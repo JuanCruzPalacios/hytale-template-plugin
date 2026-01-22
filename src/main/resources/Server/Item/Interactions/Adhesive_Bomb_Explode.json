@@ -1,0 +1,58 @@
+{
+  "Type": "Explode",
+  "Config": {
+    "DamageEntities": true,
+    "DamageBlocks": true,
+    "BlockDamageRadius": 6,
+    "BlockDropChance": 0.6,
+    "EntityDamage": 80,
+    "EntityDamageRadius": 8,
+    "ItemTool": {
+      "Specs": [
+        {
+          "Power": 2,
+          "GatherType": "SoftBlocks"
+        },
+        {
+          "Power": 2,
+          "GatherType": "Soils"
+        },
+        {
+          "Power": 2,
+          "GatherType": "Woods"
+        },
+        {
+          "Power": 2,
+          "GatherType": "Rocks"
+        },
+        {
+          "Power": 2,
+          "GatherType": "Benches"
+        },
+        {
+          "Power": 0.001,
+          "GatherType": "VolcanicRocks"
+        }
+      ]
+    }
+  },
+  "Effects": {
+    "Particles": [
+      {
+        "SystemId": "Explosion_Big",
+        "TargetEntityPart": "Entity",
+        "Color": "#f40808",
+        "Scale": 4,
+        "RotationOffset": {
+          "Yaw": 0,
+          "Roll": 0
+        },
+        "PositionOffset": {
+          "X": 0
+        }
+      }
+    ],
+    "WorldSoundEventId": "C4_Explode",
+    "LocalSoundEventId": "C4_Explode"
+  }
+}

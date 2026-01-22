@@ -1,0 +1,65 @@
+{
+  "Model": "Adhesive_Bomb_Projectile",
+  "SpawnRotationOffset": {
+    "Pitch": 0,
+    "Yaw": 0,
+    "Roll": 0
+  },
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 20,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0,
+    "SticksVertically": true
+  },
+  "LaunchForce": 25,
+  "SpawnOffset": {
+    "Y": 0.05,
+    "Z": -1
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Cooldown": {
+        "Cooldown": 0
+      },
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 0,
+          "Effects": {
+            "WorldSoundEventId": "C4_Place",
+            "LocalSoundEventId": "C4_Place"
+          }
+        },
+        {
+          "Type": "RemoveEntity",
+          "Entity": "User",
+          "Effects": {}
+        },
+        "Adhesive_Bomb_Explode_Tier2"
+      ]
+    },
+    "ProjectileMiss": {
+      "Cooldown": {
+        "Cooldown": 0
+      },
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 3,
+          "Effects": {
+            "LocalSoundEventId": "C4_Place",
+            "WorldSoundEventId": "C4_Place"
+          }
+        },
+        {
+          "Type": "RemoveEntity",
+          "Entity": "User"
+        },
+        "Adhesive_Bomb_Explode_Tier2"
+      ]
+    }
+  }
+}

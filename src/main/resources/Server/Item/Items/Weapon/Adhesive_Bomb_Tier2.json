@@ -1,0 +1,73 @@
+{
+  "TranslationProperties": {
+    "Name": "Adhesive Throwable Bomb Tier 2"
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "Icon": "Icons/ItemsGenerated/Adhesive_Bomb.png",
+  "IconProperties": {
+    "Scale": 0.8,
+    "Rotation": [
+      51,
+      101,
+      99
+    ],
+    "Translation": [
+      0,
+      0
+    ]
+  },
+  "Quality": "Rare",
+  "ItemLevel": 40,
+  "Model": "Items/Weapons/AdhesiveBombs/C4.blockymodel",
+  "Texture": "Items/Weapons/AdhesiveBombs/C4texture.png",
+  "PlayerAnimationsId": "Item",
+  "Utility": {
+    "Usable": true
+  },
+  "Weapon": {},
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ]
+  },
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        "Adhesive_Bomb_Throw_Tier2",
+        {
+          "Type": "ModifyInventory",
+          "ItemToRemove": {
+            "Id": "Adhesive_Bomb_Tier2"
+          }
+        }
+      ]
+    }
+  },
+  "ItemSoundSetId": "ISS_Items_Gadget",
+  "MaxStack": 10,
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 7
+      },
+      {
+        "ItemId": "Ingredient_Powder_Boom",
+        "Quantity": 5
+      }
+    ],
+    "OutputQuantity": 2,
+    "BenchRequirement": [
+      {
+        "Id": "Explosive_Workbench",
+        "Categories": [
+          "Explosive_Workbench_Weapons"
+        ],
+        "RequiredTierLevel": 3
+      }
+    ],
+    "TimeSeconds": 1
+  }
+}

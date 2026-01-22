@@ -1,0 +1,64 @@
+{
+  "TranslationProperties": {
+    "Name": "Bang Snap"
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "Quality": "Common",
+  "ItemLevel": 20,
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Primary": {
+      "Interactions": [
+        "Bang_Snap_Throw"
+      ]
+    }
+  },
+  "MaxStack": 100,
+  "IconProperties": {
+    "Scale": 0.9,
+    "Rotation": [
+      37,
+      90,
+      0
+    ],
+    "Translation": [
+      -2,
+      -3
+    ]
+  },
+  "Model": "Items/Weapons/BangSnap/BangSnap.blockymodel",
+  "Texture": "Items/Weapons/BangSnap/BangSnapTexture.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_BangSnap_Bomb.png",
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Bomb"
+    ]
+  },
+  "Weapon": {},
+  "ItemSoundSetId": "ISS_Items_Seeds",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Powder_Boom",
+        "Quantity": 1
+      }
+    ],
+    "OutputQuantity": 5,
+    "BenchRequirement": [
+      {
+        "Id": "Explosive_Workbench",
+        "Categories": [
+          "Explosive_Workbench_Weapons"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "TimeSeconds": 0.2
+  },
+  "Scale": 1
+}

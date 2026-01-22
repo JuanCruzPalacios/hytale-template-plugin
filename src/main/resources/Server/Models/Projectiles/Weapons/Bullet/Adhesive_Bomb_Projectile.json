@@ -1,0 +1,34 @@
+{
+  "Model": "Items/Weapons/AdhesiveBombs/C4.blockymodel",
+  "Texture": "Items/Weapons/AdhesiveBombs/C4texture.png",
+  "HitBox": {
+    "Max": {
+      "X": 0.05,
+      "Y": 0.05,
+      "Z": 0.05
+    },
+    "Min": {
+      "X": -0.05,
+      "Y": -0.05,
+      "Z": -0.05
+    }
+  },
+  "Trails": [
+    {
+      "TrailId": "RocketTrail",
+      "TargetNodeName": "Origin_Item"
+    }
+  ],
+  "MinScale": 1,
+  "MaxScale": 1,
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "Items/Animations/Spin_Roll/Spin_Roll_Right.blockyanim",
+          "Speed": 2
+        }
+      ]
+    }
+  }
+}

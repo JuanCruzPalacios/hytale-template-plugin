@@ -1,0 +1,212 @@
+{
+  "TranslationProperties": {
+    "Name": "Explosive Workbench",
+    "Description": "A specialized workstation designed for crafting explosives and heavy weaponry. From volatile charges to advanced demolition tools, this bench allows skilled engineers to assemble dangerous devices that require precision, knowledge, and a steady hand. Handle with care."
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "Quantity": 10,
+        "ItemId": "Ingredient_Bar_Iron"
+      },
+      {
+        "Quantity": 25,
+        "ItemId": "Ingredient_Bar_Copper"
+      },
+      {
+        "ItemId": "Ingredient_Powder_Boom",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Crafting"
+        ],
+        "Id": "Workbench"
+      }
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Explosive_Workbench.png",
+  "Categories": [
+    "Furniture.Benches"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Benches/Explosive_Workbench.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Benches/explosive_workbench_texture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Block_Three_Quarter",
+    "VariantRotation": "NESW",
+    "Bench": {
+      "Type": "Crafting",
+      "Categories": [
+        {
+          "Id": "Workbench_Mines",
+          "Icon": "Icons/CraftingCategories/Fieldcraft/Deco_Campfire.png",
+          "Name": "Mines"
+        },
+        {
+          "Id": "Explosive_Workbench_Weapons",
+          "Icon": "Icons/CraftingCategories/Alchemy/Bombs.png",
+          "Name": "Weapons"
+        }
+      ],
+      "LocalOpenSoundEventId": "SFX_Workbench_Open",
+      "LocalCloseSoundEventId": "SFX_Workbench_Close",
+      "CompletedSoundEventId": "SFX_Workbench_Craft",
+      "FailedSoundEventId": "SFX_Generic_Crafting_Failed",
+      "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
+      "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
+      "Id": "Explosive_Workbench",
+      "TierLevels": [
+        {
+          "CraftingTimeReductionModifier": 0.0,
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ItemId": "Ingredient_Powder_Boom",
+                "Quantity": 10
+              },
+              {
+                "ItemId": "Ingredient_Bar_Iron",
+                "Quantity": 25
+              },
+              {
+                "ItemId": "Ingredient_Fabric_Scrap_Linen",
+                "Quantity": 20
+              }
+            ],
+            "TimeSeconds": 5.0
+          }
+        },
+        {
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ItemId": "Ingredient_Powder_Boom",
+                "Quantity": 25
+              },
+              {
+                "ItemId": "Ingredient_Bar_Iron",
+                "Quantity": 50
+              },
+              {
+                "ItemId": "Ingredient_Leather_Heavy",
+                "Quantity": 10
+              },
+              {
+                "ItemId": "Ingredient_Bar_Copper",
+                "Quantity": 100
+              },
+              {
+                "ItemId": "Ingredient_Fire_Essence",
+                "Quantity": 25
+              }
+            ],
+            "TimeSeconds": 10.0
+          },
+          "CraftingTimeReductionModifier": 0.15
+        },
+        {
+          "CraftingTimeReductionModifier": 0.3
+        }
+      ]
+    },
+    "State": {
+      "Id": "crafting",
+      "Definitions": {
+        "CraftCompleted": {
+          "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim",
+          "Looping": true
+        },
+        "CraftCompletedInstant": {
+          "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim"
+        },
+        "Tier2": {
+          "CustomModel": "Blocks/Benches/Explosive_Workbench.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Benches/explosive_workbench_texture.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "Block_Three_Quarter",
+          "State": {
+            "Id": "crafting",
+            "Definitions": {
+              "CraftCompleted": {
+                "CustomModelAnimation": "Blocks/Benches/Workbench2_Crafting.blockyanim"
+              }
+            }
+          }
+        },
+        "Tier3": {
+          "CustomModel": "Blocks/Benches/Explosive_Workbench.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Benches/explosive_workbench_texture.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "Block_Three_Quarter",
+          "State": {
+            "Id": "crafting",
+            "Definitions": {
+              "CraftCompleted": {
+                "CustomModelAnimation": "Blocks/Benches/Workbench3_Crafting.blockyanim"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "ParticleColor": "#6e4a2f",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Metal"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.6,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      1,
+      -11.7
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Bench"
+    ]
+  },
+  "MaxStack": 1,
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "Model": "Blocks/Benches/Explosive_Workbench.blockymodel",
+  "Texture": "Blocks/Benches/explosive_workbench_texture.png",
+  "Quality": "Common",
+  "ItemLevel": 2,
+  "Scale": 1.4
+}

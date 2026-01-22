@@ -1,0 +1,17 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 0.25,
+      "Effects": {
+        "ItemAnimationId": "Throw"
+      }
+    },
+    {
+      "Type": "Projectile",
+      "Config": "Projectile_Config_RocketLauncher"
+    },
+    "RocketLauncher_Shoot"
+  ]
+}

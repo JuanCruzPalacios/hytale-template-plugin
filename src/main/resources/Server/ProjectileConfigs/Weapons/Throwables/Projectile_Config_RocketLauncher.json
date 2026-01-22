@@ -1,0 +1,57 @@
+{
+  "Model": "RocketLauncherProjectile",
+  "SpawnRotationOffset": {
+    "Pitch": 0,
+    "Yaw": -0.5,
+    "Roll": -50
+  },
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 2,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0,
+    "SticksVertically": true
+  },
+  "LaunchForce": 35,
+  "SpawnOffset": {
+    "X": -0.05,
+    "Y": 0,
+    "Z": -1
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Cooldown": {
+        "Cooldown": 0
+      },
+      "Interactions": [
+        "RocketLauncher_Explode",
+        {
+          "Type": "RemoveEntity",
+          "Entity": "User",
+          "Effects": {
+            "LocalSoundEventId": "RocketExplosion",
+            "WorldSoundEventId": "RocketExplosion"
+          }
+        }
+      ]
+    },
+    "ProjectileMiss": {
+      "Cooldown": {
+        "Cooldown": 0
+      },
+      "Interactions": [
+        "RocketLauncher_Explode",
+        {
+          "Type": "RemoveEntity",
+          "Entity": "User",
+          "Effects": {
+            "LocalSoundEventId": "RocketExplosion",
+            "WorldSoundEventId": "RocketExplosion"
+          }
+        }
+      ]
+    }
+  }
+}

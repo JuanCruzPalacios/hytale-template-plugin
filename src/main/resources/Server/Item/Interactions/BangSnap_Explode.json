@@ -1,0 +1,58 @@
+{
+  "Type": "Explode",
+  "Config": {
+    "DamageEntities": true,
+    "DamageBlocks": false,
+    "BlockDamageRadius": 1,
+    "BlockDropChance": 0.6,
+    "EntityDamage": 10,
+    "EntityDamageRadius": 3,
+    "ItemTool": {
+      "Specs": [
+        {
+          "Power": 2,
+          "GatherType": "SoftBlocks"
+        },
+        {
+          "Power": 2,
+          "GatherType": "Soils"
+        },
+        {
+          "Power": 2,
+          "GatherType": "Woods"
+        },
+        {
+          "Power": 2,
+          "GatherType": "Rocks"
+        },
+        {
+          "Power": 2,
+          "GatherType": "Benches"
+        },
+        {
+          "Power": 0.001,
+          "GatherType": "VolcanicRocks"
+        }
+      ]
+    }
+  },
+  "Effects": {
+    "Particles": [
+      {
+        "SystemId": "Explosion_Small",
+        "TargetEntityPart": "Entity",
+        "Color": "#fe0000",
+        "Scale": 0.5,
+        "RotationOffset": {
+          "Yaw": 0,
+          "Roll": 0
+        },
+        "PositionOffset": {
+          "X": 0
+        }
+      }
+    ],
+    "WorldSoundEventId": "BangSnap_Explode",
+    "LocalSoundEventId": "BangSnap_Explode"
+  }
+}

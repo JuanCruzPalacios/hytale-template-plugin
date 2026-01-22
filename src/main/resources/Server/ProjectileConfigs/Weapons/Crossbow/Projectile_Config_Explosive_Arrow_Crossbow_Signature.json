@@ -1,0 +1,35 @@
+{
+  "Parent": "Projectile_Config_Arrow_Base",
+  "Model": "Explosive_Arrow_Projectile",
+  "LaunchForce": 100,
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 40,
+    "TerminalVelocityAir": 100,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0.0,
+    "SticksVertically": true
+  },
+  "LaunchLocalSoundEventId": "SFX_Bow_T2_Signature_Shoot_Local",
+  "LaunchWorldSoundEventId": "SFX_Bow_T2_Signature_Shoot",
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "RemoveEntity"
+        },
+        "Super_Explosive_Arrow_Explode"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "RemoveEntity"
+        },
+        "Super_Explosive_Arrow_Explode",
+        "Common_Projectile_Despawn"
+      ]
+    }
+  }
+}

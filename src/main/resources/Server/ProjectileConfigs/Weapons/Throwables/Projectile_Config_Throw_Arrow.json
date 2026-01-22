@@ -1,0 +1,40 @@
+{
+  "Model": "Explosive_Arrow_Projectile",
+  "SpawnRotationOffset": {
+    "Pitch": 0,
+    "Yaw": 0,
+    "Roll": 0
+  },
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 20,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0,
+    "SticksVertically": true
+  },
+  "LaunchForce": 30,
+  "SpawnOffset": {
+    "Y": 0.05,
+    "Z": -1
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "RemoveEntity"
+        },
+        "Hand_Throw_Explosive_Arrow_Explode"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "RemoveEntity"
+        },
+        "Hand_Throw_Explosive_Arrow_Explode"
+      ]
+    }
+  }
+}

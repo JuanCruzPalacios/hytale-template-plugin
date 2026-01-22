@@ -1,14 +1,14 @@
 {
-    "Group": "Example",
-    "Name": "ExamplePlugin",
-    "Version": "0.0.2",
-    "Description": "An example plugin for HyTale!",
+    "Group": "JCP",
+    "Name": "ExplosivesPackPlugin",
+    "Version": "1.0.0",
+    "Description": "Explosives Pack funcionality plugin",
     "Authors": [
         {
-            "Name": "It's you!"
+            "Name": "JCProgrammer"
         }
     ],
-    "Website": "example.org",
+    "Website": "",
     "ServerVersion": "*",
     "Dependencies": {
         
@@ -17,6 +17,6 @@
         
     },
     "DisabledByDefault": false,
-    "Main": "org.example.plugin.ExamplePlugin",
+    "Main": "org.jcp.plugin.ExplosivesPackPlugin",
     "IncludesAssetPack": true
 }

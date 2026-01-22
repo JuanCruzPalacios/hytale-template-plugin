@@ -1,0 +1,113 @@
+{
+  "TranslationProperties": {
+    "Name": "Grass Mine Tier 2"
+  },
+  "ItemLevel": 3,
+  "Icon": "Icons/ItemsGenerated/Soil_Grass.png",
+  "Categories": [
+    "Blocks.Soils"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Soil_Grass",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Soil_Grass",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 7
+      },
+      {
+        "ItemId": "Ingredient_Powder_Boom",
+        "Quantity": 7
+      }
+    ],
+    "OutputQuantity": 3,
+    "BenchRequirement": [
+      {
+        "Id": "Explosive_Workbench",
+        "Categories": [
+          "Workbench_Mines"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ]
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Grass",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Soils",
+        "ItemId": "Soil_Dirt"
+      }
+    },
+    "BlockParticleSetId": "Grass_Earth",
+    "Textures": [
+      {
+        "Down": "BlockTextures/Soil_Dirt.png",
+        "Sides": "BlockTextures/Soil_Grass_Side.png",
+        "Up": "BlockTextures/Soil_Grass_GS.png",
+        "Weight": 1
+      },
+      {
+        "Down": "BlockTextures/Soil_Dirt.png",
+        "Sides": "BlockTextures/Soil_Grass_Side.png",
+        "Up": "BlockTextures/Soil_Grass_GS_02.png",
+        "Weight": 1
+      }
+    ],
+    "BlockSoundSetId": "Metal",
+    "BiomeTintUp": 100,
+    "TextureSideMask": "BlockTextures/Soil_grass_Side_Mask_GS.png",
+    "TintUp": [
+      "#67b62d"
+    ],
+    "TransitionTexture": "BlockTextures/Transition_Soil_Grass_GS.png",
+    "TransitionToGroups": [
+      "Stone",
+      "Dirt",
+      "Dirt_Dark",
+      "Sand",
+      "Sand_White",
+      "Gravel",
+      "Wood"
+    ],
+    "ParticleColor": "#eae8e8",
+    "TransitionToTag": "Fluid=Water",
+    "Interactions": {
+      "CollisionEnter": {
+        "Interactions": [
+          {
+            "Type": "DestroyBlock"
+          },
+          "Mine_Explode_Tier2"
+        ]
+      }
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Soil"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      339.295,
+      229.107,
+      337.792
+    ],
+    "Translation": [
+      0,
+      -6
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Ingots",
+  "Quality": "Rare",
+  "MaxStack": 16
+}

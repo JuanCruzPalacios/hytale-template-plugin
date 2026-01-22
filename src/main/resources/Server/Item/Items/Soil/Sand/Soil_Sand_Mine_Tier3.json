@@ -1,0 +1,92 @@
+{
+  "TranslationProperties": {
+    "Name": "Sand Mine Tier 3"
+  },
+  "ItemLevel": 10,
+  "Icon": "Icons/ItemsGenerated/Soil_Sand.png",
+  "Categories": [
+    "Blocks.Soils"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Soil",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Sand",
+    "HitboxType": "Full",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Soils"
+      }
+    },
+    "BlockParticleSetId": "Sand",
+    "Textures": [
+      {
+        "All": "BlockTextures/Soil_Sand.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#f9cb57",
+    "BlockSoundSetId": "Metal",
+    "TransitionTexture": "BlockTextures/Transition_Soil_Sand.png",
+    "TransitionToGroups": [
+      "Stone",
+      "Wood",
+      "Mud",
+      "Dirt"
+    ],
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "CubeShadingMode": "Standard",
+    "Interactions": {
+      "CollisionEnter": {
+        "Interactions": [
+          {
+            "Type": "DestroyBlock"
+          },
+          "Mine_Explode_Tier3"
+        ]
+      }
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Soil"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Ingots",
+  "MaxStack": 16,
+  "Quality": "Epic",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Soil_Sand",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Powder_Boom",
+        "Quantity": 10
+      }
+    ],
+    "OutputQuantity": 3,
+    "BenchRequirement": [
+      {
+        "Id": "Explosive_Workbench",
+        "Categories": [
+          "Workbench_Mines"
+        ],
+        "RequiredTierLevel": 3
+      }
+    ]
+  }
+}

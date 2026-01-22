@@ -1,0 +1,67 @@
+{
+  "TranslationProperties": {
+    "Name": "Rocket Bullet Tier 2"
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "Quality": "Rare",
+  "ItemLevel": 14,
+  "Recipe": {
+    "TimeSeconds": 1,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "Quantity": 10,
+        "ItemId": "Ingredient_Bar_Iron"
+      },
+      {
+        "ItemId": "Ingredient_Powder_Boom",
+        "Quantity": 5
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Rocket_Bullet_Tier2"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Explosive_Workbench_Weapons"
+        ],
+        "Id": "Explosive_Workbench",
+        "RequiredTierLevel": 3
+      }
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.8,
+    "Rotation": [
+      45,
+      282,
+      16
+    ],
+    "Translation": [
+      3,
+      -2
+    ]
+  },
+  "Model": "Items/Weapons/RocketLauncher/RocketLauncher_Bullet.blockymodel",
+  "Texture": "Items/Weapons/RocketLauncher/rpgbullettexture.png",
+  "Icon": "Icons/ItemsGenerated/Rocket_Bullet.png",
+  "MaxStack": 10,
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Arrow"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Ingots",
+  "Scale": 1.5,
+  "PlayerAnimationsId": "Item"
+}

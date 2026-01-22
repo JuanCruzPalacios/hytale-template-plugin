@@ -1,0 +1,63 @@
+{
+  "HitBox": {
+    "Max": {
+      "X": 0.075,
+      "Y": 0.075,
+      "Z": 0.075
+    },
+    "Min": {
+      "X": -0.075,
+      "Y": -0.075,
+      "Z": -0.075
+    }
+  },
+  "MinScale": 1,
+  "MaxScale": 1,
+  "Trails": [
+    {
+      "PositionOffset": {
+        "X": 0.5,
+        "Y": 0,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle",
+      "TrailId": "Arrow",
+      "RotationOffset": {
+        "Yaw": 90,
+        "Pitch": 0,
+        "Roll": 45
+      }
+    },
+    {
+      "PositionOffset": {
+        "X": 0.5,
+        "Y": 0,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle",
+      "TrailId": "Arrow",
+      "RotationOffset": {
+        "Yaw": 0,
+        "Pitch": 45,
+        "Roll": 90
+      }
+    }
+  ],
+  "DefaultAttachments": [
+    {
+      "Model": "Items/Weapons/ExplosiveCrossbow/Explosive_Arrow.blockymodel",
+      "Texture": "Items/Weapons/ExplosiveCrossbow/Arrow_Explosive.png"
+    }
+  ],
+  "Model": "Items/Weapons/ExplosiveCrossbow/Explosive_Arrow.blockymodel",
+  "Texture": "Items/Weapons/ExplosiveCrossbow/Arrow_Explosive.png",
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "Items/Animations/Fly/Fly_Vertical.blockyanim"
+        }
+      ]
+    }
+  }
+}
