@@ -35,8 +35,7 @@
         },
         {
           "Type": "RemoveEntity",
-          "Entity": "User",
-          "Effects": {}
+          "Entity": "User"
         },
         "Adhesive_Bomb_Explode_Tier2"
       ]

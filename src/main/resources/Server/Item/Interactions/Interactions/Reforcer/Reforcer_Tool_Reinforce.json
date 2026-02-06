@@ -1,0 +1,10 @@
+{
+  "Type": "ChangeBlock",
+  "RequireNotBroken": true,
+  "Changes": {
+    "Rock_Volcanic_Cobble": "Rock_Stone_Aqua",
+    "Rock_Volcanic_Cracked_Lava": "Rock_Stone_Aqua",
+    "Rock_Volcanic_Cracked_Lava_Incandescent": "Rock_Stone_Aqua",
+    "Rock_Volcanic": "Rock_Stone_Aqua"
+  }
+}

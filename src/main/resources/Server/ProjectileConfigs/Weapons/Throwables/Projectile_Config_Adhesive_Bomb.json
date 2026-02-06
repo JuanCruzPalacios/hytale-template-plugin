@@ -35,8 +35,7 @@
         },
         {
           "Type": "RemoveEntity",
-          "Entity": "User",
-          "Effects": {}
+          "Entity": "User"
         },
         "Adhesive_Bomb_Explode"
       ]
@@ -54,11 +53,11 @@
             "WorldSoundEventId": "C4_Place"
           }
         },
+        "Adhesive_Bomb_Explode",
         {
           "Type": "RemoveEntity",
           "Entity": "User"
-        },
-        "Adhesive_Bomb_Explode"
+        }
       ]
     }
   }

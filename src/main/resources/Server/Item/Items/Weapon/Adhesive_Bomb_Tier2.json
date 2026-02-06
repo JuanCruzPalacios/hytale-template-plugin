@@ -23,9 +23,6 @@
   "Model": "Items/Weapons/AdhesiveBombs/C4.blockymodel",
   "Texture": "Items/Weapons/AdhesiveBombs/C4texture.png",
   "PlayerAnimationsId": "Item",
-  "Utility": {
-    "Usable": true
-  },
   "Weapon": {},
   "Tags": {
     "Type": [

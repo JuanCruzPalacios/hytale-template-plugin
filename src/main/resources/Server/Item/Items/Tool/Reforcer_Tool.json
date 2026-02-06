@@ -1,0 +1,314 @@
+{
+  "TranslationProperties": {
+    "Name": "Reforcer Tool",
+    "Description": "Use this tool along with the designated materials to improve volcanic rock and make it more resistant to explosions!"
+  },
+  "Parent": "Tool_Pickaxe_Crude",
+  "Icon": "Icons/ItemsGenerated/Tool_Pickaxe_Adamantite.png",
+  "Quality": "Rare",
+  "ItemLevel": 40,
+  "Model": "Items/Tools/Pickaxe/Adamantite.blockymodel",
+  "Texture": "Items/Tools/Pickaxe/Adamantite_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 4.5,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 8
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Cindercloth",
+        "Quantity": 4
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Tools"
+        ],
+        "Id": "Workbench",
+        "RequiredTierLevel": 3
+      }
+    ]
+  },
+  "Tool": {
+    "Specs": [
+      {
+        "Power": 1,
+        "GatherType": "SoftBlocks"
+      },
+      {
+        "Power": 1.0,
+        "GatherType": "Soils"
+      },
+      {
+        "Power": 0.05,
+        "GatherType": "Woods"
+      },
+      {
+        "Power": 1,
+        "GatherType": "Rocks",
+        "Quality": 5
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Benches"
+      },
+      {
+        "Power": 0.34,
+        "GatherType": "VolcanicRocks"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreCopper"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreIron"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreSilver"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreGold"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreThorium"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreCobalt"
+      },
+      {
+        "Power": 0.25,
+        "GatherType": "OreAdamantite",
+        "Quality": 4
+      },
+      {
+        "Power": 0.125,
+        "GatherType": "OreMithril"
+      }
+    ],
+    "DurabilityLossBlockTypes": [
+      {
+        "BlockSets": [
+          "Stone",
+          "Rock",
+          "Ores",
+          "Soil"
+        ],
+        "DurabilityLossOnHit": 0.25
+      }
+    ]
+  },
+  "MaxDurability": 400.0,
+  "Interactions": {
+    "Secondary": {
+      "RequireNewClick": false,
+      "Interactions": [
+        {
+          "Type": "BlockCondition",
+          "Matchers": [
+            {
+              "Block": {
+                "Id": "Rock_Volcanic_Cobble"
+              }
+            }
+          ],
+          "Next": {
+            "Type": "ModifyInventory",
+            "ItemToRemove": {
+              "Id": "Ingredient_Bar_Copper",
+              "Quantity": 1
+            },
+            "Next": {
+              "Type": "ChangeBlock",
+              "Changes": {
+                "Rock_Volcanic_Cobble": "Reforced_Rock_Tier1"
+              },
+              "Next": {
+                "Type": "Simple"
+              },
+              "Failed": {
+                "Type": "Simple"
+              },
+              "Effects": {
+                "WorldSoundEventId": "SFX_Block_Reforce",
+                "ItemAnimationId": "Interact",
+                "LocalSoundEventId": "SFX_Block_Reforce"
+              }
+            },
+            "Failed": {
+              "Type": "SendMessage",
+              "Message": "Can't reinforce: you need 1x Ingredient_Bar_Copper."
+            }
+          },
+          "Failed": {
+            "Type": "BlockCondition",
+            "Matchers": [
+              {
+                "Block": {
+                  "Id": "Reforced_Rock_Tier1"
+                }
+              }
+            ],
+            "Next": {
+              "Type": "ModifyInventory",
+              "ItemToRemove": {
+                "Id": "Ingredient_Bar_Iron",
+                "Quantity": 1
+              },
+              "Next": {
+                "Type": "ChangeBlock",
+                "Changes": {
+                  "Reforced_Rock_Tier1": "Reforced_Rock_Tier2"
+                },
+                "Next": {
+                  "Type": "Simple"
+                },
+                "Failed": {
+                  "Type": "Simple"
+                },
+                "Effects": {
+                  "WorldSoundEventId": "SFX_Block_Reforce",
+                  "ItemAnimationId": "Interact",
+                  "LocalSoundEventId": "SFX_Block_Reforce"
+                }
+              },
+              "Failed": {
+                "Type": "SendMessage",
+                "Message": "Can't reinforce to Tier 2: you need 1x Ingredient_Bar_Iron."
+              }
+            },
+            "Failed": {
+              "Type": "BlockCondition",
+              "Matchers": [
+                {
+                  "Block": {
+                    "Id": "Reforced_Rock_Tier2"
+                  }
+                }
+              ],
+              "Next": {
+                "Type": "ModifyInventory",
+                "ItemToRemove": {
+                  "Id": "Ingredient_Bar_Thorium",
+                  "Quantity": 1
+                },
+                "Next": {
+                  "Type": "ChangeBlock",
+                  "Changes": {
+                    "Reforced_Rock_Tier2": "Reforced_Rock_Tier3"
+                  },
+                  "Next": {
+                    "Type": "Simple"
+                  },
+                  "Failed": {
+                    "Type": "Simple"
+                  },
+                  "Effects": {
+                    "WorldSoundEventId": "SFX_Block_Reforce",
+                    "ItemAnimationId": "Interact",
+                    "LocalSoundEventId": "SFX_Block_Reforce"
+                  }
+                },
+                "Failed": {
+                  "Type": "SendMessage",
+                  "Message": "Can't reinforce to Tier 3: you need 1x Ingredient_Bar_Thorium."
+                }
+              },
+              "Failed": {
+                "Type": "BlockCondition",
+                "Matchers": [
+                  {
+                    "Block": {
+                      "Id": "Reforced_Rock_Tier3"
+                    }
+                  }
+                ],
+                "Next": {
+                  "Type": "ModifyInventory",
+                  "ItemToRemove": {
+                    "Id": "Ingredient_Bar_Cobalt",
+                    "Quantity": 1
+                  },
+                  "Next": {
+                    "Type": "ChangeBlock",
+                    "Changes": {
+                      "Reforced_Rock_Tier3": "Reforced_Rock_Tier4"
+                    },
+                    "Next": {
+                      "Type": "Simple"
+                    },
+                    "Failed": {
+                      "Type": "Simple"
+                    },
+                    "Effects": {
+                      "WorldSoundEventId": "SFX_Block_Reforce",
+                      "ItemAnimationId": "Interact",
+                      "LocalSoundEventId": "SFX_Block_Reforce"
+                    }
+                  },
+                  "Failed": {
+                    "Type": "SendMessage",
+                    "Message": "Can't reinforce to Tier 4: you need 1x Ingredient_Bar_Cobalt."
+                  }
+                },
+                "Failed": {
+                  "Type": "BlockCondition",
+                  "Matchers": [
+                    {
+                      "Block": {
+                        "Id": "Reforced_Rock_Tier4"
+                      }
+                    }
+                  ],
+                  "Next": {
+                    "Type": "ModifyInventory",
+                    "ItemToRemove": {
+                      "Id": "Ingredient_Bar_Adamantite",
+                      "Quantity": 1
+                    },
+                    "Next": {
+                      "Type": "ChangeBlock",
+                      "Changes": {
+                        "Reforced_Rock_Tier4": "Reforced_Rock_Tier5"
+                      },
+                      "Next": {
+                        "Type": "Simple"
+                      },
+                      "Failed": {
+                        "Type": "Simple"
+                      },
+                      "Effects": {
+                        "WorldSoundEventId": "SFX_Block_Reforce",
+                        "ItemAnimationId": "Interact",
+                        "LocalSoundEventId": "SFX_Block_Reforce"
+                      }
+                    },
+                    "Failed": {
+                      "Type": "SendMessage",
+                      "Message": "Can't reinforce to Tier 5: you need 1x Ingredient_Bar_Adamantite."
+                    }
+                  },
+                  "Failed": {
+                    "Type": "Simple",
+                    "Effects": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

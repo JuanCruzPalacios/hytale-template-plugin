@@ -1,0 +1,32 @@
+{
+  "TranslationProperties": {
+    "Name": "Reforced Rock Tier 4"
+  },
+  "Icon": "Icons/ItemsGenerated/Rock_Aqua_Brick_Smooth.png",
+  "Categories": [
+    "Blocks.Rocks"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Rock_Stone_Aqua",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Stone",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "ReinforcedRocks_T1"
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "Textures": [
+      {
+        "All": "BlockTextures/Rock_Aqua.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#58ad9b",
+    "BlockSoundSetId": "Stone"
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone"
+}

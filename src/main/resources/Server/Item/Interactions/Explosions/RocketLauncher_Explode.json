@@ -49,6 +49,42 @@
         {
           "Power": 0.001,
           "GatherType": "VolcanicRocks"
+        },
+        {
+          "GatherType": "OreAdamantite",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreGold",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreCobalt",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreCopper",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreSilver",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreMithril",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreOnyxium",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreThorium",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreIron",
+          "Power": 2
         }
       ]
     }

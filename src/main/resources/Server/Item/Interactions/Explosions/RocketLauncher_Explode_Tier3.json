@@ -30,8 +30,64 @@
           "GatherType": "Benches"
         },
         {
-          "Power": 0.001,
+          "Power": 2,
           "GatherType": "VolcanicRocks"
+        },
+        {
+          "GatherType": "OreAdamantite",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreGold",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreCobalt",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreCopper",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreSilver",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreMithril",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreOnyxium",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreThorium",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreIron",
+          "Power": 2
+        },
+        {
+          "Power": 1,
+          "GatherType": "ReinforcedRocks_T1"
+        },
+        {
+          "Power": 0.5,
+          "GatherType": "ReinforcedRocks_T2"
+        },
+        {
+          "Power": 0.3,
+          "GatherType": "ReinforcedRocks_T3"
+        },
+        {
+          "Power": 0.2,
+          "GatherType": "ReinforcedRocks_T4"
+        },
+        {
+          "Power": 0.15,
+          "GatherType": "ReinforcedRocks_T5"
         }
       ]
     }

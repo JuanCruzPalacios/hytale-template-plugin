@@ -1,22 +1,29 @@
 {
-    "Group": "JCP",
-    "Name": "ExplosivesPackPlugin",
+    "Group": "Pipita",
+    "Name": "Explosives Pack",
     "Version": "1.0.0",
-    "Description": "Explosives Pack funcionality plugin",
+    "Description": "A modular explosives pack. Introduces all type of explosive.",
+    "Main": "org.jcp.plugin.ExplosivesPackPlugin",
     "Authors": [
         {
-            "Name": "JCProgrammer"
+            "Name": "Juan Cruz Palacios | Pipita",
+            "Email": "juancruzpalacios2007@gmail.com",
+            "Url": "https://github.com/JuanCruzPalacios"
         }
     ],
     "Website": "",
-    "ServerVersion": "*",
     "Dependencies": {
         
     },
     "OptionalDependencies": {
         
     },
+    "LoadBefore": {
+        
+    },
     "DisabledByDefault": false,
-    "Main": "org.jcp.plugin.ExplosivesPackPlugin",
-    "IncludesAssetPack": true
+    "IncludesAssetPack": true,
+    "SubPlugins": [
+        
+    ]
 }
