@@ -1,0 +1,15 @@
+{
+  "Cooldown": {
+    "Cooldown": 0
+  },
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 3,
+      "Effects": {
+        "WorldSoundEventId": "C4_Place",
+        "LocalSoundEventId": "C4_Place"
+      }
+    }
+  ]
+}

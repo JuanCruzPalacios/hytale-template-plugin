@@ -1,0 +1,16 @@
+{
+  "Cooldown": {
+    "Cooldown": 0
+  },
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 3
+    },
+    "Adhesive_Bomb_Explode",
+    {
+      "Type": "RemoveEntity",
+      "Entity": "User"
+    }
+  ]
+}

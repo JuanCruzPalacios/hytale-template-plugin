@@ -1,0 +1,14 @@
+{
+  "Cooldown": {
+    "Cooldown": 0
+  },
+  "Interactions": [
+    {
+      "Type": "Parallel",
+      "Interactions": [
+        "Adhesive_Bomb_Miss_PlaceSound_Delayed",
+        "Adhesive_Bomb_Tier2_Explode_Delayed"
+      ]
+    }
+  ]
+}

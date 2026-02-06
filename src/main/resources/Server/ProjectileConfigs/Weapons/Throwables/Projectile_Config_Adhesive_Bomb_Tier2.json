@@ -40,25 +40,6 @@
         "Adhesive_Bomb_Explode_Tier2"
       ]
     },
-    "ProjectileMiss": {
-      "Cooldown": {
-        "Cooldown": 0
-      },
-      "Interactions": [
-        {
-          "Type": "Simple",
-          "RunTime": 3,
-          "Effects": {
-            "LocalSoundEventId": "C4_Place",
-            "WorldSoundEventId": "C4_Place"
-          }
-        },
-        {
-          "Type": "RemoveEntity",
-          "Entity": "User"
-        },
-        "Adhesive_Bomb_Explode_Tier2"
-      ]
-    }
+    "ProjectileMiss": "Adhesive_Bomb_Tier2_OnMiss"
   }
 }

@@ -20,44 +20,13 @@
     "Z": -1
   },
   "Interactions": {
+    "ProjectileMiss": "Adhesive_Bomb_OnMiss",
     "ProjectileHit": {
-      "Cooldown": {
-        "Cooldown": 0
-      },
       "Interactions": [
         {
-          "Type": "Simple",
-          "RunTime": 0,
-          "Effects": {
-            "WorldSoundEventId": "C4_Place",
-            "LocalSoundEventId": "C4_Place"
-          }
-        },
-        {
-          "Type": "RemoveEntity",
-          "Entity": "User"
+          "Type": "RemoveEntity"
         },
         "Adhesive_Bomb_Explode"
-      ]
-    },
-    "ProjectileMiss": {
-      "Cooldown": {
-        "Cooldown": 0
-      },
-      "Interactions": [
-        {
-          "Type": "Simple",
-          "RunTime": 3,
-          "Effects": {
-            "LocalSoundEventId": "C4_Place",
-            "WorldSoundEventId": "C4_Place"
-          }
-        },
-        "Adhesive_Bomb_Explode",
-        {
-          "Type": "RemoveEntity",
-          "Entity": "User"
-        }
       ]
     }
   }
