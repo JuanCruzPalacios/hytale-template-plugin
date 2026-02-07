@@ -1,0 +1,91 @@
+$Common = "../../Common.ui";
+
+Group {
+  LayoutMode: Center;
+
+  // Panel único
+  Group #Panel {
+    Anchor: (Width: 600, Height: 260);
+    Padding: (Left: 16, Right: 16, Top: 14, Bottom: 14);
+    Background: $Common.@InputBoxBackground;
+
+    // Título
+    Label {
+      Text: "Missile Table";
+      Anchor: (Top: 0, Left: 0, Right: 0, Height: 22);
+    }
+
+    // Subtítulo
+    Label {
+      Text: "Enter target coordinates (X / Z)";
+      Anchor: (Top: 22, Left: 0, Right: 0, Height: 18);
+    }
+
+    // Campo X
+    Label {
+      Text: "X";
+      Anchor: (Top: 52, Left: 0, Width: 20, Height: 18);
+    }
+
+    TextField #TargetX {
+      Anchor: (Top: 72, Left: 0, Width: 260, Height: 40);
+      Background: $Common.@InputBoxBackground;
+      Padding: (Full: 6);
+    }
+
+    // Campo Z
+    Label {
+      Text: "Z";
+      Anchor: (Top: 52, Left: 300, Width: 20, Height: 18);
+    }
+
+    TextField #TargetZ {
+      Anchor: (Top: 72, Left: 300, Width: 260, Height: 40);
+      Background: $Common.@InputBoxBackground;
+      Padding: (Full: 6);
+    }
+
+    // Requisito
+    Label #Req {
+      Text: "Requires: Missile x1";
+      Anchor: (Top: 122, Left: 0, Right: 0, Height: 18);
+    }
+
+    // Mensajes (solo togglás Visible desde Java)
+    Label #Error {
+      Visible: false;
+      Text: "Error";
+      Anchor: (Top: 142, Left: 0, Right: 0, Height: 18);
+    }
+
+    Label #Status {
+      Visible: false;
+      Text: "Scheduled!";
+      Anchor: (Top: 160, Left: 0, Right: 0, Height: 18);
+    }
+
+    // Botón Launch con frame
+    Group #LaunchButtonFrame {
+      Anchor: (Top: 190, Left: 0, Width: 270, Height: 40);
+      Padding: (Full: 4);
+      Background: $Common.@InputBoxBackground;
+
+      Button #LaunchButton {
+        Anchor: (Left: 0, Top: 0, Right: 0, Bottom: 0);
+        Label { Text: "Launch"; }
+      }
+    }
+
+    // Botón Close con frame
+    Group #CloseButtonFrame {
+      Anchor: (Top: 190, Left: 290, Width: 270, Height: 40);
+      Padding: (Full: 4);
+      Background: $Common.@InputBoxBackground;
+
+      Button #CloseButton {
+        Anchor: (Left: 0, Top: 0, Right: 0, Bottom: 0);
+        Label { Text: "Close"; }
+      }
+    }
+  }
+}

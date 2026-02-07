@@ -1,0 +1,121 @@
+{
+  "Appearance": "Missile",
+  "Radius": 0.15,
+  "Height": 0.15,
+  "Gravity": 40.0,
+  "TerminalVelocity": 120.0,
+  "TimeToLive": 100.0,
+  "DeathEffectsOnHit": true,
+  "DeadTime": 0.0,
+  "DeathSoundEventId": "SFX_Missile_Explode",
+  "DeathParticles": {
+    "SystemId": "Explosion_Big",
+    "Color": "#f40808",
+    "Scale": 20,
+    "PositionOffset": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "RotationOffset": {
+      "Pitch": 0.0,
+      "Yaw": 0.0,
+      "Roll": 0.0
+    }
+  },
+  "ExplosionConfig": {
+    "DamageEntities": true,
+    "DamageBlocks": true,
+    "BlockDamageRadius": 50,
+    "BlockDamageFalloff": 1.0,
+    "BlockDropChance": 0.6,
+    "EntityDamageRadius": 50,
+    "EntityDamage": 1500,
+    "EntityDamageFalloff": 1.0,
+    "ItemTool": {
+      "Specs": [
+        {
+          "Power": 2,
+          "GatherType": "SoftBlocks"
+        },
+        {
+          "Power": 2,
+          "GatherType": "Soils"
+        },
+        {
+          "Power": 2,
+          "GatherType": "Woods"
+        },
+        {
+          "Power": 2,
+          "GatherType": "Rocks"
+        },
+        {
+          "Power": 2,
+          "GatherType": "Benches"
+        },
+        {
+          "Power": 2,
+          "GatherType": "VolcanicRocks"
+        },
+        {
+          "GatherType": "OreAdamantite",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreGold",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreCobalt",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreCopper",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreSilver",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreMithril",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreOnyxium",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreThorium",
+          "Power": 2
+        },
+        {
+          "GatherType": "OreIron",
+          "Power": 2
+        },
+        {
+          "Power": 2,
+          "GatherType": "ReinforcedRocks_T1"
+        },
+        {
+          "Power": 2,
+          "GatherType": "ReinforcedRocks_T2"
+        },
+        {
+          "Power": 2,
+          "GatherType": "ReinforcedRocks_T3"
+        },
+        {
+          "Power": 2,
+          "GatherType": "ReinforcedRocks_T4"
+        },
+        {
+          "Power": 2,
+          "GatherType": "ReinforcedRocks_T5"
+        }
+      ]
+    }
+  },
+  "DeadTimeMiss": 0
+}

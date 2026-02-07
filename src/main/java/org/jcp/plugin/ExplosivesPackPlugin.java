@@ -1,12 +1,16 @@
 package org.jcp.plugin;
 
-import com.hypixel.hytale.event.EventPriority;
 import com.hypixel.hytale.assetstore.map.DefaultAssetMap;
+import com.hypixel.hytale.codec.Codec;
+import com.hypixel.hytale.event.EventPriority;
 import com.hypixel.hytale.server.core.asset.type.item.config.Item;
 import com.hypixel.hytale.server.core.asset.type.item.config.ItemTool;
-import com.hypixel.hytale.server.core.asset.type.item.config.ItemToolSpec; // ✅ ESTA ES LA CORRECTA
+import com.hypixel.hytale.server.core.asset.type.item.config.ItemToolSpec;
 import com.hypixel.hytale.server.core.event.events.BootEvent;
+import com.hypixel.hytale.server.core.modules.interaction.interaction.config.server.OpenCustomUIInteraction;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
+import org.jcp.plugin.missile.ExplosivesPackMissileFeature;
+import org.jcp.plugin.missile.MissileTablePageSupplier;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -16,6 +20,15 @@ import java.util.Set;
 import java.util.logging.Level;
 
 public class ExplosivesPackPlugin extends JavaPlugin {
+
+    // ✅ Se ejecuta al cargar la clase: necesario para que el AssetStore pueda decodificar OpenCustomUI(Page.Id)
+    static {
+        OpenCustomUIInteraction.PAGE_CODEC.register(
+                "MissileTable",
+                MissileTablePageSupplier.class,
+                (Codec) MissileTablePageSupplier.CODEC
+        );
+    }
 
     private static final String[] REINFORCED_GATHER_TYPES = new String[] {
             "ReinforcedRocks_T1",
@@ -31,6 +44,15 @@ public class ExplosivesPackPlugin extends JavaPlugin {
 
     @Override
     protected void setup() {
+
+        // ✅ Registra TODO lo del sistema de misiles (component, tick, spawn/remove commands, indestructible, etc.)
+        try {
+            ExplosivesPackMissileFeature.register(this);
+        } catch (Throwable t) {
+            getLogger().at(Level.SEVERE).log("ExplosivesPack: failed to register missile feature", t);
+        }
+
+        // ✅ Parche de herramientas (cuando assets ya están cargados)
         getEventRegistry().register(EventPriority.NORMAL, BootEvent.class, evt -> {
             try {
                 patchAllToolsForReinforcedRocks();
@@ -47,7 +69,6 @@ public class ExplosivesPackPlugin extends JavaPlugin {
         int patchedTools = 0;
         int injectedSpecs = 0;
 
-        // ✅ DefaultAssetMap -> Map<String, Item>
         DefaultAssetMap<String, Item> dam = Item.getAssetStore().getAssetMap();
         Map<String, Item> allItems = dam.getAssetMap();
 
@@ -58,8 +79,8 @@ public class ExplosivesPackPlugin extends JavaPlugin {
             ItemToolSpec[] specs = tool.getSpecs();
             if (specs == null || specs.length == 0) continue;
 
-            ItemToolSpec rocksSpec = findSpec(specs, "VolcanicRocks");
-            if (rocksSpec == null) continue;
+            ItemToolSpec baseSpec = findSpec(specs, "VolcanicRocks");
+            if (baseSpec == null) continue;
 
             Set<String> existing = new HashSet<>();
             for (ItemToolSpec s : specs) {
@@ -73,8 +94,7 @@ public class ExplosivesPackPlugin extends JavaPlugin {
             for (String gt : REINFORCED_GATHER_TYPES) {
                 if (existing.contains(gt)) continue;
 
-                // Copia el comportamiento de "VolcanicRocks" para que piquen igual
-                ItemToolSpec injected = new ItemToolSpec(gt, rocksSpec.getPower(), rocksSpec.getQuality());
+                ItemToolSpec injected = new ItemToolSpec(gt, baseSpec.getPower(), baseSpec.getQuality());
                 out.add(injected);
 
                 injectedSpecs++;

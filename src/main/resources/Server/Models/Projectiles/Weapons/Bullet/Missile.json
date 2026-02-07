@@ -1,0 +1,34 @@
+{
+  "Model": "Items/Weapons/Missile/Missile.blockymodel",
+  "Texture": "Items/Weapons/Missile/MissileTexture.png",
+  "HitBox": {
+    "Max": {
+      "X": 0.05,
+      "Y": 0.05,
+      "Z": 0.05
+    },
+    "Min": {
+      "X": -0.05,
+      "Y": -0.05,
+      "Z": -0.05
+    }
+  },
+  "Trails": [
+    {
+      "TrailId": "RocketTrail",
+      "TargetNodeName": "Origin_Item"
+    }
+  ],
+  "MinScale": 2,
+  "MaxScale": 2,
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "Items/Animations/Spin_Roll/Spin_Roll_Right.blockyanim",
+          "Speed": 2
+        }
+      ]
+    }
+  }
+}

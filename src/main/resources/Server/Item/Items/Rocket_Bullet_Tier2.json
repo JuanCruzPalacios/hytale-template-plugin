@@ -37,7 +37,7 @@
     ]
   },
   "IconProperties": {
-    "Scale": 0.8,
+    "Scale": 0.3,
     "Rotation": [
       45,
       282,
@@ -50,7 +50,7 @@
   },
   "Model": "Items/Weapons/RocketLauncher/RocketLauncher_Bullet.blockymodel",
   "Texture": "Items/Weapons/RocketLauncher/rpgbullettexture.png",
-  "Icon": "Icons/ItemsGenerated/Rocket_Bullet.png",
+  "Icon": "Icons/ItemsGenerated/Rocket_Bullet_level_2.png",
   "MaxStack": 10,
   "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
   "Tags": {
@@ -62,6 +62,6 @@
     ]
   },
   "ItemSoundSetId": "ISS_Items_Ingots",
-  "Scale": 1.5,
+  "Scale": 1,
   "PlayerAnimationsId": "Item"
 }

@@ -23,11 +23,11 @@
     "BlockParticleSetId": "Stone",
     "Textures": [
       {
-        "All": "BlockTextures/StoneSlabAqua.png",
+        "All": "Blocks/ReforcedBlockT2.png",
         "Weight": 1
       }
     ],
-    "ParticleColor": "#58ad9b",
+    "ParticleColor": "#969696",
     "BlockSoundSetId": "Stone"
   },
   "ItemSoundSetId": "ISS_Blocks_Stone"

@@ -1,0 +1,255 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Explosion_Big_Star",
+      "FixedRotation": false,
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 2.0,
+        "Z": 0.0
+      },
+      "StartDelay": 0.0
+    },
+    {
+      "SpawnerId": "Explosion_Big_Flash_Glow",
+      "FixedRotation": false,
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 2.2,
+        "Z": 0.0
+      },
+      "StartDelay": 0.0
+    },
+    {
+      "SpawnerId": "Explosion_Big_Glow",
+      "FixedRotation": false,
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 1.4,
+        "Z": 0.0
+      },
+      "StartDelay": 0.0
+    },
+    {
+      "SpawnerId": "Explosion_Big_Shockwave",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "FixedRotation": true,
+      "StartDelay": 0.02
+    },
+    {
+      "SpawnerId": "Explosion_Big_Shockwave_Ground",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 0.05,
+        "Z": 0.0
+      },
+      "FixedRotation": true,
+      "StartDelay": 0.04
+    },
+    {
+      "SpawnerId": "Explosion_Big_Shockwave2",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 0.8,
+        "Z": 0.0
+      },
+      "FixedRotation": true,
+      "StartDelay": 0.12
+    },
+    {
+      "SpawnerId": "Explosion_Big_Lines",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 1.2,
+        "Z": 0.0
+      },
+      "StartDelay": 0.03
+    },
+    {
+      "SpawnerId": "Explosion_Big_Sparks_Out",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 0.8,
+        "Z": 0.0
+      },
+      "FixedRotation": false,
+      "StartDelay": 0.02
+    },
+    {
+      "SpawnerId": "Explosion_Big_Sparks_Radial",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 0.6,
+        "Z": 0.0
+      },
+      "FixedRotation": false,
+      "StartDelay": 0.04
+    },
+    {
+      "SpawnerId": "Explosion_Big_Sparks_Linger",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 0.9,
+        "Z": 0.0
+      },
+      "FixedRotation": false,
+      "StartDelay": 0.08
+    },
+    {
+      "SpawnerId": "Explosion_Big_Derbis",
+      "StartDelay": 0.06
+    },
+    {
+      "SpawnerId": "Explosion_Big_Fires",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 0.9,
+        "Z": 0.0
+      },
+      "FixedRotation": false,
+      "StartDelay": 0.1
+    },
+    {
+      "SpawnerId": "Explosion_Big_Fire_Ground",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 0.1,
+        "Z": 0.0
+      },
+      "StartDelay": 0.2,
+      "FixedRotation": true
+    },
+    {
+      "SpawnerId": "Explosion_Big_Smoke_Main",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 1.2,
+        "Z": 0.0
+      },
+      "StartDelay": 0.1
+    },
+    {
+      "SpawnerId": "Explosion_Big_Smoke_Main",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 3.0,
+        "Z": 0.0
+      },
+      "StartDelay": 0.35
+    },
+    {
+      "SpawnerId": "Explosion_Big_Smoke_Main",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 5.2,
+        "Z": 0.0
+      },
+      "StartDelay": 0.65
+    },
+    {
+      "SpawnerId": "Explosion_Big_Smoke_Main",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 7.6,
+        "Z": 0.0
+      },
+      "StartDelay": 0.95
+    },
+    {
+      "SpawnerId": "Explosion_Big_Smoke_Spikes",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 4.2,
+        "Z": 0.0
+      },
+      "StartDelay": 0.55
+    },
+    {
+      "SpawnerId": "Explosion_Big_Smoke_Spikes",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 6.8,
+        "Z": 0.0
+      },
+      "StartDelay": 0.95
+    },
+    {
+      "SpawnerId": "Explosion_Big_Smoke_Side",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 6.0,
+        "Z": -0.6
+      },
+      "StartDelay": 0.7,
+      "RotationOffset": {
+        "Yaw": 0.0
+      },
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Explosion_Big_Smoke_Side",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 6.0,
+        "Z": 0.6
+      },
+      "StartDelay": 0.7,
+      "RotationOffset": {
+        "Yaw": 180.0
+      },
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Explosion_Big_Smoke_Side",
+      "PositionOffset": {
+        "X": -0.6,
+        "Y": 6.0,
+        "Z": 0.0
+      },
+      "StartDelay": 0.7,
+      "RotationOffset": {
+        "Yaw": 90.0
+      },
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Explosion_Big_Smoke_Side",
+      "PositionOffset": {
+        "X": 0.6,
+        "Y": 6.0,
+        "Z": 0.0
+      },
+      "StartDelay": 0.7,
+      "RotationOffset": {
+        "Yaw": 270.0
+      },
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Explosion_Big_Smoke_Ground",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 0.2,
+        "Z": 0.0
+      },
+      "StartDelay": 0.35
+    },
+    {
+      "SpawnerId": "Explosion_Big_Smoke_Ground",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 0.2,
+        "Z": 0.0
+      },
+      "StartDelay": 0.85
+    }
+  ],
+  "BoundingRadius": 220.0,
+  "CullDistance": 220.0,
+  "IsImportant": true,
+  "LifeSpan": 8
+}

@@ -21,12 +21,13 @@
     "BlockParticleSetId": "Stone",
     "Textures": [
       {
-        "All": "BlockTextures/Rock_Aqua.png",
+        "All": "Blocks/ReforcedBlockT1.png",
         "Weight": 1
       }
     ],
-    "ParticleColor": "#58ad9b",
+    "ParticleColor": "#b46606",
     "BlockSoundSetId": "Stone"
   },
-  "ItemSoundSetId": "ISS_Blocks_Stone"
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "Texture": "Blocks/ReforcedBlockT1.png"
 }

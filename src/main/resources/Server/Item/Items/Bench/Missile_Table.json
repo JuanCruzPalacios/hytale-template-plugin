@@ -1,0 +1,74 @@
+{
+  "TranslationProperties": {
+    "Name": "Missile Table"
+  },
+  "Categories": [
+    "Furniture.Benches"
+  ],
+  "Quality": "Tool",
+  "Icon": "Icons/ItemsGenerated/Missile_Table.png",
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "DrawType": "Model",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "BlockSoundSetId": "Stone",
+    "BlockParticleSetId": "Stone",
+    "CustomModel": "Blocks/Benches/Missile_Table.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Benches/MissileTableTexture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Bench_Workbench",
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Indesctructible"
+      }
+    },
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "OpenCustomUI",
+            "Page": {
+              "Id": "MissileTable"
+            }
+          }
+        ]
+      }
+    },
+    "Flags": {
+      "IsUsable": true
+    },
+    "ParticleColor": "#bdab12"
+  },
+  "MaxStack": 1,
+  "Interactions": {
+    "Use": {
+      "Interactions": [
+        {
+          "Type": "OpenCustomUI",
+          "Page": {
+            "Id": "MissileTable"
+          }
+        }
+      ]
+    }
+  },
+  "Model": "Blocks/Benches/Missile_Table.blockymodel",
+  "Texture": "Blocks/Benches/MissileTableTexture.png",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      12,
+      -13.5
+    ]
+  }
+}

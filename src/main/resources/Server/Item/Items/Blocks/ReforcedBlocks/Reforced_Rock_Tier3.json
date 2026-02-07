@@ -15,17 +15,17 @@
     "Flags": {},
     "Gathering": {
       "Breaking": {
-        "GatherType": "ReinforcedRocks_T1"
+        "GatherType": "ReinforcedRocks_T3"
       }
     },
     "BlockParticleSetId": "Stone",
     "Textures": [
       {
-        "All": "BlockTextures/Rock_Aqua_Cobble.png",
+        "All": "Blocks/ReforcedBlockT3.png",
         "Weight": 1
       }
     ],
-    "ParticleColor": "#58ad9b",
+    "ParticleColor": "#2a662e",
     "BlockSoundSetId": "Stone"
   },
   "ItemSoundSetId": "ISS_Blocks_Stone"

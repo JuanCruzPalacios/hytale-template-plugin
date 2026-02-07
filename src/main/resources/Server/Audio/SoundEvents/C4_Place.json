@@ -11,5 +11,7 @@
         "MaxVolume": 0.8278537031645015
       }
     }
-  ]
+  ],
+  "MaxDistance": 30,
+  "StartAttenuationDistance": 5
 }

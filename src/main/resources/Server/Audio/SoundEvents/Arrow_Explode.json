@@ -13,5 +13,7 @@
       "Volume": 10
     }
   ],
-  "Volume": 10
+  "Volume": 10,
+  "MaxDistance": 30,
+  "StartAttenuationDistance": 10
 }

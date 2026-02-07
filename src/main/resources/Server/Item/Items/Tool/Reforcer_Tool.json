@@ -1,37 +1,33 @@
 {
   "TranslationProperties": {
     "Name": "Reforcer Tool",
-    "Description": "Use this tool along with the designated materials to improve volcanic rock and make it more resistant to explosions!"
+    "Description": "Reinforces volcanic rocks cobble into higher tiers.\nConsumes 1 bar per upgrade."
   },
   "Parent": "Tool_Pickaxe_Crude",
-  "Icon": "Icons/ItemsGenerated/Tool_Pickaxe_Adamantite.png",
+  "Icon": "Icons/ItemsGenerated/Reforcer_Tool.png",
   "Quality": "Rare",
   "ItemLevel": 40,
-  "Model": "Items/Tools/Pickaxe/Adamantite.blockymodel",
-  "Texture": "Items/Tools/Pickaxe/Adamantite_Texture.png",
+  "Model": "Items/Tools/ReforcerTool/Reforcer_Tool.blockymodel",
+  "Texture": "Items/Tools/ReforcerTool/ReforcerToolTexture.png",
   "Recipe": {
     "TimeSeconds": 4.5,
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Adamantite",
+        "ItemId": "Ingredient_Bar_Iron",
         "Quantity": 8
       },
       {
         "ItemId": "Ingredient_Leather_Heavy",
         "Quantity": 3
-      },
-      {
-        "ItemId": "Ingredient_Fabric_Scrap_Cindercloth",
-        "Quantity": 4
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
         "Categories": [
-          "Workbench_Tools"
+          "Explosive_Workbench_Weapons"
         ],
-        "Id": "Workbench",
+        "Id": "Explosive_Workbench",
         "RequiredTierLevel": 3
       }
     ]
@@ -310,5 +306,17 @@
         }
       ]
     }
+  },
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      45,
+      270,
+      0
+    ],
+    "Translation": [
+      25,
+      -25
+    ]
   }
 }

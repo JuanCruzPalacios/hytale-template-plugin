@@ -49,14 +49,14 @@
       "Type": "Crafting",
       "Categories": [
         {
-          "Id": "Workbench_Mines",
-          "Icon": "Icons/CraftingCategories/Fieldcraft/Deco_Campfire.png",
-          "Name": "Mines"
-        },
-        {
           "Id": "Explosive_Workbench_Weapons",
           "Icon": "Icons/CraftingCategories/Alchemy/Bombs.png",
           "Name": "Weapons"
+        },
+        {
+          "Id": "Workbench_Mines",
+          "Icon": "Icons/CraftingCategories/Fieldcraft/Deco_Campfire.png",
+          "Name": "Mines"
         }
       ],
       "LocalOpenSoundEventId": "SFX_Workbench_Open",

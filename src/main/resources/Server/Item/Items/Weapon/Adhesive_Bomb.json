@@ -66,5 +66,6 @@
       }
     ],
     "TimeSeconds": 0.5
-  }
+  },
+  "Scale": 1
 }

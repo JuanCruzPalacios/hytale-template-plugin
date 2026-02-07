@@ -1,14 +1,14 @@
 {
     "Group": "Pipita",
     "Name": "Explosives Pack",
-    "Version": "1.0.0",
+    "Version": "2.0.0",
     "Description": "A modular explosives pack. Introduces all type of explosive.",
     "Main": "org.jcp.plugin.ExplosivesPackPlugin",
     "Authors": [
         {
-            "Name": "Juan Cruz Palacios | Pipita",
-            "Email": "juancruzpalacios2007@gmail.com",
-            "Url": "https://github.com/JuanCruzPalacios"
+            "Name": "JCP | Pipita",
+            "Email": "",
+            "Url": "https://discord.com/users/504108539837415437"
         }
     ],
     "Website": "",
