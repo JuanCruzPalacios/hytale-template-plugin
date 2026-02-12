@@ -50,8 +50,13 @@
       "Categories": [
         {
           "Id": "Explosive_Workbench_Weapons",
-          "Icon": "Icons/CraftingCategories/Alchemy/Bombs.png",
+          "Icon": "Icons/CraftingCategories/Weapon_RocketLauncher.png",
           "Name": "Weapons"
+        },
+        {
+          "Id": "Explosive_Workbench_Construction",
+          "Name": "Construction",
+          "Icon": "Icons/CraftingCategories/Reforced_Rock_Tier1.png"
         },
         {
           "Id": "Workbench_Mines",

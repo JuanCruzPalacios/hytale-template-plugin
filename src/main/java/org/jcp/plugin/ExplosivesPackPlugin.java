@@ -7,8 +7,10 @@ import com.hypixel.hytale.server.core.asset.type.item.config.Item;
 import com.hypixel.hytale.server.core.asset.type.item.config.ItemTool;
 import com.hypixel.hytale.server.core.asset.type.item.config.ItemToolSpec;
 import com.hypixel.hytale.server.core.event.events.BootEvent;
+import com.hypixel.hytale.server.core.modules.interaction.interaction.config.Interaction;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.server.OpenCustomUIInteraction;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
+import org.jcp.plugin.interaction.ExplodeSelectiveInteraction;
 import org.jcp.plugin.missile.ExplosivesPackMissileFeature;
 import org.jcp.plugin.missile.MissileTablePageSupplier;
 
@@ -27,6 +29,14 @@ public class ExplosivesPackPlugin extends JavaPlugin {
                 "MissileTable",
                 MissileTablePageSupplier.class,
                 (Codec) MissileTablePageSupplier.CODEC
+        );
+
+        // ✅ Nuevo Interaction Type: ExplodeSelective
+        // Permite activar self-damage SOLO para algunas explosiones (por JSON flag).
+        Interaction.CODEC.register(
+                "ExplodeSelective",
+                ExplodeSelectiveInteraction.class,
+                ExplodeSelectiveInteraction.CODEC
         );
     }
 

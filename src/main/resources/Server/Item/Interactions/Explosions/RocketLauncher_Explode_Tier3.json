@@ -1,5 +1,6 @@
 {
-  "Type": "Explode",
+  "Type": "ExplodeSelective",
+  "SelfDamageProjectiles": true,
   "Config": {
     "DamageEntities": true,
     "DamageBlocks": true,

@@ -1,8 +1,10 @@
 {
   "TranslationProperties": {
-    "Name": "Reforced Rock Tier 1"
+    "Name": "Reinforced Rock Tier 2"
   },
-  "Icon": "Icons/ItemsGenerated/Rock_Aqua.png",
+  "ItemLevel": 10,
+  "MaxStack": 100,
+  "Icon": "Icons/ItemsGenerated/Reforced_Rock_Tier2.png",
   "Categories": [
     "Blocks.Rocks"
   ],
@@ -15,19 +17,30 @@
     "Flags": {},
     "Gathering": {
       "Breaking": {
-        "GatherType": "ReinforcedRocks_T1"
+        "GatherType": "ReinforcedRocks_T2"
       }
     },
     "BlockParticleSetId": "Stone",
     "Textures": [
       {
-        "All": "Blocks/ReforcedBlockT1.png",
+        "All": "Blocks/ReinforcedBlock2.png",
         "Weight": 1
       }
     ],
-    "ParticleColor": "#b46606",
+    "ParticleColor": "#969696",
     "BlockSoundSetId": "Stone"
   },
   "ItemSoundSetId": "ISS_Blocks_Stone",
-  "Texture": "Blocks/ReforcedBlockT1.png"
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
 }

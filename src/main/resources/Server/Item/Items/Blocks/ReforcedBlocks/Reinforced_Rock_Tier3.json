@@ -1,8 +1,8 @@
 {
   "TranslationProperties": {
-    "Name": "Reforced Rock Tier 3"
+    "Name": "Reinforced Rock Tier 3"
   },
-  "Icon": "Icons/ItemsGenerated/Rock_Aqua_Brick.png",
+  "Icon": "Icons/ItemsGenerated/Reforced_Rock_Tier3.png",
   "Categories": [
     "Blocks.Rocks"
   ],
@@ -21,12 +21,24 @@
     "BlockParticleSetId": "Stone",
     "Textures": [
       {
-        "All": "Blocks/ReforcedBlockT3.png",
+        "All": "Blocks/ReinforcedBlock3.png",
         "Weight": 1
       }
     ],
     "ParticleColor": "#2a662e",
     "BlockSoundSetId": "Stone"
   },
-  "ItemSoundSetId": "ISS_Blocks_Stone"
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
 }

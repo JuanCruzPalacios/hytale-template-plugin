@@ -11,17 +11,16 @@
   "BlockType": {
     "DrawType": "Model",
     "Material": "Solid",
-    "Opacity": "Transparent",
+    "Opacity": "Solid",
     "BlockSoundSetId": "Stone",
     "BlockParticleSetId": "Stone",
-    "CustomModel": "Blocks/Benches/Missile_Table.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Benches/MissileTableTexture.png",
+        "Texture": "Items/Weapons/Missile/Missile_Tank.png",
         "Weight": 1
       }
     ],
-    "HitboxType": "Bench_Workbench",
+    "HitboxType": "Missile_Tank_Hitbox",
     "Gathering": {
       "Breaking": {
         "GatherType": "Indesctructible"
@@ -42,7 +41,9 @@
     "Flags": {
       "IsUsable": true
     },
-    "ParticleColor": "#bdab12"
+    "ParticleColor": "#1d301b",
+    "CustomModelScale": 0.5,
+    "CustomModel": "Items/Weapons/Missile/Missile_Tank.blockymodel"
   },
   "MaxStack": 1,
   "Interactions": {
@@ -57,18 +58,16 @@
       ]
     }
   },
-  "Model": "Blocks/Benches/Missile_Table.blockymodel",
-  "Texture": "Blocks/Benches/MissileTableTexture.png",
   "IconProperties": {
-    "Scale": 0.4,
+    "Scale": 0.1,
     "Rotation": [
       22.5,
       45,
       22.5
     ],
     "Translation": [
-      12,
-      -13.5
+      9,
+      -90
     ]
   }
 }

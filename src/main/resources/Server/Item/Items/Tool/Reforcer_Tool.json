@@ -39,7 +39,7 @@
         "GatherType": "SoftBlocks"
       },
       {
-        "Power": 1.0,
+        "Power": 0.5,
         "GatherType": "Soils"
       },
       {
@@ -47,16 +47,16 @@
         "GatherType": "Woods"
       },
       {
-        "Power": 1,
+        "Power": 0.5,
         "GatherType": "Rocks",
-        "Quality": 5
+        "Quality": 3
       },
       {
         "Power": 0.5,
         "GatherType": "Benches"
       },
       {
-        "Power": 0.34,
+        "Power": 0.5,
         "GatherType": "VolcanicRocks"
       },
       {
@@ -64,32 +64,31 @@
         "GatherType": "OreCopper"
       },
       {
-        "Power": 0.5,
+        "Power": 0.25,
         "GatherType": "OreIron"
       },
       {
-        "Power": 0.5,
+        "Power": 0.25,
         "GatherType": "OreSilver"
       },
       {
-        "Power": 0.5,
+        "Power": 0.25,
         "GatherType": "OreGold"
       },
       {
-        "Power": 0.5,
+        "Power": 0.125,
         "GatherType": "OreThorium"
       },
       {
-        "Power": 0.5,
+        "Power": 0.125,
         "GatherType": "OreCobalt"
       },
       {
-        "Power": 0.25,
-        "GatherType": "OreAdamantite",
-        "Quality": 4
+        "Power": 0.084,
+        "GatherType": "OreAdamantite"
       },
       {
-        "Power": 0.125,
+        "Power": 0.063,
         "GatherType": "OreMithril"
       }
     ],
@@ -128,7 +127,7 @@
             "Next": {
               "Type": "ChangeBlock",
               "Changes": {
-                "Rock_Volcanic_Cobble": "Reforced_Rock_Tier1"
+                "Rock_Volcanic_Cobble": "Reinforced_Rock_Tier1"
               },
               "Next": {
                 "Type": "Simple"
@@ -152,7 +151,7 @@
             "Matchers": [
               {
                 "Block": {
-                  "Id": "Reforced_Rock_Tier1"
+                  "Id": "Reinforced_Rock_Tier1"
                 }
               }
             ],
@@ -165,7 +164,7 @@
               "Next": {
                 "Type": "ChangeBlock",
                 "Changes": {
-                  "Reforced_Rock_Tier1": "Reforced_Rock_Tier2"
+                  "Reinforced_Rock_Tier1": "Reinforced_Rock_Tier2"
                 },
                 "Next": {
                   "Type": "Simple"
@@ -189,7 +188,7 @@
               "Matchers": [
                 {
                   "Block": {
-                    "Id": "Reforced_Rock_Tier2"
+                    "Id": "Reinforced_Rock_Tier2"
                   }
                 }
               ],
@@ -202,7 +201,7 @@
                 "Next": {
                   "Type": "ChangeBlock",
                   "Changes": {
-                    "Reforced_Rock_Tier2": "Reforced_Rock_Tier3"
+                    "Reinforced_Rock_Tier2": "Reinforced_Rock_Tier3"
                   },
                   "Next": {
                     "Type": "Simple"
@@ -226,7 +225,7 @@
                 "Matchers": [
                   {
                     "Block": {
-                      "Id": "Reforced_Rock_Tier3"
+                      "Id": "Reinforced_Rock_Tier3"
                     }
                   }
                 ],
@@ -239,7 +238,7 @@
                   "Next": {
                     "Type": "ChangeBlock",
                     "Changes": {
-                      "Reforced_Rock_Tier3": "Reforced_Rock_Tier4"
+                      "Reinforced_Rock_Tier3": "Reinforced_Rock_Tier4"
                     },
                     "Next": {
                       "Type": "Simple"
@@ -263,7 +262,7 @@
                   "Matchers": [
                     {
                       "Block": {
-                        "Id": "Reforced_Rock_Tier4"
+                        "Id": "Reinforced_Rock_Tier4"
                       }
                     }
                   ],
@@ -276,7 +275,7 @@
                     "Next": {
                       "Type": "ChangeBlock",
                       "Changes": {
-                        "Reforced_Rock_Tier4": "Reforced_Rock_Tier5"
+                        "Reinforced_Rock_Tier4": "Reinforced_Rock_Tier5"
                       },
                       "Next": {
                         "Type": "Simple"
@@ -296,8 +295,1608 @@
                     }
                   },
                   "Failed": {
-                    "Type": "Simple",
-                    "Effects": {}
+                    "Type": "BlockCondition",
+                    "Matchers": [
+                      {
+                        "Block": {
+                          "Id": "Furniture_Village_Door"
+                        }
+                      },
+                      {
+                        "Block": {
+                          "Id": "*Furniture_Village_Door_State_Definitions_CloseDoorIn"
+                        }
+                      },
+                      {
+                        "Block": {
+                          "Id": "*Furniture_Village_Door_State_Definitions_CloseDoorOut"
+                        }
+                      },
+                      {
+                        "Block": {
+                          "Id": "*Furniture_Village_Door_State_Definitions_OpenDoorIn"
+                        }
+                      },
+                      {
+                        "Block": {
+                          "Id": "*Furniture_Village_Door_State_Definitions_OpenDoorOut"
+                        }
+                      },
+                      {
+                        "Block": {
+                          "Id": "*Furniture_Village_Door_State_Definitions_DoorBlocked"
+                        }
+                      },
+                      {
+                        "Block": {
+                          "Id": "*Furniture_Village_Door_CloseDoorIn"
+                        }
+                      },
+                      {
+                        "Block": {
+                          "Id": "*Furniture_Village_Door_CloseDoorOut"
+                        }
+                      },
+                      {
+                        "Block": {
+                          "Id": "*Furniture_Village_Door_OpenDoorIn"
+                        }
+                      },
+                      {
+                        "Block": {
+                          "Id": "*Furniture_Village_Door_OpenDoorOut"
+                        }
+                      },
+                      {
+                        "Block": {
+                          "Id": "*Furniture_Village_Door_DoorBlocked"
+                        }
+                      }
+                    ],
+                    "Next": {
+                      "Type": "ModifyInventory",
+                      "ItemToRemove": {
+                        "Id": "Ingredient_Bar_Copper",
+                        "Quantity": 1
+                      },
+                      "Next": {
+                        "Type": "ChangeBlock",
+                        "Changes": {
+                          "Furniture_Village_Door": "ReinforcedDoor_T1",
+                          "*Furniture_Village_Door_State_Definitions_CloseDoorIn": "*ReinforcedDoor_T1_State_Definitions_CloseDoorIn",
+                          "*Furniture_Village_Door_State_Definitions_CloseDoorOut": "*ReinforcedDoor_T1_State_Definitions_CloseDoorOut",
+                          "*Furniture_Village_Door_State_Definitions_OpenDoorIn": "*ReinforcedDoor_T1_State_Definitions_OpenDoorIn",
+                          "*Furniture_Village_Door_State_Definitions_OpenDoorOut": "*ReinforcedDoor_T1_State_Definitions_OpenDoorOut",
+                          "*Furniture_Village_Door_State_Definitions_DoorBlocked": "*ReinforcedDoor_T1_State_Definitions_DoorBlocked",
+                          "*Furniture_Village_Door_CloseDoorIn": "*ReinforcedDoor_T1_State_Definitions_CloseDoorIn",
+                          "*Furniture_Village_Door_CloseDoorOut": "*ReinforcedDoor_T1_State_Definitions_CloseDoorOut",
+                          "*Furniture_Village_Door_OpenDoorIn": "*ReinforcedDoor_T1_State_Definitions_OpenDoorIn",
+                          "*Furniture_Village_Door_OpenDoorOut": "*ReinforcedDoor_T1_State_Definitions_OpenDoorOut",
+                          "*Furniture_Village_Door_DoorBlocked": "*ReinforcedDoor_T1_State_Definitions_DoorBlocked"
+                        },
+                        "Next": {
+                          "Type": "Simple"
+                        },
+                        "Failed": {
+                          "Type": "Simple"
+                        },
+                        "Effects": {
+                          "WorldSoundEventId": "SFX_Block_Reforce",
+                          "ItemAnimationId": "Interact",
+                          "LocalSoundEventId": "SFX_Block_Reforce"
+                        }
+                      },
+                      "Failed": {
+                        "Type": "SendMessage",
+                        "Message": "Can't reinforce Door: you need 1x Ingredient_Bar_Copper."
+                      }
+                    },
+                    "Failed": {
+                      "Type": "BlockCondition",
+                      "Matchers": [
+                        {
+                          "Block": {
+                            "Id": "Furniture_MediumDoor_Normal"
+                          }
+                        },
+                        {
+                          "Block": {
+                            "Id": "*Furniture_MediumDoor_Normal_State_Definitions_CloseDoorIn"
+                          }
+                        },
+                        {
+                          "Block": {
+                            "Id": "*Furniture_MediumDoor_Normal_State_Definitions_CloseDoorOut"
+                          }
+                        },
+                        {
+                          "Block": {
+                            "Id": "*Furniture_MediumDoor_Normal_State_Definitions_OpenDoorIn"
+                          }
+                        },
+                        {
+                          "Block": {
+                            "Id": "*Furniture_MediumDoor_Normal_State_Definitions_OpenDoorOut"
+                          }
+                        },
+                        {
+                          "Block": {
+                            "Id": "*Furniture_MediumDoor_Normal_State_Definitions_DoorBlocked"
+                          }
+                        },
+                        {
+                          "Block": {
+                            "Id": "*Furniture_MediumDoor_Normal_CloseDoorIn"
+                          }
+                        },
+                        {
+                          "Block": {
+                            "Id": "*Furniture_MediumDoor_Normal_CloseDoorOut"
+                          }
+                        },
+                        {
+                          "Block": {
+                            "Id": "*Furniture_MediumDoor_Normal_OpenDoorIn"
+                          }
+                        },
+                        {
+                          "Block": {
+                            "Id": "*Furniture_MediumDoor_Normal_OpenDoorOut"
+                          }
+                        },
+                        {
+                          "Block": {
+                            "Id": "*Furniture_MediumDoor_Normal_DoorBlocked"
+                          }
+                        }
+                      ],
+                      "Next": {
+                        "Type": "ModifyInventory",
+                        "ItemToRemove": {
+                          "Id": "Ingredient_Bar_Copper",
+                          "Quantity": 1
+                        },
+                        "Next": {
+                          "Type": "ChangeBlock",
+                          "Changes": {
+                            "Furniture_MediumDoor_Normal": "ReinforcedMediumDoor_T1",
+                            "*Furniture_MediumDoor_Normal_State_Definitions_CloseDoorIn": "*ReinforcedMediumDoor_T1_State_Definitions_CloseDoorIn",
+                            "*Furniture_MediumDoor_Normal_State_Definitions_CloseDoorOut": "*ReinforcedMediumDoor_T1_State_Definitions_CloseDoorOut",
+                            "*Furniture_MediumDoor_Normal_State_Definitions_OpenDoorIn": "*ReinforcedMediumDoor_T1_State_Definitions_OpenDoorIn",
+                            "*Furniture_MediumDoor_Normal_State_Definitions_OpenDoorOut": "*ReinforcedMediumDoor_T1_State_Definitions_OpenDoorOut",
+                            "*Furniture_MediumDoor_Normal_State_Definitions_DoorBlocked": "*ReinforcedMediumDoor_T1_State_Definitions_DoorBlocked",
+                            "*Furniture_MediumDoor_Normal_CloseDoorIn": "*ReinforcedMediumDoor_T1_State_Definitions_CloseDoorIn",
+                            "*Furniture_MediumDoor_Normal_CloseDoorOut": "*ReinforcedMediumDoor_T1_State_Definitions_CloseDoorOut",
+                            "*Furniture_MediumDoor_Normal_OpenDoorIn": "*ReinforcedMediumDoor_T1_State_Definitions_OpenDoorIn",
+                            "*Furniture_MediumDoor_Normal_OpenDoorOut": "*ReinforcedMediumDoor_T1_State_Definitions_OpenDoorOut",
+                            "*Furniture_MediumDoor_Normal_DoorBlocked": "*ReinforcedMediumDoor_T1_State_Definitions_DoorBlocked"
+                          },
+                          "Next": {
+                            "Type": "Simple"
+                          },
+                          "Failed": {
+                            "Type": "Simple"
+                          },
+                          "Effects": {
+                            "WorldSoundEventId": "SFX_Block_Reforce",
+                            "ItemAnimationId": "Interact",
+                            "LocalSoundEventId": "SFX_Block_Reforce"
+                          }
+                        },
+                        "Failed": {
+                          "Type": "SendMessage",
+                          "Message": "Can't reinforce Medium Door: you need 1x Ingredient_Bar_Copper."
+                        }
+                      },
+                      "Failed": {
+                        "Type": "BlockCondition",
+                        "Matchers": [
+                          {
+                            "Block": {
+                              "Id": "Furniture_Crude_Chest_Small"
+                            }
+                          },
+                          {
+                            "Block": {
+                              "Id": "*Furniture_Crude_Chest_Small_State_Definitions_CloseWindow"
+                            }
+                          },
+                          {
+                            "Block": {
+                              "Id": "*Furniture_Crude_Chest_Small_State_Definitions_OpenWindow"
+                            }
+                          },
+                          {
+                            "Block": {
+                              "Id": "*Furniture_Crude_Chest_Small_CloseWindow"
+                            }
+                          },
+                          {
+                            "Block": {
+                              "Id": "*Furniture_Crude_Chest_Small_OpenWindow"
+                            }
+                          }
+                        ],
+                        "Next": {
+                          "Type": "ModifyInventory",
+                          "ItemToRemove": {
+                            "Id": "Ingredient_Bar_Copper",
+                            "Quantity": 1
+                          },
+                          "Next": {
+                            "Type": "ChangeBlock",
+                            "Changes": {
+                              "Furniture_Crude_Chest_Small": "ReinforcedChest_Small_T1",
+                              "*Furniture_Crude_Chest_Small_State_Definitions_CloseWindow": "*ReinforcedChest_Small_T1_State_Definitions_CloseWindow",
+                              "*Furniture_Crude_Chest_Small_State_Definitions_OpenWindow": "*ReinforcedChest_Small_T1_State_Definitions_OpenWindow",
+                              "*Furniture_Crude_Chest_Small_CloseWindow": "*ReinforcedChest_Small_T1_State_Definitions_CloseWindow",
+                              "*Furniture_Crude_Chest_Small_OpenWindow": "*ReinforcedChest_Small_T1_State_Definitions_OpenWindow"
+                            },
+                            "Next": {
+                              "Type": "Simple"
+                            },
+                            "Failed": {
+                              "Type": "Simple"
+                            },
+                            "Effects": {
+                              "WorldSoundEventId": "SFX_Block_Reforce",
+                              "ItemAnimationId": "Interact",
+                              "LocalSoundEventId": "SFX_Block_Reforce"
+                            }
+                          },
+                          "Failed": {
+                            "Type": "SendMessage",
+                            "Message": "Can't reinforce Chest: you need 1x Ingredient_Bar_Copper."
+                          }
+                        },
+                        "Failed": {
+                          "Type": "BlockCondition",
+                          "Matchers": [
+                            {
+                              "Block": {
+                                "Id": "Furniture_Crude_Chest_Large"
+                              }
+                            },
+                            {
+                              "Block": {
+                                "Id": "*Furniture_Crude_Chest_Large_State_Definitions_CloseWindow"
+                              }
+                            },
+                            {
+                              "Block": {
+                                "Id": "*Furniture_Crude_Chest_Large_State_Definitions_OpenWindow"
+                              }
+                            },
+                            {
+                              "Block": {
+                                "Id": "*Furniture_Crude_Chest_Large_CloseWindow"
+                              }
+                            },
+                            {
+                              "Block": {
+                                "Id": "*Furniture_Crude_Chest_Large_OpenWindow"
+                              }
+                            }
+                          ],
+                          "Next": {
+                            "Type": "ModifyInventory",
+                            "ItemToRemove": {
+                              "Id": "Ingredient_Bar_Copper",
+                              "Quantity": 1
+                            },
+                            "Next": {
+                              "Type": "ChangeBlock",
+                              "Changes": {
+                                "Furniture_Crude_Chest_Large": "ReinforcedChest_Large_T1",
+                                "*Furniture_Crude_Chest_Large_State_Definitions_CloseWindow": "*ReinforcedChest_Large_T1_State_Definitions_CloseWindow",
+                                "*Furniture_Crude_Chest_Large_State_Definitions_OpenWindow": "*ReinforcedChest_Large_T1_State_Definitions_OpenWindow",
+                                "*Furniture_Crude_Chest_Large_CloseWindow": "*ReinforcedChest_Large_T1_State_Definitions_CloseWindow",
+                                "*Furniture_Crude_Chest_Large_OpenWindow": "*ReinforcedChest_Large_T1_State_Definitions_OpenWindow"
+                              },
+                              "Next": {
+                                "Type": "Simple"
+                              },
+                              "Failed": {
+                                "Type": "Simple"
+                              },
+                              "Effects": {
+                                "WorldSoundEventId": "SFX_Block_Reforce",
+                                "ItemAnimationId": "Interact",
+                                "LocalSoundEventId": "SFX_Block_Reforce"
+                              }
+                            },
+                            "Failed": {
+                              "Type": "SendMessage",
+                              "Message": "Can't reinforce Large Chest: you need 1x Ingredient_Bar_Copper."
+                            }
+                          },
+                          "Failed": {
+                            "Type": "BlockCondition",
+                            "Matchers": [
+                              {
+                                "Block": {
+                                  "Id": "ReinforcedDoor_T1"
+                                }
+                              },
+                              {
+                                "Block": {
+                                  "Id": "*ReinforcedDoor_T1_State_Definitions_CloseDoorIn"
+                                }
+                              },
+                              {
+                                "Block": {
+                                  "Id": "*ReinforcedDoor_T1_State_Definitions_CloseDoorOut"
+                                }
+                              },
+                              {
+                                "Block": {
+                                  "Id": "*ReinforcedDoor_T1_State_Definitions_OpenDoorIn"
+                                }
+                              },
+                              {
+                                "Block": {
+                                  "Id": "*ReinforcedDoor_T1_State_Definitions_OpenDoorOut"
+                                }
+                              },
+                              {
+                                "Block": {
+                                  "Id": "*ReinforcedDoor_T1_State_Definitions_DoorBlocked"
+                                }
+                              },
+                              {
+                                "Block": {
+                                  "Id": "*ReinforcedDoor_T1_CloseDoorIn"
+                                }
+                              },
+                              {
+                                "Block": {
+                                  "Id": "*ReinforcedDoor_T1_CloseDoorOut"
+                                }
+                              },
+                              {
+                                "Block": {
+                                  "Id": "*ReinforcedDoor_T1_OpenDoorIn"
+                                }
+                              },
+                              {
+                                "Block": {
+                                  "Id": "*ReinforcedDoor_T1_OpenDoorOut"
+                                }
+                              },
+                              {
+                                "Block": {
+                                  "Id": "*ReinforcedDoor_T1_DoorBlocked"
+                                }
+                              }
+                            ],
+                            "Next": {
+                              "Type": "ModifyInventory",
+                              "ItemToRemove": {
+                                "Id": "Ingredient_Bar_Iron",
+                                "Quantity": 1
+                              },
+                              "Next": {
+                                "Type": "ChangeBlock",
+                                "Changes": {
+                                  "ReinforcedDoor_T1": "ReinforcedDoor_T2",
+                                  "*ReinforcedDoor_T1_State_Definitions_CloseDoorIn": "*ReinforcedDoor_T2_State_Definitions_CloseDoorIn",
+                                  "*ReinforcedDoor_T1_State_Definitions_CloseDoorOut": "*ReinforcedDoor_T2_State_Definitions_CloseDoorOut",
+                                  "*ReinforcedDoor_T1_State_Definitions_OpenDoorIn": "*ReinforcedDoor_T2_State_Definitions_OpenDoorIn",
+                                  "*ReinforcedDoor_T1_State_Definitions_OpenDoorOut": "*ReinforcedDoor_T2_State_Definitions_OpenDoorOut",
+                                  "*ReinforcedDoor_T1_State_Definitions_DoorBlocked": "*ReinforcedDoor_T2_State_Definitions_DoorBlocked",
+                                  "*ReinforcedDoor_T1_CloseDoorIn": "*ReinforcedDoor_T2_State_Definitions_CloseDoorIn",
+                                  "*ReinforcedDoor_T1_CloseDoorOut": "*ReinforcedDoor_T2_State_Definitions_CloseDoorOut",
+                                  "*ReinforcedDoor_T1_OpenDoorIn": "*ReinforcedDoor_T2_State_Definitions_OpenDoorIn",
+                                  "*ReinforcedDoor_T1_OpenDoorOut": "*ReinforcedDoor_T2_State_Definitions_OpenDoorOut",
+                                  "*ReinforcedDoor_T1_DoorBlocked": "*ReinforcedDoor_T2_State_Definitions_DoorBlocked"
+                                },
+                                "Next": {
+                                  "Type": "Simple"
+                                },
+                                "Failed": {
+                                  "Type": "Simple"
+                                },
+                                "Effects": {
+                                  "WorldSoundEventId": "SFX_Block_Reforce",
+                                  "ItemAnimationId": "Interact",
+                                  "LocalSoundEventId": "SFX_Block_Reforce"
+                                }
+                              },
+                              "Failed": {
+                                "Type": "SendMessage",
+                                "Message": "Can't reinforce Door to Tier 2: you need 1x Ingredient_Bar_Iron."
+                              }
+                            },
+                            "Failed": {
+                              "Type": "BlockCondition",
+                              "Matchers": [
+                                {
+                                  "Block": {
+                                    "Id": "ReinforcedDoor_T2"
+                                  }
+                                },
+                                {
+                                  "Block": {
+                                    "Id": "*ReinforcedDoor_T2_State_Definitions_CloseDoorIn"
+                                  }
+                                },
+                                {
+                                  "Block": {
+                                    "Id": "*ReinforcedDoor_T2_State_Definitions_CloseDoorOut"
+                                  }
+                                },
+                                {
+                                  "Block": {
+                                    "Id": "*ReinforcedDoor_T2_State_Definitions_OpenDoorIn"
+                                  }
+                                },
+                                {
+                                  "Block": {
+                                    "Id": "*ReinforcedDoor_T2_State_Definitions_OpenDoorOut"
+                                  }
+                                },
+                                {
+                                  "Block": {
+                                    "Id": "*ReinforcedDoor_T2_State_Definitions_DoorBlocked"
+                                  }
+                                },
+                                {
+                                  "Block": {
+                                    "Id": "*ReinforcedDoor_T2_CloseDoorIn"
+                                  }
+                                },
+                                {
+                                  "Block": {
+                                    "Id": "*ReinforcedDoor_T2_CloseDoorOut"
+                                  }
+                                },
+                                {
+                                  "Block": {
+                                    "Id": "*ReinforcedDoor_T2_OpenDoorIn"
+                                  }
+                                },
+                                {
+                                  "Block": {
+                                    "Id": "*ReinforcedDoor_T2_OpenDoorOut"
+                                  }
+                                },
+                                {
+                                  "Block": {
+                                    "Id": "*ReinforcedDoor_T2_DoorBlocked"
+                                  }
+                                }
+                              ],
+                              "Next": {
+                                "Type": "ModifyInventory",
+                                "ItemToRemove": {
+                                  "Id": "Ingredient_Bar_Thorium",
+                                  "Quantity": 1
+                                },
+                                "Next": {
+                                  "Type": "ChangeBlock",
+                                  "Changes": {
+                                    "ReinforcedDoor_T2": "ReinforcedDoor_T3",
+                                    "*ReinforcedDoor_T2_State_Definitions_CloseDoorIn": "*ReinforcedDoor_T3_State_Definitions_CloseDoorIn",
+                                    "*ReinforcedDoor_T2_State_Definitions_CloseDoorOut": "*ReinforcedDoor_T3_State_Definitions_CloseDoorOut",
+                                    "*ReinforcedDoor_T2_State_Definitions_OpenDoorIn": "*ReinforcedDoor_T3_State_Definitions_OpenDoorIn",
+                                    "*ReinforcedDoor_T2_State_Definitions_OpenDoorOut": "*ReinforcedDoor_T3_State_Definitions_OpenDoorOut",
+                                    "*ReinforcedDoor_T2_State_Definitions_DoorBlocked": "*ReinforcedDoor_T3_State_Definitions_DoorBlocked",
+                                    "*ReinforcedDoor_T2_CloseDoorIn": "*ReinforcedDoor_T3_State_Definitions_CloseDoorIn",
+                                    "*ReinforcedDoor_T2_CloseDoorOut": "*ReinforcedDoor_T3_State_Definitions_CloseDoorOut",
+                                    "*ReinforcedDoor_T2_OpenDoorIn": "*ReinforcedDoor_T3_State_Definitions_OpenDoorIn",
+                                    "*ReinforcedDoor_T2_OpenDoorOut": "*ReinforcedDoor_T3_State_Definitions_OpenDoorOut",
+                                    "*ReinforcedDoor_T2_DoorBlocked": "*ReinforcedDoor_T3_State_Definitions_DoorBlocked"
+                                  },
+                                  "Next": {
+                                    "Type": "Simple"
+                                  },
+                                  "Failed": {
+                                    "Type": "Simple"
+                                  },
+                                  "Effects": {
+                                    "WorldSoundEventId": "SFX_Block_Reforce",
+                                    "ItemAnimationId": "Interact",
+                                    "LocalSoundEventId": "SFX_Block_Reforce"
+                                  }
+                                },
+                                "Failed": {
+                                  "Type": "SendMessage",
+                                  "Message": "Can't reinforce Door to Tier 3: you need 1x Ingredient_Bar_Thorium."
+                                }
+                              },
+                              "Failed": {
+                                "Type": "BlockCondition",
+                                "Matchers": [
+                                  {
+                                    "Block": {
+                                      "Id": "ReinforcedDoor_T3"
+                                    }
+                                  },
+                                  {
+                                    "Block": {
+                                      "Id": "*ReinforcedDoor_T3_State_Definitions_CloseDoorIn"
+                                    }
+                                  },
+                                  {
+                                    "Block": {
+                                      "Id": "*ReinforcedDoor_T3_State_Definitions_CloseDoorOut"
+                                    }
+                                  },
+                                  {
+                                    "Block": {
+                                      "Id": "*ReinforcedDoor_T3_State_Definitions_OpenDoorIn"
+                                    }
+                                  },
+                                  {
+                                    "Block": {
+                                      "Id": "*ReinforcedDoor_T3_State_Definitions_OpenDoorOut"
+                                    }
+                                  },
+                                  {
+                                    "Block": {
+                                      "Id": "*ReinforcedDoor_T3_State_Definitions_DoorBlocked"
+                                    }
+                                  },
+                                  {
+                                    "Block": {
+                                      "Id": "*ReinforcedDoor_T3_CloseDoorIn"
+                                    }
+                                  },
+                                  {
+                                    "Block": {
+                                      "Id": "*ReinforcedDoor_T3_CloseDoorOut"
+                                    }
+                                  },
+                                  {
+                                    "Block": {
+                                      "Id": "*ReinforcedDoor_T3_OpenDoorIn"
+                                    }
+                                  },
+                                  {
+                                    "Block": {
+                                      "Id": "*ReinforcedDoor_T3_OpenDoorOut"
+                                    }
+                                  },
+                                  {
+                                    "Block": {
+                                      "Id": "*ReinforcedDoor_T3_DoorBlocked"
+                                    }
+                                  }
+                                ],
+                                "Next": {
+                                  "Type": "ModifyInventory",
+                                  "ItemToRemove": {
+                                    "Id": "Ingredient_Bar_Cobalt",
+                                    "Quantity": 1
+                                  },
+                                  "Next": {
+                                    "Type": "ChangeBlock",
+                                    "Changes": {
+                                      "ReinforcedDoor_T3": "ReinforcedDoor_T4",
+                                      "*ReinforcedDoor_T3_State_Definitions_CloseDoorIn": "*ReinforcedDoor_T4_State_Definitions_CloseDoorIn",
+                                      "*ReinforcedDoor_T3_State_Definitions_CloseDoorOut": "*ReinforcedDoor_T4_State_Definitions_CloseDoorOut",
+                                      "*ReinforcedDoor_T3_State_Definitions_OpenDoorIn": "*ReinforcedDoor_T4_State_Definitions_OpenDoorIn",
+                                      "*ReinforcedDoor_T3_State_Definitions_OpenDoorOut": "*ReinforcedDoor_T4_State_Definitions_OpenDoorOut",
+                                      "*ReinforcedDoor_T3_State_Definitions_DoorBlocked": "*ReinforcedDoor_T4_State_Definitions_DoorBlocked",
+                                      "*ReinforcedDoor_T3_CloseDoorIn": "*ReinforcedDoor_T4_State_Definitions_CloseDoorIn",
+                                      "*ReinforcedDoor_T3_CloseDoorOut": "*ReinforcedDoor_T4_State_Definitions_CloseDoorOut",
+                                      "*ReinforcedDoor_T3_OpenDoorIn": "*ReinforcedDoor_T4_State_Definitions_OpenDoorIn",
+                                      "*ReinforcedDoor_T3_OpenDoorOut": "*ReinforcedDoor_T4_State_Definitions_OpenDoorOut",
+                                      "*ReinforcedDoor_T3_DoorBlocked": "*ReinforcedDoor_T4_State_Definitions_DoorBlocked"
+                                    },
+                                    "Next": {
+                                      "Type": "Simple"
+                                    },
+                                    "Failed": {
+                                      "Type": "Simple"
+                                    },
+                                    "Effects": {
+                                      "WorldSoundEventId": "SFX_Block_Reforce",
+                                      "ItemAnimationId": "Interact",
+                                      "LocalSoundEventId": "SFX_Block_Reforce"
+                                    }
+                                  },
+                                  "Failed": {
+                                    "Type": "SendMessage",
+                                    "Message": "Can't reinforce Door to Tier 4: you need 1x Ingredient_Bar_Cobalt."
+                                  }
+                                },
+                                "Failed": {
+                                  "Type": "BlockCondition",
+                                  "Matchers": [
+                                    {
+                                      "Block": {
+                                        "Id": "ReinforcedDoor_T4"
+                                      }
+                                    },
+                                    {
+                                      "Block": {
+                                        "Id": "*ReinforcedDoor_T4_State_Definitions_CloseDoorIn"
+                                      }
+                                    },
+                                    {
+                                      "Block": {
+                                        "Id": "*ReinforcedDoor_T4_State_Definitions_CloseDoorOut"
+                                      }
+                                    },
+                                    {
+                                      "Block": {
+                                        "Id": "*ReinforcedDoor_T4_State_Definitions_OpenDoorIn"
+                                      }
+                                    },
+                                    {
+                                      "Block": {
+                                        "Id": "*ReinforcedDoor_T4_State_Definitions_OpenDoorOut"
+                                      }
+                                    },
+                                    {
+                                      "Block": {
+                                        "Id": "*ReinforcedDoor_T4_State_Definitions_DoorBlocked"
+                                      }
+                                    },
+                                    {
+                                      "Block": {
+                                        "Id": "*ReinforcedDoor_T4_CloseDoorIn"
+                                      }
+                                    },
+                                    {
+                                      "Block": {
+                                        "Id": "*ReinforcedDoor_T4_CloseDoorOut"
+                                      }
+                                    },
+                                    {
+                                      "Block": {
+                                        "Id": "*ReinforcedDoor_T4_OpenDoorIn"
+                                      }
+                                    },
+                                    {
+                                      "Block": {
+                                        "Id": "*ReinforcedDoor_T4_OpenDoorOut"
+                                      }
+                                    },
+                                    {
+                                      "Block": {
+                                        "Id": "*ReinforcedDoor_T4_DoorBlocked"
+                                      }
+                                    }
+                                  ],
+                                  "Next": {
+                                    "Type": "ModifyInventory",
+                                    "ItemToRemove": {
+                                      "Id": "Ingredient_Bar_Adamantite",
+                                      "Quantity": 1
+                                    },
+                                    "Next": {
+                                      "Type": "ChangeBlock",
+                                      "Changes": {
+                                        "ReinforcedDoor_T4": "ReinforcedDoor_T5",
+                                        "*ReinforcedDoor_T4_State_Definitions_CloseDoorIn": "*ReinforcedDoor_T5_State_Definitions_CloseDoorIn",
+                                        "*ReinforcedDoor_T4_State_Definitions_CloseDoorOut": "*ReinforcedDoor_T5_State_Definitions_CloseDoorOut",
+                                        "*ReinforcedDoor_T4_State_Definitions_OpenDoorIn": "*ReinforcedDoor_T5_State_Definitions_OpenDoorIn",
+                                        "*ReinforcedDoor_T4_State_Definitions_OpenDoorOut": "*ReinforcedDoor_T5_State_Definitions_OpenDoorOut",
+                                        "*ReinforcedDoor_T4_State_Definitions_DoorBlocked": "*ReinforcedDoor_T5_State_Definitions_DoorBlocked",
+                                        "*ReinforcedDoor_T4_CloseDoorIn": "*ReinforcedDoor_T5_State_Definitions_CloseDoorIn",
+                                        "*ReinforcedDoor_T4_CloseDoorOut": "*ReinforcedDoor_T5_State_Definitions_CloseDoorOut",
+                                        "*ReinforcedDoor_T4_OpenDoorIn": "*ReinforcedDoor_T5_State_Definitions_OpenDoorIn",
+                                        "*ReinforcedDoor_T4_OpenDoorOut": "*ReinforcedDoor_T5_State_Definitions_OpenDoorOut",
+                                        "*ReinforcedDoor_T4_DoorBlocked": "*ReinforcedDoor_T5_State_Definitions_DoorBlocked"
+                                      },
+                                      "Next": {
+                                        "Type": "Simple"
+                                      },
+                                      "Failed": {
+                                        "Type": "Simple"
+                                      },
+                                      "Effects": {
+                                        "WorldSoundEventId": "SFX_Block_Reforce",
+                                        "ItemAnimationId": "Interact",
+                                        "LocalSoundEventId": "SFX_Block_Reforce"
+                                      }
+                                    },
+                                    "Failed": {
+                                      "Type": "SendMessage",
+                                      "Message": "Can't reinforce Door to Tier 5: you need 1x Ingredient_Bar_Adamantite."
+                                    }
+                                  },
+                                  "Failed": {
+                                    "Type": "BlockCondition",
+                                    "Matchers": [
+                                      {
+                                        "Block": {
+                                          "Id": "ReinforcedMediumDoor_T1"
+                                        }
+                                      },
+                                      {
+                                        "Block": {
+                                          "Id": "*ReinforcedMediumDoor_T1_State_Definitions_CloseDoorIn"
+                                        }
+                                      },
+                                      {
+                                        "Block": {
+                                          "Id": "*ReinforcedMediumDoor_T1_State_Definitions_CloseDoorOut"
+                                        }
+                                      },
+                                      {
+                                        "Block": {
+                                          "Id": "*ReinforcedMediumDoor_T1_State_Definitions_OpenDoorIn"
+                                        }
+                                      },
+                                      {
+                                        "Block": {
+                                          "Id": "*ReinforcedMediumDoor_T1_State_Definitions_OpenDoorOut"
+                                        }
+                                      },
+                                      {
+                                        "Block": {
+                                          "Id": "*ReinforcedMediumDoor_T1_State_Definitions_DoorBlocked"
+                                        }
+                                      },
+                                      {
+                                        "Block": {
+                                          "Id": "*ReinforcedMediumDoor_T1_CloseDoorIn"
+                                        }
+                                      },
+                                      {
+                                        "Block": {
+                                          "Id": "*ReinforcedMediumDoor_T1_CloseDoorOut"
+                                        }
+                                      },
+                                      {
+                                        "Block": {
+                                          "Id": "*ReinforcedMediumDoor_T1_OpenDoorIn"
+                                        }
+                                      },
+                                      {
+                                        "Block": {
+                                          "Id": "*ReinforcedMediumDoor_T1_OpenDoorOut"
+                                        }
+                                      },
+                                      {
+                                        "Block": {
+                                          "Id": "*ReinforcedMediumDoor_T1_DoorBlocked"
+                                        }
+                                      }
+                                    ],
+                                    "Next": {
+                                      "Type": "ModifyInventory",
+                                      "ItemToRemove": {
+                                        "Id": "Ingredient_Bar_Iron",
+                                        "Quantity": 1
+                                      },
+                                      "Next": {
+                                        "Type": "ChangeBlock",
+                                        "Changes": {
+                                          "ReinforcedMediumDoor_T1": "ReinforcedMediumDoor_T2",
+                                          "*ReinforcedMediumDoor_T1_State_Definitions_CloseDoorIn": "*ReinforcedMediumDoor_T2_State_Definitions_CloseDoorIn",
+                                          "*ReinforcedMediumDoor_T1_State_Definitions_CloseDoorOut": "*ReinforcedMediumDoor_T2_State_Definitions_CloseDoorOut",
+                                          "*ReinforcedMediumDoor_T1_State_Definitions_OpenDoorIn": "*ReinforcedMediumDoor_T2_State_Definitions_OpenDoorIn",
+                                          "*ReinforcedMediumDoor_T1_State_Definitions_OpenDoorOut": "*ReinforcedMediumDoor_T2_State_Definitions_OpenDoorOut",
+                                          "*ReinforcedMediumDoor_T1_State_Definitions_DoorBlocked": "*ReinforcedMediumDoor_T2_State_Definitions_DoorBlocked",
+                                          "*ReinforcedMediumDoor_T1_CloseDoorIn": "*ReinforcedMediumDoor_T2_State_Definitions_CloseDoorIn",
+                                          "*ReinforcedMediumDoor_T1_CloseDoorOut": "*ReinforcedMediumDoor_T2_State_Definitions_CloseDoorOut",
+                                          "*ReinforcedMediumDoor_T1_OpenDoorIn": "*ReinforcedMediumDoor_T2_State_Definitions_OpenDoorIn",
+                                          "*ReinforcedMediumDoor_T1_OpenDoorOut": "*ReinforcedMediumDoor_T2_State_Definitions_OpenDoorOut",
+                                          "*ReinforcedMediumDoor_T1_DoorBlocked": "*ReinforcedMediumDoor_T2_State_Definitions_DoorBlocked"
+                                        },
+                                        "Next": {
+                                          "Type": "Simple"
+                                        },
+                                        "Failed": {
+                                          "Type": "Simple"
+                                        },
+                                        "Effects": {
+                                          "WorldSoundEventId": "SFX_Block_Reforce",
+                                          "ItemAnimationId": "Interact",
+                                          "LocalSoundEventId": "SFX_Block_Reforce"
+                                        }
+                                      },
+                                      "Failed": {
+                                        "Type": "SendMessage",
+                                        "Message": "Can't reinforce Medium Door to Tier 2: you need 1x Ingredient_Bar_Iron."
+                                      }
+                                    },
+                                    "Failed": {
+                                      "Type": "BlockCondition",
+                                      "Matchers": [
+                                        {
+                                          "Block": {
+                                            "Id": "ReinforcedMediumDoor_T2"
+                                          }
+                                        },
+                                        {
+                                          "Block": {
+                                            "Id": "*ReinforcedMediumDoor_T2_State_Definitions_CloseDoorIn"
+                                          }
+                                        },
+                                        {
+                                          "Block": {
+                                            "Id": "*ReinforcedMediumDoor_T2_State_Definitions_CloseDoorOut"
+                                          }
+                                        },
+                                        {
+                                          "Block": {
+                                            "Id": "*ReinforcedMediumDoor_T2_State_Definitions_OpenDoorIn"
+                                          }
+                                        },
+                                        {
+                                          "Block": {
+                                            "Id": "*ReinforcedMediumDoor_T2_State_Definitions_OpenDoorOut"
+                                          }
+                                        },
+                                        {
+                                          "Block": {
+                                            "Id": "*ReinforcedMediumDoor_T2_State_Definitions_DoorBlocked"
+                                          }
+                                        },
+                                        {
+                                          "Block": {
+                                            "Id": "*ReinforcedMediumDoor_T2_CloseDoorIn"
+                                          }
+                                        },
+                                        {
+                                          "Block": {
+                                            "Id": "*ReinforcedMediumDoor_T2_CloseDoorOut"
+                                          }
+                                        },
+                                        {
+                                          "Block": {
+                                            "Id": "*ReinforcedMediumDoor_T2_OpenDoorIn"
+                                          }
+                                        },
+                                        {
+                                          "Block": {
+                                            "Id": "*ReinforcedMediumDoor_T2_OpenDoorOut"
+                                          }
+                                        },
+                                        {
+                                          "Block": {
+                                            "Id": "*ReinforcedMediumDoor_T2_DoorBlocked"
+                                          }
+                                        }
+                                      ],
+                                      "Next": {
+                                        "Type": "ModifyInventory",
+                                        "ItemToRemove": {
+                                          "Id": "Ingredient_Bar_Thorium",
+                                          "Quantity": 1
+                                        },
+                                        "Next": {
+                                          "Type": "ChangeBlock",
+                                          "Changes": {
+                                            "ReinforcedMediumDoor_T2": "ReinforcedMediumDoor_T3",
+                                            "*ReinforcedMediumDoor_T2_State_Definitions_CloseDoorIn": "*ReinforcedMediumDoor_T3_State_Definitions_CloseDoorIn",
+                                            "*ReinforcedMediumDoor_T2_State_Definitions_CloseDoorOut": "*ReinforcedMediumDoor_T3_State_Definitions_CloseDoorOut",
+                                            "*ReinforcedMediumDoor_T2_State_Definitions_OpenDoorIn": "*ReinforcedMediumDoor_T3_State_Definitions_OpenDoorIn",
+                                            "*ReinforcedMediumDoor_T2_State_Definitions_OpenDoorOut": "*ReinforcedMediumDoor_T3_State_Definitions_OpenDoorOut",
+                                            "*ReinforcedMediumDoor_T2_State_Definitions_DoorBlocked": "*ReinforcedMediumDoor_T3_State_Definitions_DoorBlocked",
+                                            "*ReinforcedMediumDoor_T2_CloseDoorIn": "*ReinforcedMediumDoor_T3_State_Definitions_CloseDoorIn",
+                                            "*ReinforcedMediumDoor_T2_CloseDoorOut": "*ReinforcedMediumDoor_T3_State_Definitions_CloseDoorOut",
+                                            "*ReinforcedMediumDoor_T2_OpenDoorIn": "*ReinforcedMediumDoor_T3_State_Definitions_OpenDoorIn",
+                                            "*ReinforcedMediumDoor_T2_OpenDoorOut": "*ReinforcedMediumDoor_T3_State_Definitions_OpenDoorOut",
+                                            "*ReinforcedMediumDoor_T2_DoorBlocked": "*ReinforcedMediumDoor_T3_State_Definitions_DoorBlocked"
+                                          },
+                                          "Next": {
+                                            "Type": "Simple"
+                                          },
+                                          "Failed": {
+                                            "Type": "Simple"
+                                          },
+                                          "Effects": {
+                                            "WorldSoundEventId": "SFX_Block_Reforce",
+                                            "ItemAnimationId": "Interact",
+                                            "LocalSoundEventId": "SFX_Block_Reforce"
+                                          }
+                                        },
+                                        "Failed": {
+                                          "Type": "SendMessage",
+                                          "Message": "Can't reinforce Medium Door to Tier 3: you need 1x Ingredient_Bar_Thorium."
+                                        }
+                                      },
+                                      "Failed": {
+                                        "Type": "BlockCondition",
+                                        "Matchers": [
+                                          {
+                                            "Block": {
+                                              "Id": "ReinforcedMediumDoor_T3"
+                                            }
+                                          },
+                                          {
+                                            "Block": {
+                                              "Id": "*ReinforcedMediumDoor_T3_State_Definitions_CloseDoorIn"
+                                            }
+                                          },
+                                          {
+                                            "Block": {
+                                              "Id": "*ReinforcedMediumDoor_T3_State_Definitions_CloseDoorOut"
+                                            }
+                                          },
+                                          {
+                                            "Block": {
+                                              "Id": "*ReinforcedMediumDoor_T3_State_Definitions_OpenDoorIn"
+                                            }
+                                          },
+                                          {
+                                            "Block": {
+                                              "Id": "*ReinforcedMediumDoor_T3_State_Definitions_OpenDoorOut"
+                                            }
+                                          },
+                                          {
+                                            "Block": {
+                                              "Id": "*ReinforcedMediumDoor_T3_State_Definitions_DoorBlocked"
+                                            }
+                                          },
+                                          {
+                                            "Block": {
+                                              "Id": "*ReinforcedMediumDoor_T3_CloseDoorIn"
+                                            }
+                                          },
+                                          {
+                                            "Block": {
+                                              "Id": "*ReinforcedMediumDoor_T3_CloseDoorOut"
+                                            }
+                                          },
+                                          {
+                                            "Block": {
+                                              "Id": "*ReinforcedMediumDoor_T3_OpenDoorIn"
+                                            }
+                                          },
+                                          {
+                                            "Block": {
+                                              "Id": "*ReinforcedMediumDoor_T3_OpenDoorOut"
+                                            }
+                                          },
+                                          {
+                                            "Block": {
+                                              "Id": "*ReinforcedMediumDoor_T3_DoorBlocked"
+                                            }
+                                          }
+                                        ],
+                                        "Next": {
+                                          "Type": "ModifyInventory",
+                                          "ItemToRemove": {
+                                            "Id": "Ingredient_Bar_Cobalt",
+                                            "Quantity": 1
+                                          },
+                                          "Next": {
+                                            "Type": "ChangeBlock",
+                                            "Changes": {
+                                              "ReinforcedMediumDoor_T3": "ReinforcedMediumDoor_T4",
+                                              "*ReinforcedMediumDoor_T3_State_Definitions_CloseDoorIn": "*ReinforcedMediumDoor_T4_State_Definitions_CloseDoorIn",
+                                              "*ReinforcedMediumDoor_T3_State_Definitions_CloseDoorOut": "*ReinforcedMediumDoor_T4_State_Definitions_CloseDoorOut",
+                                              "*ReinforcedMediumDoor_T3_State_Definitions_OpenDoorIn": "*ReinforcedMediumDoor_T4_State_Definitions_OpenDoorIn",
+                                              "*ReinforcedMediumDoor_T3_State_Definitions_OpenDoorOut": "*ReinforcedMediumDoor_T4_State_Definitions_OpenDoorOut",
+                                              "*ReinforcedMediumDoor_T3_State_Definitions_DoorBlocked": "*ReinforcedMediumDoor_T4_State_Definitions_DoorBlocked",
+                                              "*ReinforcedMediumDoor_T3_CloseDoorIn": "*ReinforcedMediumDoor_T4_State_Definitions_CloseDoorIn",
+                                              "*ReinforcedMediumDoor_T3_CloseDoorOut": "*ReinforcedMediumDoor_T4_State_Definitions_CloseDoorOut",
+                                              "*ReinforcedMediumDoor_T3_OpenDoorIn": "*ReinforcedMediumDoor_T4_State_Definitions_OpenDoorIn",
+                                              "*ReinforcedMediumDoor_T3_OpenDoorOut": "*ReinforcedMediumDoor_T4_State_Definitions_OpenDoorOut",
+                                              "*ReinforcedMediumDoor_T3_DoorBlocked": "*ReinforcedMediumDoor_T4_State_Definitions_DoorBlocked"
+                                            },
+                                            "Next": {
+                                              "Type": "Simple"
+                                            },
+                                            "Failed": {
+                                              "Type": "Simple"
+                                            },
+                                            "Effects": {
+                                              "WorldSoundEventId": "SFX_Block_Reforce",
+                                              "ItemAnimationId": "Interact",
+                                              "LocalSoundEventId": "SFX_Block_Reforce"
+                                            }
+                                          },
+                                          "Failed": {
+                                            "Type": "SendMessage",
+                                            "Message": "Can't reinforce Medium Door to Tier 4: you need 1x Ingredient_Bar_Cobalt."
+                                          }
+                                        },
+                                        "Failed": {
+                                          "Type": "BlockCondition",
+                                          "Matchers": [
+                                            {
+                                              "Block": {
+                                                "Id": "ReinforcedMediumDoor_T4"
+                                              }
+                                            },
+                                            {
+                                              "Block": {
+                                                "Id": "*ReinforcedMediumDoor_T4_State_Definitions_CloseDoorIn"
+                                              }
+                                            },
+                                            {
+                                              "Block": {
+                                                "Id": "*ReinforcedMediumDoor_T4_State_Definitions_CloseDoorOut"
+                                              }
+                                            },
+                                            {
+                                              "Block": {
+                                                "Id": "*ReinforcedMediumDoor_T4_State_Definitions_OpenDoorIn"
+                                              }
+                                            },
+                                            {
+                                              "Block": {
+                                                "Id": "*ReinforcedMediumDoor_T4_State_Definitions_OpenDoorOut"
+                                              }
+                                            },
+                                            {
+                                              "Block": {
+                                                "Id": "*ReinforcedMediumDoor_T4_State_Definitions_DoorBlocked"
+                                              }
+                                            },
+                                            {
+                                              "Block": {
+                                                "Id": "*ReinforcedMediumDoor_T4_CloseDoorIn"
+                                              }
+                                            },
+                                            {
+                                              "Block": {
+                                                "Id": "*ReinforcedMediumDoor_T4_CloseDoorOut"
+                                              }
+                                            },
+                                            {
+                                              "Block": {
+                                                "Id": "*ReinforcedMediumDoor_T4_OpenDoorIn"
+                                              }
+                                            },
+                                            {
+                                              "Block": {
+                                                "Id": "*ReinforcedMediumDoor_T4_OpenDoorOut"
+                                              }
+                                            },
+                                            {
+                                              "Block": {
+                                                "Id": "*ReinforcedMediumDoor_T4_DoorBlocked"
+                                              }
+                                            }
+                                          ],
+                                          "Next": {
+                                            "Type": "ModifyInventory",
+                                            "ItemToRemove": {
+                                              "Id": "Ingredient_Bar_Adamantite",
+                                              "Quantity": 1
+                                            },
+                                            "Next": {
+                                              "Type": "ChangeBlock",
+                                              "Changes": {
+                                                "ReinforcedMediumDoor_T4": "ReinforcedMediumDoor_T5",
+                                                "*ReinforcedMediumDoor_T4_State_Definitions_CloseDoorIn": "*ReinforcedMediumDoor_T5_State_Definitions_CloseDoorIn",
+                                                "*ReinforcedMediumDoor_T4_State_Definitions_CloseDoorOut": "*ReinforcedMediumDoor_T5_State_Definitions_CloseDoorOut",
+                                                "*ReinforcedMediumDoor_T4_State_Definitions_OpenDoorIn": "*ReinforcedMediumDoor_T5_State_Definitions_OpenDoorIn",
+                                                "*ReinforcedMediumDoor_T4_State_Definitions_OpenDoorOut": "*ReinforcedMediumDoor_T5_State_Definitions_OpenDoorOut",
+                                                "*ReinforcedMediumDoor_T4_State_Definitions_DoorBlocked": "*ReinforcedMediumDoor_T5_State_Definitions_DoorBlocked",
+                                                "*ReinforcedMediumDoor_T4_CloseDoorIn": "*ReinforcedMediumDoor_T5_State_Definitions_CloseDoorIn",
+                                                "*ReinforcedMediumDoor_T4_CloseDoorOut": "*ReinforcedMediumDoor_T5_State_Definitions_CloseDoorOut",
+                                                "*ReinforcedMediumDoor_T4_OpenDoorIn": "*ReinforcedMediumDoor_T5_State_Definitions_OpenDoorIn",
+                                                "*ReinforcedMediumDoor_T4_OpenDoorOut": "*ReinforcedMediumDoor_T5_State_Definitions_OpenDoorOut",
+                                                "*ReinforcedMediumDoor_T4_DoorBlocked": "*ReinforcedMediumDoor_T5_State_Definitions_DoorBlocked"
+                                              },
+                                              "Next": {
+                                                "Type": "Simple"
+                                              },
+                                              "Failed": {
+                                                "Type": "Simple"
+                                              },
+                                              "Effects": {
+                                                "WorldSoundEventId": "SFX_Block_Reforce",
+                                                "ItemAnimationId": "Interact",
+                                                "LocalSoundEventId": "SFX_Block_Reforce"
+                                              }
+                                            },
+                                            "Failed": {
+                                              "Type": "SendMessage",
+                                              "Message": "Can't reinforce Medium Door to Tier 5: you need 1x Ingredient_Bar_Adamantite."
+                                            }
+                                          },
+                                          "Failed": {
+                                            "Type": "BlockCondition",
+                                            "Matchers": [
+                                              {
+                                                "Block": {
+                                                  "Id": "ReinforcedChest_Small_T1"
+                                                }
+                                              },
+                                              {
+                                                "Block": {
+                                                  "Id": "*ReinforcedChest_Small_T1_State_Definitions_CloseWindow"
+                                                }
+                                              },
+                                              {
+                                                "Block": {
+                                                  "Id": "*ReinforcedChest_Small_T1_State_Definitions_OpenWindow"
+                                                }
+                                              },
+                                              {
+                                                "Block": {
+                                                  "Id": "*ReinforcedChest_Small_T1_CloseWindow"
+                                                }
+                                              },
+                                              {
+                                                "Block": {
+                                                  "Id": "*ReinforcedChest_Small_T1_OpenWindow"
+                                                }
+                                              }
+                                            ],
+                                            "Next": {
+                                              "Type": "ModifyInventory",
+                                              "ItemToRemove": {
+                                                "Id": "Ingredient_Bar_Iron",
+                                                "Quantity": 1
+                                              },
+                                              "Next": {
+                                                "Type": "ChangeBlock",
+                                                "Changes": {
+                                                  "ReinforcedChest_Small_T1": "ReinforcedChest_Small_T2",
+                                                  "*ReinforcedChest_Small_T1_State_Definitions_CloseWindow": "*ReinforcedChest_Small_T2_State_Definitions_CloseWindow",
+                                                  "*ReinforcedChest_Small_T1_State_Definitions_OpenWindow": "*ReinforcedChest_Small_T2_State_Definitions_OpenWindow",
+                                                  "*ReinforcedChest_Small_T1_CloseWindow": "*ReinforcedChest_Small_T2_State_Definitions_CloseWindow",
+                                                  "*ReinforcedChest_Small_T1_OpenWindow": "*ReinforcedChest_Small_T2_State_Definitions_OpenWindow"
+                                                },
+                                                "Next": {
+                                                  "Type": "Simple"
+                                                },
+                                                "Failed": {
+                                                  "Type": "Simple"
+                                                },
+                                                "Effects": {
+                                                  "WorldSoundEventId": "SFX_Block_Reforce",
+                                                  "ItemAnimationId": "Interact",
+                                                  "LocalSoundEventId": "SFX_Block_Reforce"
+                                                }
+                                              },
+                                              "Failed": {
+                                                "Type": "SendMessage",
+                                                "Message": "Can't reinforce Chest to Tier 2: you need 1x Ingredient_Bar_Iron."
+                                              }
+                                            },
+                                            "Failed": {
+                                              "Type": "BlockCondition",
+                                              "Matchers": [
+                                                {
+                                                  "Block": {
+                                                    "Id": "ReinforcedChest_Small_T2"
+                                                  }
+                                                },
+                                                {
+                                                  "Block": {
+                                                    "Id": "*ReinforcedChest_Small_T2_State_Definitions_CloseWindow"
+                                                  }
+                                                },
+                                                {
+                                                  "Block": {
+                                                    "Id": "*ReinforcedChest_Small_T2_State_Definitions_OpenWindow"
+                                                  }
+                                                },
+                                                {
+                                                  "Block": {
+                                                    "Id": "*ReinforcedChest_Small_T2_CloseWindow"
+                                                  }
+                                                },
+                                                {
+                                                  "Block": {
+                                                    "Id": "*ReinforcedChest_Small_T2_OpenWindow"
+                                                  }
+                                                }
+                                              ],
+                                              "Next": {
+                                                "Type": "ModifyInventory",
+                                                "ItemToRemove": {
+                                                  "Id": "Ingredient_Bar_Thorium",
+                                                  "Quantity": 1
+                                                },
+                                                "Next": {
+                                                  "Type": "ChangeBlock",
+                                                  "Changes": {
+                                                    "ReinforcedChest_Small_T2": "ReinforcedChest_Small_T3",
+                                                    "*ReinforcedChest_Small_T2_State_Definitions_CloseWindow": "*ReinforcedChest_Small_T3_State_Definitions_CloseWindow",
+                                                    "*ReinforcedChest_Small_T2_State_Definitions_OpenWindow": "*ReinforcedChest_Small_T3_State_Definitions_OpenWindow",
+                                                    "*ReinforcedChest_Small_T2_CloseWindow": "*ReinforcedChest_Small_T3_State_Definitions_CloseWindow",
+                                                    "*ReinforcedChest_Small_T2_OpenWindow": "*ReinforcedChest_Small_T3_State_Definitions_OpenWindow"
+                                                  },
+                                                  "Next": {
+                                                    "Type": "Simple"
+                                                  },
+                                                  "Failed": {
+                                                    "Type": "Simple"
+                                                  },
+                                                  "Effects": {
+                                                    "WorldSoundEventId": "SFX_Block_Reforce",
+                                                    "ItemAnimationId": "Interact",
+                                                    "LocalSoundEventId": "SFX_Block_Reforce"
+                                                  }
+                                                },
+                                                "Failed": {
+                                                  "Type": "SendMessage",
+                                                  "Message": "Can't reinforce Chest to Tier 3: you need 1x Ingredient_Bar_Thorium."
+                                                }
+                                              },
+                                              "Failed": {
+                                                "Type": "BlockCondition",
+                                                "Matchers": [
+                                                  {
+                                                    "Block": {
+                                                      "Id": "ReinforcedChest_Small_T3"
+                                                    }
+                                                  },
+                                                  {
+                                                    "Block": {
+                                                      "Id": "*ReinforcedChest_Small_T3_State_Definitions_CloseWindow"
+                                                    }
+                                                  },
+                                                  {
+                                                    "Block": {
+                                                      "Id": "*ReinforcedChest_Small_T3_State_Definitions_OpenWindow"
+                                                    }
+                                                  },
+                                                  {
+                                                    "Block": {
+                                                      "Id": "*ReinforcedChest_Small_T3_CloseWindow"
+                                                    }
+                                                  },
+                                                  {
+                                                    "Block": {
+                                                      "Id": "*ReinforcedChest_Small_T3_OpenWindow"
+                                                    }
+                                                  }
+                                                ],
+                                                "Next": {
+                                                  "Type": "ModifyInventory",
+                                                  "ItemToRemove": {
+                                                    "Id": "Ingredient_Bar_Cobalt",
+                                                    "Quantity": 1
+                                                  },
+                                                  "Next": {
+                                                    "Type": "ChangeBlock",
+                                                    "Changes": {
+                                                      "ReinforcedChest_Small_T3": "ReinforcedChest_Small_T4",
+                                                      "*ReinforcedChest_Small_T3_State_Definitions_CloseWindow": "*ReinforcedChest_Small_T4_State_Definitions_CloseWindow",
+                                                      "*ReinforcedChest_Small_T3_State_Definitions_OpenWindow": "*ReinforcedChest_Small_T4_State_Definitions_OpenWindow",
+                                                      "*ReinforcedChest_Small_T3_CloseWindow": "*ReinforcedChest_Small_T4_State_Definitions_CloseWindow",
+                                                      "*ReinforcedChest_Small_T3_OpenWindow": "*ReinforcedChest_Small_T4_State_Definitions_OpenWindow"
+                                                    },
+                                                    "Next": {
+                                                      "Type": "Simple"
+                                                    },
+                                                    "Failed": {
+                                                      "Type": "Simple"
+                                                    },
+                                                    "Effects": {
+                                                      "WorldSoundEventId": "SFX_Block_Reforce",
+                                                      "ItemAnimationId": "Interact",
+                                                      "LocalSoundEventId": "SFX_Block_Reforce"
+                                                    }
+                                                  },
+                                                  "Failed": {
+                                                    "Type": "SendMessage",
+                                                    "Message": "Can't reinforce Chest to Tier 4: you need 1x Ingredient_Bar_Cobalt."
+                                                  }
+                                                },
+                                                "Failed": {
+                                                  "Type": "BlockCondition",
+                                                  "Matchers": [
+                                                    {
+                                                      "Block": {
+                                                        "Id": "ReinforcedChest_Small_T4"
+                                                      }
+                                                    },
+                                                    {
+                                                      "Block": {
+                                                        "Id": "*ReinforcedChest_Small_T4_State_Definitions_CloseWindow"
+                                                      }
+                                                    },
+                                                    {
+                                                      "Block": {
+                                                        "Id": "*ReinforcedChest_Small_T4_State_Definitions_OpenWindow"
+                                                      }
+                                                    },
+                                                    {
+                                                      "Block": {
+                                                        "Id": "*ReinforcedChest_Small_T4_CloseWindow"
+                                                      }
+                                                    },
+                                                    {
+                                                      "Block": {
+                                                        "Id": "*ReinforcedChest_Small_T4_OpenWindow"
+                                                      }
+                                                    }
+                                                  ],
+                                                  "Next": {
+                                                    "Type": "ModifyInventory",
+                                                    "ItemToRemove": {
+                                                      "Id": "Ingredient_Bar_Adamantite",
+                                                      "Quantity": 1
+                                                    },
+                                                    "Next": {
+                                                      "Type": "ChangeBlock",
+                                                      "Changes": {
+                                                        "ReinforcedChest_Small_T4": "ReinforcedChest_Small_T5",
+                                                        "*ReinforcedChest_Small_T4_State_Definitions_CloseWindow": "*ReinforcedChest_Small_T5_State_Definitions_CloseWindow",
+                                                        "*ReinforcedChest_Small_T4_State_Definitions_OpenWindow": "*ReinforcedChest_Small_T5_State_Definitions_OpenWindow",
+                                                        "*ReinforcedChest_Small_T4_CloseWindow": "*ReinforcedChest_Small_T5_State_Definitions_CloseWindow",
+                                                        "*ReinforcedChest_Small_T4_OpenWindow": "*ReinforcedChest_Small_T5_State_Definitions_OpenWindow"
+                                                      },
+                                                      "Next": {
+                                                        "Type": "Simple"
+                                                      },
+                                                      "Failed": {
+                                                        "Type": "Simple"
+                                                      },
+                                                      "Effects": {
+                                                        "WorldSoundEventId": "SFX_Block_Reforce",
+                                                        "ItemAnimationId": "Interact",
+                                                        "LocalSoundEventId": "SFX_Block_Reforce"
+                                                      }
+                                                    },
+                                                    "Failed": {
+                                                      "Type": "SendMessage",
+                                                      "Message": "Can't reinforce Chest to Tier 5: you need 1x Ingredient_Bar_Adamantite."
+                                                    }
+                                                  },
+                                                  "Failed": {
+                                                    "Type": "BlockCondition",
+                                                    "Matchers": [
+                                                      {
+                                                        "Block": {
+                                                          "Id": "ReinforcedChest_Large_T1"
+                                                        }
+                                                      },
+                                                      {
+                                                        "Block": {
+                                                          "Id": "*ReinforcedChest_Large_T1_State_Definitions_CloseWindow"
+                                                        }
+                                                      },
+                                                      {
+                                                        "Block": {
+                                                          "Id": "*ReinforcedChest_Large_T1_State_Definitions_OpenWindow"
+                                                        }
+                                                      },
+                                                      {
+                                                        "Block": {
+                                                          "Id": "*ReinforcedChest_Large_T1_CloseWindow"
+                                                        }
+                                                      },
+                                                      {
+                                                        "Block": {
+                                                          "Id": "*ReinforcedChest_Large_T1_OpenWindow"
+                                                        }
+                                                      }
+                                                    ],
+                                                    "Next": {
+                                                      "Type": "ModifyInventory",
+                                                      "ItemToRemove": {
+                                                        "Id": "Ingredient_Bar_Iron",
+                                                        "Quantity": 1
+                                                      },
+                                                      "Next": {
+                                                        "Type": "ChangeBlock",
+                                                        "Changes": {
+                                                          "ReinforcedChest_Large_T1": "ReinforcedChest_Large_T2",
+                                                          "*ReinforcedChest_Large_T1_State_Definitions_CloseWindow": "*ReinforcedChest_Large_T2_State_Definitions_CloseWindow",
+                                                          "*ReinforcedChest_Large_T1_State_Definitions_OpenWindow": "*ReinforcedChest_Large_T2_State_Definitions_OpenWindow",
+                                                          "*ReinforcedChest_Large_T1_CloseWindow": "*ReinforcedChest_Large_T2_State_Definitions_CloseWindow",
+                                                          "*ReinforcedChest_Large_T1_OpenWindow": "*ReinforcedChest_Large_T2_State_Definitions_OpenWindow"
+                                                        },
+                                                        "Next": {
+                                                          "Type": "Simple"
+                                                        },
+                                                        "Failed": {
+                                                          "Type": "Simple"
+                                                        },
+                                                        "Effects": {
+                                                          "WorldSoundEventId": "SFX_Block_Reforce",
+                                                          "ItemAnimationId": "Interact",
+                                                          "LocalSoundEventId": "SFX_Block_Reforce"
+                                                        }
+                                                      },
+                                                      "Failed": {
+                                                        "Type": "SendMessage",
+                                                        "Message": "Can't reinforce Large Chest to Tier 2: you need 1x Ingredient_Bar_Iron."
+                                                      }
+                                                    },
+                                                    "Failed": {
+                                                      "Type": "BlockCondition",
+                                                      "Matchers": [
+                                                        {
+                                                          "Block": {
+                                                            "Id": "ReinforcedChest_Large_T2"
+                                                          }
+                                                        },
+                                                        {
+                                                          "Block": {
+                                                            "Id": "*ReinforcedChest_Large_T2_State_Definitions_CloseWindow"
+                                                          }
+                                                        },
+                                                        {
+                                                          "Block": {
+                                                            "Id": "*ReinforcedChest_Large_T2_State_Definitions_OpenWindow"
+                                                          }
+                                                        },
+                                                        {
+                                                          "Block": {
+                                                            "Id": "*ReinforcedChest_Large_T2_CloseWindow"
+                                                          }
+                                                        },
+                                                        {
+                                                          "Block": {
+                                                            "Id": "*ReinforcedChest_Large_T2_OpenWindow"
+                                                          }
+                                                        }
+                                                      ],
+                                                      "Next": {
+                                                        "Type": "ModifyInventory",
+                                                        "ItemToRemove": {
+                                                          "Id": "Ingredient_Bar_Thorium",
+                                                          "Quantity": 1
+                                                        },
+                                                        "Next": {
+                                                          "Type": "ChangeBlock",
+                                                          "Changes": {
+                                                            "ReinforcedChest_Large_T2": "ReinforcedChest_Large_T3",
+                                                            "*ReinforcedChest_Large_T2_State_Definitions_CloseWindow": "*ReinforcedChest_Large_T3_State_Definitions_CloseWindow",
+                                                            "*ReinforcedChest_Large_T2_State_Definitions_OpenWindow": "*ReinforcedChest_Large_T3_State_Definitions_OpenWindow",
+                                                            "*ReinforcedChest_Large_T2_CloseWindow": "*ReinforcedChest_Large_T3_State_Definitions_CloseWindow",
+                                                            "*ReinforcedChest_Large_T2_OpenWindow": "*ReinforcedChest_Large_T3_State_Definitions_OpenWindow"
+                                                          },
+                                                          "Next": {
+                                                            "Type": "Simple"
+                                                          },
+                                                          "Failed": {
+                                                            "Type": "Simple"
+                                                          },
+                                                          "Effects": {
+                                                            "WorldSoundEventId": "SFX_Block_Reforce",
+                                                            "ItemAnimationId": "Interact",
+                                                            "LocalSoundEventId": "SFX_Block_Reforce"
+                                                          }
+                                                        },
+                                                        "Failed": {
+                                                          "Type": "SendMessage",
+                                                          "Message": "Can't reinforce Large Chest to Tier 3: you need 1x Ingredient_Bar_Thorium."
+                                                        }
+                                                      },
+                                                      "Failed": {
+                                                        "Type": "BlockCondition",
+                                                        "Matchers": [
+                                                          {
+                                                            "Block": {
+                                                              "Id": "ReinforcedChest_Large_T3"
+                                                            }
+                                                          },
+                                                          {
+                                                            "Block": {
+                                                              "Id": "*ReinforcedChest_Large_T3_State_Definitions_CloseWindow"
+                                                            }
+                                                          },
+                                                          {
+                                                            "Block": {
+                                                              "Id": "*ReinforcedChest_Large_T3_State_Definitions_OpenWindow"
+                                                            }
+                                                          },
+                                                          {
+                                                            "Block": {
+                                                              "Id": "*ReinforcedChest_Large_T3_CloseWindow"
+                                                            }
+                                                          },
+                                                          {
+                                                            "Block": {
+                                                              "Id": "*ReinforcedChest_Large_T3_OpenWindow"
+                                                            }
+                                                          }
+                                                        ],
+                                                        "Next": {
+                                                          "Type": "ModifyInventory",
+                                                          "ItemToRemove": {
+                                                            "Id": "Ingredient_Bar_Cobalt",
+                                                            "Quantity": 1
+                                                          },
+                                                          "Next": {
+                                                            "Type": "ChangeBlock",
+                                                            "Changes": {
+                                                              "ReinforcedChest_Large_T3": "ReinforcedChest_Large_T4",
+                                                              "*ReinforcedChest_Large_T3_State_Definitions_CloseWindow": "*ReinforcedChest_Large_T4_State_Definitions_CloseWindow",
+                                                              "*ReinforcedChest_Large_T3_State_Definitions_OpenWindow": "*ReinforcedChest_Large_T4_State_Definitions_OpenWindow",
+                                                              "*ReinforcedChest_Large_T3_CloseWindow": "*ReinforcedChest_Large_T4_State_Definitions_CloseWindow",
+                                                              "*ReinforcedChest_Large_T3_OpenWindow": "*ReinforcedChest_Large_T4_State_Definitions_OpenWindow"
+                                                            },
+                                                            "Next": {
+                                                              "Type": "Simple"
+                                                            },
+                                                            "Failed": {
+                                                              "Type": "Simple"
+                                                            },
+                                                            "Effects": {
+                                                              "WorldSoundEventId": "SFX_Block_Reforce",
+                                                              "ItemAnimationId": "Interact",
+                                                              "LocalSoundEventId": "SFX_Block_Reforce"
+                                                            }
+                                                          },
+                                                          "Failed": {
+                                                            "Type": "SendMessage",
+                                                            "Message": "Can't reinforce Large Chest to Tier 4: you need 1x Ingredient_Bar_Cobalt."
+                                                          }
+                                                        },
+                                                        "Failed": {
+                                                          "Type": "BlockCondition",
+                                                          "Matchers": [
+                                                            {
+                                                              "Block": {
+                                                                "Id": "ReinforcedChest_Large_T4"
+                                                              }
+                                                            },
+                                                            {
+                                                              "Block": {
+                                                                "Id": "*ReinforcedChest_Large_T4_State_Definitions_CloseWindow"
+                                                              }
+                                                            },
+                                                            {
+                                                              "Block": {
+                                                                "Id": "*ReinforcedChest_Large_T4_State_Definitions_OpenWindow"
+                                                              }
+                                                            },
+                                                            {
+                                                              "Block": {
+                                                                "Id": "*ReinforcedChest_Large_T4_CloseWindow"
+                                                              }
+                                                            },
+                                                            {
+                                                              "Block": {
+                                                                "Id": "*ReinforcedChest_Large_T4_OpenWindow"
+                                                              }
+                                                            }
+                                                          ],
+                                                          "Next": {
+                                                            "Type": "ModifyInventory",
+                                                            "ItemToRemove": {
+                                                              "Id": "Ingredient_Bar_Adamantite",
+                                                              "Quantity": 1
+                                                            },
+                                                            "Next": {
+                                                              "Type": "ChangeBlock",
+                                                              "Changes": {
+                                                                "ReinforcedChest_Large_T4": "ReinforcedChest_Large_T5",
+                                                                "*ReinforcedChest_Large_T4_State_Definitions_CloseWindow": "*ReinforcedChest_Large_T5_State_Definitions_CloseWindow",
+                                                                "*ReinforcedChest_Large_T4_State_Definitions_OpenWindow": "*ReinforcedChest_Large_T5_State_Definitions_OpenWindow",
+                                                                "*ReinforcedChest_Large_T4_CloseWindow": "*ReinforcedChest_Large_T5_State_Definitions_CloseWindow",
+                                                                "*ReinforcedChest_Large_T4_OpenWindow": "*ReinforcedChest_Large_T5_State_Definitions_OpenWindow"
+                                                              },
+                                                              "Next": {
+                                                                "Type": "Simple"
+                                                              },
+                                                              "Failed": {
+                                                                "Type": "Simple"
+                                                              },
+                                                              "Effects": {
+                                                                "WorldSoundEventId": "SFX_Block_Reforce",
+                                                                "ItemAnimationId": "Interact",
+                                                                "LocalSoundEventId": "SFX_Block_Reforce"
+                                                              }
+                                                            },
+                                                            "Failed": {
+                                                              "Type": "SendMessage",
+                                                              "Message": "Can't reinforce Large Chest to Tier 5: you need 1x Ingredient_Bar_Adamantite."
+                                                            }
+                                                          },
+                                                          "Failed": {
+                                                            "Type": "Simple",
+                                                            "Effects": {}
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }

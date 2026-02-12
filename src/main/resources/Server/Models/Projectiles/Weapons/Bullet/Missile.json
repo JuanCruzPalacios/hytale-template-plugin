@@ -1,6 +1,6 @@
 {
-  "Model": "Items/Weapons/Missile/Missile.blockymodel",
-  "Texture": "Items/Weapons/Missile/MissileTexture.png",
+  "Model": "Items/Weapons/Missile/RocketLaunched.blockymodel",
+  "Texture": "Items/Weapons/Missile/Rocket.png",
   "HitBox": {
     "Max": {
       "X": 0.05,

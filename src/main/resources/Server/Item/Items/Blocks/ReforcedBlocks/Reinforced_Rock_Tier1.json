@@ -1,0 +1,67 @@
+{
+  "TranslationProperties": {
+    "Name": "Reinforced Rock Tier 1"
+  },
+  "Icon": "Icons/ItemsGenerated/Reforced_Rock_Tier1.png",
+  "Categories": [
+    "Blocks.Rocks"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Rock_Stone_Aqua",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Stone",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "ReinforcedRocks_T1"
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "Textures": [
+      {
+        "All": "Blocks/ReinforcedBlock1.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#b46606",
+    "BlockSoundSetId": "Stone"
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "Texture": "Blocks/ReinforcedBlock1.png",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Recipe": {
+    "TimeSeconds": 1,
+    "Input": [
+      {
+        "ResourceTypeId": "Rock_Volcanic",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Bar_Copper",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Explosive_Workbench",
+        "Type": "Crafting",
+        "Categories": [
+          "Explosive_Workbench_Construction"
+        ]
+      }
+    ]
+  }
+}

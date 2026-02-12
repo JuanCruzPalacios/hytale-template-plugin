@@ -42,19 +42,19 @@
     ]
   },
   "IconProperties": {
-    "Scale": 0.3,
+    "Scale": 0.1,
     "Rotation": [
       45,
       275,
       0
     ],
     "Translation": [
-      30,
-      -30
+      76,
+      -74
     ]
   },
-  "Model": "Items/Weapons/Missile/Missile.blockymodel",
-  "Texture": "Items/Weapons/Missile/MissileTexture.png",
+  "Model": "Items/Weapons/Missile/Rocket.blockymodel",
+  "Texture": "Items/Weapons/Missile/Rocket.png",
   "Icon": "Icons/ItemsGenerated/Missile.png",
   "MaxStack": 1,
   "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",

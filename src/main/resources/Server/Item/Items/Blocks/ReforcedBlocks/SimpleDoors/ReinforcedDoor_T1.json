@@ -1,0 +1,114 @@
+{
+  "TranslationProperties": {
+    "Name": "Reinforced Door Tier 1"
+  },
+  "Icon": "Icons/ItemsGenerated/ReinforcedDoor_T1.png",
+  "Categories": [
+    "Furniture.Doors"
+  ],
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Reinforced/Door.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Reinforced/Door_Copper.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Door",
+    "VariantRotation": "NESW",
+    "State": {
+      "Definitions": {
+        "CloseDoorIn": {
+          "InteractionSoundEventId": "SFX_Door_Wooden_Close",
+          "CustomModelAnimation": "Blocks/Animations/Door/Door_Close_In.blockyanim"
+        },
+        "CloseDoorOut": {
+          "InteractionSoundEventId": "SFX_Door_Wooden_Close",
+          "CustomModelAnimation": "Blocks/Animations/Door/Door_Close_Out.blockyanim"
+        },
+        "DoorBlocked": {},
+        "OpenDoorIn": {
+          "HitboxType": "Door_Open_In",
+          "InteractionHitboxType": "Door_Open_In_Interaction",
+          "InteractionSoundEventId": "SFX_Door_Wooden_Open",
+          "CustomModelAnimation": "Blocks/Animations/Door/Door_Open_In.blockyanim"
+        },
+        "OpenDoorOut": {
+          "HitboxType": "Door_Open_Out",
+          "InteractionHitboxType": "Door_Open_Out_Interaction",
+          "InteractionSoundEventId": "SFX_Door_Wooden_Open",
+          "CustomModelAnimation": "Blocks/Animations/Door/Door_Open_Out.blockyanim"
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "ReinforcedRocks_T1"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "ParticleColor": "#5b3222",
+    "BlockSoundSetId": "Wood",
+    "IsDoor": true,
+    "Interactions": {
+      "Use": "Door"
+    },
+    "ConnectedBlockRuleSet": {
+      "Type": "CustomTemplate",
+      "TemplateShapeAssetId": "DoorConnectedBlockTemplate",
+      "TemplateShapeBlockPatterns": {
+        "Default": "ReinforcedDoor_T1"
+      }
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.45,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -27
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Village"
+    ]
+  },
+  "Scale": 0.8,
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "Recipe": {
+    "Input": [
+      {
+        "ResourceTypeId": "Wood_Hardwood",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_Bar_Copper"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Explosive_Workbench",
+        "Type": "Crafting",
+        "Categories": [
+          "Explosive_Workbench_Construction"
+        ]
+      }
+    ]
+  }
+}

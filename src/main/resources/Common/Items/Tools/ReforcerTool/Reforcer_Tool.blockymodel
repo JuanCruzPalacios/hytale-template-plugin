@@ -65,39 +65,39 @@
                   "shape": {
                     "type": "box",
                     "offset": {"x": 13, "y": 0, "z": 0},
-                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "stretch": {"x": 1, "y": 1.125, "z": 1.125},
                     "settings": {
                       "isPiece": false,
                       "size": {"x": 38, "y": 6, "z": 6}
                     },
                     "textureLayout": {
                       "back": {
-                        "offset": {"x": 55, "y": 12},
+                        "offset": {"x": 64, "y": 6},
                         "mirror": {"x": true, "y": true},
                         "angle": 0
                       },
                       "right": {
-                        "offset": {"x": 17, "y": 0},
+                        "offset": {"x": 0, "y": 0},
                         "mirror": {"x": false, "y": false},
                         "angle": 0
                       },
                       "front": {
-                        "offset": {"x": 17, "y": 6},
+                        "offset": {"x": 26, "y": 0},
                         "mirror": {"x": false, "y": false},
                         "angle": 0
                       },
                       "left": {
-                        "offset": {"x": 17, "y": 0},
+                        "offset": {"x": 0, "y": 0},
                         "mirror": {"x": false, "y": false},
                         "angle": 0
                       },
                       "top": {
-                        "offset": {"x": 17, "y": 0},
+                        "offset": {"x": 26, "y": 0},
                         "mirror": {"x": false, "y": false},
                         "angle": 0
                       },
                       "bottom": {
-                        "offset": {"x": 17, "y": 0},
+                        "offset": {"x": 26, "y": 0},
                         "mirror": {"x": false, "y": false},
                         "angle": 0
                       }
@@ -110,45 +110,46 @@
                   "children": [
                     {
                       "id": "5",
-                      "name": "Pommel",
-                      "position": {"x": -18, "y": 0, "z": 0},
+                      "name": "Handle--C1",
+                      "position": {"x": 0, "y": 0, "z": 0},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                       "shape": {
                         "type": "box",
-                        "offset": {"x": -6, "y": 0, "z": 0},
-                        "stretch": {"x": 1, "y": 1.2, "z": 1.2},
+                        "offset": {"x": -3, "y": 0, "z": 0},
+                        "stretch": {"x": 1, "y": 0.8875, "z": 0.8875},
                         "settings": {
                           "isPiece": false,
-                          "size": {"x": 12, "y": 6, "z": 6}
+                          "size": {"x": 22, "y": 8, "z": 8},
+                          "isStaticBox": true
                         },
                         "textureLayout": {
                           "back": {
-                            "offset": {"x": 0, "y": 6},
-                            "mirror": {"x": false, "y": false},
+                            "offset": {"x": 22, "y": 23},
+                            "mirror": {"x": true, "y": true},
                             "angle": 0
                           },
                           "right": {
-                            "offset": {"x": 0, "y": 12},
+                            "offset": {"x": 0, "y": 15},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "front": {
-                            "offset": {"x": 0, "y": 6},
+                            "offset": {"x": 0, "y": 15},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "left": {
-                            "offset": {"x": 0, "y": 12},
+                            "offset": {"x": 0, "y": 15},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "top": {
-                            "offset": {"x": 0, "y": 0},
+                            "offset": {"x": 0, "y": 15},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "bottom": {
-                            "offset": {"x": 0, "y": 0},
+                            "offset": {"x": 0, "y": 15},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           }
@@ -161,45 +162,45 @@
                     },
                     {
                       "id": "6",
-                      "name": "Handle2",
-                      "position": {"x": 27.999, "y": 0, "z": 0},
+                      "name": "Pommel",
+                      "position": {"x": -18, "y": 0, "z": 0},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                       "shape": {
                         "type": "box",
-                        "offset": {"x": 0, "y": 0, "z": 0},
-                        "stretch": {"x": 1, "y": 1.2, "z": 0.8},
+                        "offset": {"x": -4, "y": 0, "z": 0},
+                        "stretch": {"x": 0.625, "y": 1.45, "z": 1.7},
                         "settings": {
                           "isPiece": false,
-                          "size": {"x": 20, "y": 6, "z": 6}
+                          "size": {"x": 12, "y": 6, "z": 6}
                         },
                         "textureLayout": {
                           "back": {
-                            "offset": {"x": 26, "y": 18},
+                            "offset": {"x": 0, "y": 0},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "right": {
-                            "offset": {"x": 3, "y": 6},
+                            "offset": {"x": 3, "y": 0},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "front": {
-                            "offset": {"x": 26, "y": 19},
+                            "offset": {"x": 0, "y": 0},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "left": {
-                            "offset": {"x": 26, "y": 13},
+                            "offset": {"x": 0, "y": 0},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "top": {
-                            "offset": {"x": 26, "y": 13},
+                            "offset": {"x": 0, "y": 0},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "bottom": {
-                            "offset": {"x": 26, "y": 13},
+                            "offset": {"x": 0, "y": 0},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           }
@@ -212,45 +213,358 @@
                       "children": [
                         {
                           "id": "7",
-                          "name": "Pickaxe",
-                          "position": {"x": 0, "y": 0, "z": 0},
+                          "name": "Pommel--C1",
+                          "position": {"x": 31, "y": 0, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
                             "type": "box",
-                            "offset": {"x": 2, "y": 0, "z": 0},
-                            "stretch": {"x": 1.1, "y": 1.25, "z": 1.1},
+                            "offset": {"x": 0, "y": 0, "z": 0},
+                            "stretch": {"x": 0.125, "y": 1.45, "z": 1.7},
                             "settings": {
                               "isPiece": false,
-                              "size": {"x": 11, "y": 29, "z": 8}
+                              "size": {"x": 12, "y": 6, "z": 6},
+                              "isStaticBox": true
                             },
                             "textureLayout": {
                               "back": {
-                                "offset": {"x": 0, "y": 35},
+                                "offset": {"x": 0, "y": 0},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "right": {
-                                "offset": {"x": 9, "y": 35},
+                                "offset": {"x": 3, "y": 0},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "front": {
-                                "offset": {"x": 0, "y": 35},
+                                "offset": {"x": 0, "y": 0},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "left": {
-                                "offset": {"x": 17, "y": 35},
+                                "offset": {"x": 0, "y": 0},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "top": {
-                                "offset": {"x": 28, "y": 30},
+                                "offset": {"x": 0, "y": 0},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "bottom": {
-                                "offset": {"x": 28, "y": 30},
+                                "offset": {"x": 0, "y": 0},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "flat"
+                          }
+                        },
+                        {
+                          "id": "8",
+                          "name": "Pommel--C2",
+                          "position": {"x": 16, "y": 0, "z": 0},
+                          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                          "shape": {
+                            "type": "box",
+                            "offset": {"x": 0, "y": 0, "z": 0},
+                            "stretch": {"x": 2.5, "y": 1.1375, "z": 1.1625},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 12, "y": 6, "z": 6},
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "back": {
+                                "offset": {"x": 0, "y": 0},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "right": {
+                                "offset": {"x": 3, "y": 0},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "front": {
+                                "offset": {"x": 0, "y": 0},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "left": {
+                                "offset": {"x": 0, "y": 0},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "top": {
+                                "offset": {"x": 0, "y": 0},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "bottom": {
+                                "offset": {"x": 0, "y": 0},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "flat"
+                          }
+                        },
+                        {
+                          "id": "9",
+                          "name": "Pommel--C3",
+                          "position": {"x": -5, "y": -0.7, "z": -2},
+                          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                          "shape": {
+                            "type": "box",
+                            "offset": {"x": 0, "y": -2, "z": 2},
+                            "stretch": {"x": 0.625, "y": 1.45, "z": 1.7},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 12, "y": 2, "z": 2},
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "back": {
+                                "offset": {"x": 0, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "right": {
+                                "offset": {"x": 3, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "front": {
+                                "offset": {"x": 0, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "left": {
+                                "offset": {"x": 4, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "top": {
+                                "offset": {"x": 0, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "bottom": {
+                                "offset": {"x": 0, "y": 0},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "flat"
+                          }
+                        },
+                        {
+                          "id": "10",
+                          "name": "Pommel--C4",
+                          "position": {"x": -5, "y": 4.7, "z": -2},
+                          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                          "shape": {
+                            "type": "box",
+                            "offset": {"x": 0, "y": -2, "z": 2},
+                            "stretch": {"x": 0.625, "y": 1.45, "z": 1.7},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 12, "y": 2, "z": 2},
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "back": {
+                                "offset": {"x": 0, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "right": {
+                                "offset": {"x": 3, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "front": {
+                                "offset": {"x": 0, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "left": {
+                                "offset": {"x": 4, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "top": {
+                                "offset": {"x": 0, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "bottom": {
+                                "offset": {"x": 0, "y": 0},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "flat"
+                          }
+                        },
+                        {
+                          "id": "11",
+                          "name": "Pommel--C5",
+                          "position": {"x": -11.4, "y": 2, "z": -2},
+                          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                          "shape": {
+                            "type": "box",
+                            "offset": {"x": 3.5, "y": -2, "z": 2},
+                            "stretch": {"x": 0.375, "y": 1.45, "z": 1.325},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 5, "y": 2, "z": 2},
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "back": {
+                                "offset": {"x": 0, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "right": {
+                                "offset": {"x": 3, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "front": {
+                                "offset": {"x": 7, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "left": {
+                                "offset": {"x": 4, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "top": {
+                                "offset": {"x": 7, "y": 4},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "bottom": {
+                                "offset": {"x": 7, "y": 0},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": false,
+                            "shadingMode": "flat"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "12",
+                      "name": "Handle2",
+                      "position": {"x": 27.999, "y": 0, "z": 0},
+                      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                      "shape": {
+                        "type": "box",
+                        "offset": {"x": 3, "y": 0, "z": 0},
+                        "stretch": {"x": 1, "y": 1.7, "z": 1.55},
+                        "settings": {
+                          "isPiece": false,
+                          "size": {"x": 26, "y": 6, "z": 6}
+                        },
+                        "textureLayout": {
+                          "back": {
+                            "offset": {"x": 38, "y": 0},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "right": {
+                            "offset": {"x": 58, "y": 0},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "front": {
+                            "offset": {"x": 38, "y": 0},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "left": {
+                            "offset": {"x": 58, "y": 0},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "top": {
+                            "offset": {"x": 38, "y": 0},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          },
+                          "bottom": {
+                            "offset": {"x": 38, "y": 0},
+                            "mirror": {"x": false, "y": false},
+                            "angle": 0
+                          }
+                        },
+                        "unwrapMode": "custom",
+                        "visible": true,
+                        "doubleSided": false,
+                        "shadingMode": "flat"
+                      },
+                      "children": [
+                        {
+                          "id": "13",
+                          "name": "Pickaxe",
+                          "position": {"x": -3, "y": 0, "z": 0},
+                          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                          "shape": {
+                            "type": "box",
+                            "offset": {"x": 5, "y": 0.1, "z": 0},
+                            "stretch": {"x": 1.1, "y": 1.25, "z": 1.1},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 17, "y": 32, "z": 16}
+                            },
+                            "textureLayout": {
+                              "back": {
+                                "offset": {"x": 24, "y": 10},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "right": {
+                                "offset": {"x": 48, "y": 32},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "front": {
+                                "offset": {"x": 24, "y": 10},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "left": {
+                                "offset": {"x": 47, "y": 32},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "top": {
+                                "offset": {"x": 47, "y": 47},
+                                "mirror": {"x": false, "y": false},
+                                "angle": 0
+                              },
+                              "bottom": {
+                                "offset": {"x": 47, "y": 48},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               }
@@ -262,46 +576,46 @@
                           },
                           "children": [
                             {
-                              "id": "8",
+                              "id": "14",
                               "name": "Pickaxe",
-                              "position": {"x": 0, "y": 0, "z": 0},
+                              "position": {"x": -3, "y": -0.1, "z": 0},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 0, "y": 0, "z": 0},
+                                "offset": {"x": 3, "y": 13.6, "z": 0},
                                 "stretch": {"x": 1.1, "y": 1.05, "z": 1.1},
                                 "settings": {
                                   "isPiece": false,
-                                  "size": {"x": 6, "y": 25, "z": 11}
+                                  "size": {"x": 20, "y": 11, "z": 21}
                                 },
                                 "textureLayout": {
                                   "back": {
-                                    "offset": {"x": 18, "y": 18},
+                                    "offset": {"x": 0, "y": 42},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "right": {
-                                    "offset": {"x": 8, "y": 18},
+                                    "offset": {"x": 1, "y": 53},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "front": {
-                                    "offset": {"x": 18, "y": 18},
+                                    "offset": {"x": 0, "y": 42},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "left": {
-                                    "offset": {"x": 9, "y": 18},
+                                    "offset": {"x": 0, "y": 53},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "top": {
-                                    "offset": {"x": 18, "y": 42},
+                                    "offset": {"x": 22, "y": 42},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "bottom": {
-                                    "offset": {"x": 18, "y": 38},
+                                    "offset": {"x": 22, "y": 43},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   }
@@ -313,9 +627,61 @@
                               },
                               "children": [
                                 {
-                                  "id": "9",
+                                  "id": "15",
+                                  "name": "Pickaxe--C1",
+                                  "position": {"x": -3, "y": -35.6, "z": 0},
+                                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                                  "shape": {
+                                    "type": "box",
+                                    "offset": {"x": 3, "y": 8.6, "z": 0},
+                                    "stretch": {"x": 1.1, "y": 1.05, "z": 1.1},
+                                    "settings": {
+                                      "isPiece": false,
+                                      "size": {"x": 20, "y": 11, "z": 21},
+                                      "isStaticBox": true
+                                    },
+                                    "textureLayout": {
+                                      "back": {
+                                        "offset": {"x": 20, "y": 53},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 180
+                                      },
+                                      "right": {
+                                        "offset": {"x": 1, "y": 53},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "front": {
+                                        "offset": {"x": 20, "y": 53},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 180
+                                      },
+                                      "left": {
+                                        "offset": {"x": 0, "y": 53},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "top": {
+                                        "offset": {"x": 22, "y": 42},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      },
+                                      "bottom": {
+                                        "offset": {"x": 22, "y": 43},
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 0
+                                      }
+                                    },
+                                    "unwrapMode": "custom",
+                                    "visible": true,
+                                    "doubleSided": false,
+                                    "shadingMode": "flat"
+                                  }
+                                },
+                                {
+                                  "id": "16",
                                   "name": "Pickaxe2",
-                                  "position": {"x": 0, "y": 11, "z": 0},
+                                  "position": {"x": -3, "y": -2.6, "z": 0},
                                   "orientation": {"x": 0, "y": 0, "z": 0.17365, "w": 0.98481},
                                   "shape": {
                                     "type": "none",
@@ -332,7 +698,7 @@
                                   },
                                   "children": [
                                     {
-                                      "id": "10",
+                                      "id": "17",
                                       "name": "Pickaxe3",
                                       "position": {"x": 0, "y": 11.5, "z": 0},
                                       "orientation": {"x": 0, "y": 0, "z": 0.21644, "w": 0.9763},
@@ -353,9 +719,9 @@
                                   ]
                                 },
                                 {
-                                  "id": "11",
+                                  "id": "18",
                                   "name": "Pickaxe2",
-                                  "position": {"x": 0, "y": -11, "z": 0},
+                                  "position": {"x": -3, "y": -24.6, "z": 0},
                                   "orientation": {"x": 0, "y": 0, "z": -0.17365, "w": 0.98481},
                                   "shape": {
                                     "type": "none",
@@ -372,7 +738,7 @@
                                   },
                                   "children": [
                                     {
-                                      "id": "12",
+                                      "id": "19",
                                       "name": "Pickaxe3",
                                       "position": {"x": 0, "y": -11.5, "z": 0},
                                       "orientation": {"x": 0, "y": 0, "z": -0.21644, "w": 0.9763},
