@@ -47,15 +47,15 @@
   "Recipe": {
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Iron",
-        "Quantity": 7
+        "ItemId": "Ingredient_Bar_Thorium",
+        "Quantity": 40
       },
       {
         "ItemId": "Ingredient_Powder_Boom",
-        "Quantity": 5
+        "Quantity": 40
       }
     ],
-    "OutputQuantity": 2,
+    "OutputQuantity": 1,
     "BenchRequirement": [
       {
         "Id": "Explosive_Workbench",

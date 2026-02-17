@@ -12,12 +12,12 @@
     "KnowledgeRequired": false,
     "Input": [
       {
-        "Quantity": 10,
-        "ItemId": "Ingredient_Bar_Iron"
+        "Quantity": 20,
+        "ItemId": "Ingredient_Bar_Cobalt"
       },
       {
         "ItemId": "Ingredient_Powder_Boom",
-        "Quantity": 5
+        "Quantity": 30
       }
     ],
     "Output": [
@@ -32,7 +32,7 @@
           "Explosive_Workbench_Weapons"
         ],
         "Id": "Explosive_Workbench",
-        "RequiredTierLevel": 3
+        "RequiredTierLevel": 2
       }
     ]
   },

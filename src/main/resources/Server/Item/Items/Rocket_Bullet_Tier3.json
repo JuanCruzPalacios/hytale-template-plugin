@@ -12,12 +12,20 @@
     "KnowledgeRequired": false,
     "Input": [
       {
-        "Quantity": 25,
-        "ItemId": "Ingredient_Bar_Iron"
+        "Quantity": 20,
+        "ItemId": "Ingredient_Bar_Adamantite"
       },
       {
         "ItemId": "Ingredient_Powder_Boom",
-        "Quantity": 10
+        "Quantity": 30
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Fire_Essence",
+        "Quantity": 20
       }
     ],
     "Output": [

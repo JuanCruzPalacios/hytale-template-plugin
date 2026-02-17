@@ -6,16 +6,24 @@
   "Recipe": {
     "Input": [
       {
-        "Quantity": 10,
-        "ItemId": "Ingredient_Bar_Iron"
+        "Quantity": 100,
+        "ResourceTypeId": "Wood_Trunk"
       },
       {
-        "Quantity": 25,
+        "Quantity": 30,
         "ItemId": "Ingredient_Bar_Copper"
       },
       {
-        "ItemId": "Ingredient_Powder_Boom",
-        "Quantity": 5
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 20
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Linen",
+        "Quantity": 30
+      },
+      {
+        "ItemId": "Ingredient_Tree_Sap",
+        "Quantity": 50
       }
     ],
     "BenchRequirement": [
@@ -77,16 +85,24 @@
           "UpgradeRequirement": {
             "Material": [
               {
-                "ItemId": "Ingredient_Powder_Boom",
-                "Quantity": 10
+                "ItemId": "Ingredient_Bar_Thorium",
+                "Quantity": 50
               },
               {
                 "ItemId": "Ingredient_Bar_Iron",
-                "Quantity": 25
+                "Quantity": 200
               },
               {
-                "ItemId": "Ingredient_Fabric_Scrap_Linen",
-                "Quantity": 20
+                "ItemId": "Ingredient_Chitin_Sturdy",
+                "Quantity": 50
+              },
+              {
+                "ItemId": "Ingredient_Fabric_Scrap_Shadoweave",
+                "Quantity": 50
+              },
+              {
+                "ItemId": "Ingredient_Ice_Essence",
+                "Quantity": 100
               }
             ],
             "TimeSeconds": 5.0
@@ -96,24 +112,24 @@
           "UpgradeRequirement": {
             "Material": [
               {
-                "ItemId": "Ingredient_Powder_Boom",
-                "Quantity": 25
-              },
-              {
-                "ItemId": "Ingredient_Bar_Iron",
-                "Quantity": 50
-              },
-              {
-                "ItemId": "Ingredient_Leather_Heavy",
-                "Quantity": 10
-              },
-              {
-                "ItemId": "Ingredient_Bar_Copper",
+                "ItemId": "Ingredient_Bar_Adamantite",
                 "Quantity": 100
               },
               {
-                "ItemId": "Ingredient_Fire_Essence",
-                "Quantity": 25
+                "ItemId": "Ingredient_Bar_Cobalt",
+                "Quantity": 200
+              },
+              {
+                "ItemId": "Ingredient_Voidheart",
+                "Quantity": 3
+              },
+              {
+                "ItemId": "Ingredient_Fabric_Scrap_Cindercloth",
+                "Quantity": 50
+              },
+              {
+                "ItemId": "Wood_Fire_Trunk",
+                "Quantity": 100
               }
             ],
             "TimeSeconds": 10.0

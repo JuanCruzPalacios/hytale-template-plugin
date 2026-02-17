@@ -19,15 +19,15 @@
           "GatherType": "Soils"
         },
         {
-          "Power": 2,
+          "Power": 1,
           "GatherType": "Woods"
         },
         {
-          "Power": 1,
+          "Power": 0.5,
           "GatherType": "Rocks"
         },
         {
-          "Power": 2,
+          "Power": 0.2,
           "GatherType": "Benches"
         },
         {
@@ -36,58 +36,58 @@
         },
         {
           "GatherType": "OreAdamantite",
-          "Power": 1
+          "Power": 0
         },
         {
           "GatherType": "OreGold",
-          "Power": 1
+          "Power": 0
         },
         {
           "GatherType": "OreCobalt",
-          "Power": 1
+          "Power": 0
         },
         {
           "GatherType": "OreCopper",
-          "Power": 1
+          "Power": 0
         },
         {
           "GatherType": "OreSilver",
-          "Power": 1
+          "Power": 0
         },
         {
           "GatherType": "OreMithril",
-          "Power": 1
+          "Power": 0
         },
         {
           "GatherType": "OreOnyxium",
-          "Power": 1
+          "Power": 0
         },
         {
           "GatherType": "OreThorium",
-          "Power": 1
+          "Power": 0
         },
         {
           "GatherType": "OreIron",
-          "Power": 1
+          "Power": 0
         },
         {
-          "Power": 1,
+          "Power": 0,
           "GatherType": "ReinforcedRocks_T1"
         },
         {
-          "Power": 0.5,
+          "Power": 0,
           "GatherType": "ReinforcedRocks_T2"
         },
         {
-          "Power": 0.3,
+          "Power": 0,
           "GatherType": "ReinforcedRocks_T3"
         },
         {
-          "Power": 0.2,
+          "Power": 0,
           "GatherType": "ReinforcedRocks_T4"
         },
         {
-          "Power": 0.1,
+          "Power": 0,
           "GatherType": "ReinforcedRocks_T5"
         }
       ]

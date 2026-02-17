@@ -69,6 +69,26 @@
         {
           "GatherType": "OreIron",
           "Power": 2
+        },
+        {
+          "GatherType": "ReinforcedRocks_T1",
+          "Power": 0.7
+        },
+        {
+          "GatherType": "ReinforcedRocks_T2",
+          "Power": 0.4
+        },
+        {
+          "GatherType": "ReinforcedRocks_T3",
+          "Power": 0.175
+        },
+        {
+          "GatherType": "ReinforcedRocks_T4",
+          "Power": 0.092
+        },
+        {
+          "GatherType": "ReinforcedRocks_T5",
+          "Power": 0.04
         }
       ]
     }

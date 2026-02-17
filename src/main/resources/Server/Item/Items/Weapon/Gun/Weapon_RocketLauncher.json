@@ -127,20 +127,20 @@
   "Recipe": {
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Cobalt",
-        "Quantity": 10
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 100
       },
       {
         "ItemId": "Ingredient_Bar_Thorium",
-        "Quantity": 10
+        "Quantity": 30
       },
       {
-        "ItemId": "Ingredient_Powder_Boom",
-        "Quantity": 15
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 100
       },
       {
-        "Quantity": 30,
-        "ItemId": "Ingredient_Bar_Iron"
+        "Quantity": 50,
+        "ItemId": "Wood_Fire_Trunk"
       }
     ],
     "Output": [

@@ -71,23 +71,23 @@
           "Power": 2
         },
         {
-          "Power": 1,
+          "Power": 4,
           "GatherType": "ReinforcedRocks_T1"
         },
         {
-          "Power": 0.5,
+          "Power": 2,
           "GatherType": "ReinforcedRocks_T2"
         },
         {
-          "Power": 0.3,
+          "Power": 0.6,
           "GatherType": "ReinforcedRocks_T3"
         },
         {
-          "Power": 0.2,
+          "Power": 0.3,
           "GatherType": "ReinforcedRocks_T4"
         },
         {
-          "Power": 0.15,
+          "Power": 0.2,
           "GatherType": "ReinforcedRocks_T5"
         }
       ]
@@ -108,6 +108,8 @@
           "X": 0
         }
       }
-    ]
+    ],
+    "WorldSoundEventId": "SFX_Mine_Explode",
+    "LocalSoundEventId": "SFX_Mine_Explode"
   }
 }

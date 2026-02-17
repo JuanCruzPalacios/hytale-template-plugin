@@ -71,23 +71,23 @@
           "Power": 2
         },
         {
-          "Power": 0.8,
+          "Power": 2,
           "GatherType": "ReinforcedRocks_T1"
         },
         {
-          "Power": 0.3,
+          "Power": 1,
           "GatherType": "ReinforcedRocks_T2"
         },
         {
-          "Power": 0.2,
+          "Power": 0.35,
           "GatherType": "ReinforcedRocks_T3"
         },
         {
-          "Power": 0.1,
+          "Power": 0.15,
           "GatherType": "ReinforcedRocks_T4"
         },
         {
-          "Power": 1.0E-4,
+          "Power": 0.08,
           "GatherType": "ReinforcedRocks_T5"
         }
       ]

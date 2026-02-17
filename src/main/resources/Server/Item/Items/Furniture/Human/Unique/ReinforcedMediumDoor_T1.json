@@ -86,8 +86,8 @@
   "Recipe": {
     "Input": [
       {
-        "ResourceTypeId": "Wood_Hardwood",
-        "Quantity": 10
+        "ResourceTypeId": "Wood_Trunk",
+        "Quantity": 30
       },
       {
         "ItemId": "Ingredient_Bar_Copper"
