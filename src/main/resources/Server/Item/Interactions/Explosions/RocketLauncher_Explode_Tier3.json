@@ -108,8 +108,6 @@
           "X": 0
         }
       }
-    ],
-    "WorldSoundEventId": "SFX_Mine_Explode",
-    "LocalSoundEventId": "SFX_Mine_Explode"
+    ]
   }
 }

@@ -25,10 +25,10 @@
       {
         "Type": "Crafting",
         "Categories": [
-          "Explosive_Workbench_Weapons"
+          "Explosive_Workbench_Construction"
         ],
         "Id": "Explosive_Workbench",
-        "RequiredTierLevel": 3
+        "RequiredTierLevel": 1
       }
     ]
   },
@@ -1875,8 +1875,318 @@
                                                             }
                                                           },
                                                           "Failed": {
-                                                            "Type": "Simple",
-                                                            "Effects": {}
+                                                            "Type": "BlockCondition",
+                                                            "Matchers": [
+                                                              {
+                                                                "Block": {
+                                                                  "Id": "Furniture_Village_Trapdoor"
+                                                                }
+                                                              },
+                                                              {
+                                                                "Block": {
+                                                                  "Id": "*Furniture_Village_Trapdoor_State_Definitions_CloseDoorOut"
+                                                                }
+                                                              },
+                                                              {
+                                                                "Block": {
+                                                                  "Id": "*Furniture_Village_Trapdoor_State_Definitions_OpenDoorOut"
+                                                                }
+                                                              },
+                                                              {
+                                                                "Block": {
+                                                                  "Id": "*Furniture_Village_Trapdoor_CloseDoorOut"
+                                                                }
+                                                              },
+                                                              {
+                                                                "Block": {
+                                                                  "Id": "*Furniture_Village_Trapdoor_OpenDoorOut"
+                                                                }
+                                                              }
+                                                            ],
+                                                            "Next": {
+                                                              "Type": "ModifyInventory",
+                                                              "ItemToRemove": {
+                                                                "Id": "Ingredient_Bar_Copper",
+                                                                "Quantity": 1
+                                                              },
+                                                              "Next": {
+                                                                "Type": "ChangeBlock",
+                                                                "Changes": {
+                                                                  "Furniture_Village_Trapdoor": "ReinforcedTrapdoor_T1",
+                                                                  "*Furniture_Village_Trapdoor_State_Definitions_CloseDoorOut": "*ReinforcedTrapdoor_T1_State_Definitions_CloseDoorOut",
+                                                                  "*Furniture_Village_Trapdoor_State_Definitions_OpenDoorOut": "*ReinforcedTrapdoor_T1_State_Definitions_OpenDoorOut",
+                                                                  "*Furniture_Village_Trapdoor_CloseDoorOut": "*ReinforcedTrapdoor_T1_State_Definitions_CloseDoorOut",
+                                                                  "*Furniture_Village_Trapdoor_OpenDoorOut": "*ReinforcedTrapdoor_T1_State_Definitions_OpenDoorOut"
+                                                                },
+                                                                "Next": {
+                                                                  "Type": "Simple"
+                                                                },
+                                                                "Failed": {
+                                                                  "Type": "Simple"
+                                                                },
+                                                                "Effects": {
+                                                                  "WorldSoundEventId": "SFX_Block_Reforce",
+                                                                  "ItemAnimationId": "Interact",
+                                                                  "LocalSoundEventId": "SFX_Block_Reforce"
+                                                                }
+                                                              },
+                                                              "Failed": {
+                                                                "Type": "SendMessage",
+                                                                "Message": "Can't reinforce Trapdoor: you need 1x Ingredient_Bar_Copper."
+                                                              }
+                                                            },
+                                                            "Failed": {
+                                                              "Type": "BlockCondition",
+                                                              "Matchers": [
+                                                                {
+                                                                  "Block": {
+                                                                    "Id": "ReinforcedTrapdoor_T1"
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "Block": {
+                                                                    "Id": "*ReinforcedTrapdoor_T1_State_Definitions_CloseDoorOut"
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "Block": {
+                                                                    "Id": "*ReinforcedTrapdoor_T1_State_Definitions_OpenDoorOut"
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "Block": {
+                                                                    "Id": "*ReinforcedTrapdoor_T1_CloseDoorOut"
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "Block": {
+                                                                    "Id": "*ReinforcedTrapdoor_T1_OpenDoorOut"
+                                                                  }
+                                                                }
+                                                              ],
+                                                              "Next": {
+                                                                "Type": "ModifyInventory",
+                                                                "ItemToRemove": {
+                                                                  "Id": "Ingredient_Bar_Iron",
+                                                                  "Quantity": 1
+                                                                },
+                                                                "Next": {
+                                                                  "Type": "ChangeBlock",
+                                                                  "Changes": {
+                                                                    "ReinforcedTrapdoor_T1": "ReinforcedTrapdoor_T2",
+                                                                    "*ReinforcedTrapdoor_T1_State_Definitions_CloseDoorOut": "*ReinforcedTrapdoor_T2_State_Definitions_CloseDoorOut",
+                                                                    "*ReinforcedTrapdoor_T1_State_Definitions_OpenDoorOut": "*ReinforcedTrapdoor_T2_State_Definitions_OpenDoorOut",
+                                                                    "*ReinforcedTrapdoor_T1_CloseDoorOut": "*ReinforcedTrapdoor_T2_State_Definitions_CloseDoorOut",
+                                                                    "*ReinforcedTrapdoor_T1_OpenDoorOut": "*ReinforcedTrapdoor_T2_State_Definitions_OpenDoorOut"
+                                                                  },
+                                                                  "Next": {
+                                                                    "Type": "Simple"
+                                                                  },
+                                                                  "Failed": {
+                                                                    "Type": "Simple"
+                                                                  },
+                                                                  "Effects": {
+                                                                    "WorldSoundEventId": "SFX_Block_Reforce",
+                                                                    "ItemAnimationId": "Interact",
+                                                                    "LocalSoundEventId": "SFX_Block_Reforce"
+                                                                  }
+                                                                },
+                                                                "Failed": {
+                                                                  "Type": "SendMessage",
+                                                                  "Message": "Can't reinforce Trapdoor to Tier 2: you need 1x Ingredient_Bar_Iron."
+                                                                }
+                                                              },
+                                                              "Failed": {
+                                                                "Type": "BlockCondition",
+                                                                "Matchers": [
+                                                                  {
+                                                                    "Block": {
+                                                                      "Id": "ReinforcedTrapdoor_T2"
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "Block": {
+                                                                      "Id": "*ReinforcedTrapdoor_T2_State_Definitions_CloseDoorOut"
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "Block": {
+                                                                      "Id": "*ReinforcedTrapdoor_T2_State_Definitions_OpenDoorOut"
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "Block": {
+                                                                      "Id": "*ReinforcedTrapdoor_T2_CloseDoorOut"
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "Block": {
+                                                                      "Id": "*ReinforcedTrapdoor_T2_OpenDoorOut"
+                                                                    }
+                                                                  }
+                                                                ],
+                                                                "Next": {
+                                                                  "Type": "ModifyInventory",
+                                                                  "ItemToRemove": {
+                                                                    "Id": "Ingredient_Bar_Thorium",
+                                                                    "Quantity": 1
+                                                                  },
+                                                                  "Next": {
+                                                                    "Type": "ChangeBlock",
+                                                                    "Changes": {
+                                                                      "ReinforcedTrapdoor_T2": "ReinforcedTrapdoor_T3",
+                                                                      "*ReinforcedTrapdoor_T2_State_Definitions_CloseDoorOut": "*ReinforcedTrapdoor_T3_State_Definitions_CloseDoorOut",
+                                                                      "*ReinforcedTrapdoor_T2_State_Definitions_OpenDoorOut": "*ReinforcedTrapdoor_T3_State_Definitions_OpenDoorOut",
+                                                                      "*ReinforcedTrapdoor_T2_CloseDoorOut": "*ReinforcedTrapdoor_T3_State_Definitions_CloseDoorOut",
+                                                                      "*ReinforcedTrapdoor_T2_OpenDoorOut": "*ReinforcedTrapdoor_T3_State_Definitions_OpenDoorOut"
+                                                                    },
+                                                                    "Next": {
+                                                                      "Type": "Simple"
+                                                                    },
+                                                                    "Failed": {
+                                                                      "Type": "Simple"
+                                                                    },
+                                                                    "Effects": {
+                                                                      "WorldSoundEventId": "SFX_Block_Reforce",
+                                                                      "ItemAnimationId": "Interact",
+                                                                      "LocalSoundEventId": "SFX_Block_Reforce"
+                                                                    }
+                                                                  },
+                                                                  "Failed": {
+                                                                    "Type": "SendMessage",
+                                                                    "Message": "Can't reinforce Trapdoor to Tier 3: you need 1x Ingredient_Bar_Thorium."
+                                                                  }
+                                                                },
+                                                                "Failed": {
+                                                                  "Type": "BlockCondition",
+                                                                  "Matchers": [
+                                                                    {
+                                                                      "Block": {
+                                                                        "Id": "ReinforcedTrapdoor_T3"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "Block": {
+                                                                        "Id": "*ReinforcedTrapdoor_T3_State_Definitions_CloseDoorOut"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "Block": {
+                                                                        "Id": "*ReinforcedTrapdoor_T3_State_Definitions_OpenDoorOut"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "Block": {
+                                                                        "Id": "*ReinforcedTrapdoor_T3_CloseDoorOut"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "Block": {
+                                                                        "Id": "*ReinforcedTrapdoor_T3_OpenDoorOut"
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "Next": {
+                                                                    "Type": "ModifyInventory",
+                                                                    "ItemToRemove": {
+                                                                      "Id": "Ingredient_Bar_Cobalt",
+                                                                      "Quantity": 1
+                                                                    },
+                                                                    "Next": {
+                                                                      "Type": "ChangeBlock",
+                                                                      "Changes": {
+                                                                        "ReinforcedTrapdoor_T3": "ReinforcedTrapdoor_T4",
+                                                                        "*ReinforcedTrapdoor_T3_State_Definitions_CloseDoorOut": "*ReinforcedTrapdoor_T4_State_Definitions_CloseDoorOut",
+                                                                        "*ReinforcedTrapdoor_T3_State_Definitions_OpenDoorOut": "*ReinforcedTrapdoor_T4_State_Definitions_OpenDoorOut",
+                                                                        "*ReinforcedTrapdoor_T3_CloseDoorOut": "*ReinforcedTrapdoor_T4_State_Definitions_CloseDoorOut",
+                                                                        "*ReinforcedTrapdoor_T3_OpenDoorOut": "*ReinforcedTrapdoor_T4_State_Definitions_OpenDoorOut"
+                                                                      },
+                                                                      "Next": {
+                                                                        "Type": "Simple"
+                                                                      },
+                                                                      "Failed": {
+                                                                        "Type": "Simple"
+                                                                      },
+                                                                      "Effects": {
+                                                                        "WorldSoundEventId": "SFX_Block_Reforce",
+                                                                        "ItemAnimationId": "Interact",
+                                                                        "LocalSoundEventId": "SFX_Block_Reforce"
+                                                                      }
+                                                                    },
+                                                                    "Failed": {
+                                                                      "Type": "SendMessage",
+                                                                      "Message": "Can't reinforce Trapdoor to Tier 4: you need 1x Ingredient_Bar_Cobalt."
+                                                                    }
+                                                                  },
+                                                                  "Failed": {
+                                                                    "Type": "BlockCondition",
+                                                                    "Matchers": [
+                                                                      {
+                                                                        "Block": {
+                                                                          "Id": "ReinforcedTrapdoor_T4"
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "Block": {
+                                                                          "Id": "*ReinforcedTrapdoor_T4_State_Definitions_CloseDoorOut"
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "Block": {
+                                                                          "Id": "*ReinforcedTrapdoor_T4_State_Definitions_OpenDoorOut"
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "Block": {
+                                                                          "Id": "*ReinforcedTrapdoor_T4_CloseDoorOut"
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "Block": {
+                                                                          "Id": "*ReinforcedTrapdoor_T4_OpenDoorOut"
+                                                                        }
+                                                                      }
+                                                                    ],
+                                                                    "Next": {
+                                                                      "Type": "ModifyInventory",
+                                                                      "ItemToRemove": {
+                                                                        "Id": "Ingredient_Bar_Adamantite",
+                                                                        "Quantity": 1
+                                                                      },
+                                                                      "Next": {
+                                                                        "Type": "ChangeBlock",
+                                                                        "Changes": {
+                                                                          "ReinforcedTrapdoor_T4": "ReinforcedTrapdoor_T5",
+                                                                          "*ReinforcedTrapdoor_T4_State_Definitions_CloseDoorOut": "*ReinforcedTrapdoor_T5_State_Definitions_CloseDoorOut",
+                                                                          "*ReinforcedTrapdoor_T4_State_Definitions_OpenDoorOut": "*ReinforcedTrapdoor_T5_State_Definitions_OpenDoorOut",
+                                                                          "*ReinforcedTrapdoor_T4_CloseDoorOut": "*ReinforcedTrapdoor_T5_State_Definitions_CloseDoorOut",
+                                                                          "*ReinforcedTrapdoor_T4_OpenDoorOut": "*ReinforcedTrapdoor_T5_State_Definitions_OpenDoorOut"
+                                                                        },
+                                                                        "Next": {
+                                                                          "Type": "Simple"
+                                                                        },
+                                                                        "Failed": {
+                                                                          "Type": "Simple"
+                                                                        },
+                                                                        "Effects": {
+                                                                          "WorldSoundEventId": "SFX_Block_Reforce",
+                                                                          "ItemAnimationId": "Interact",
+                                                                          "LocalSoundEventId": "SFX_Block_Reforce"
+                                                                        }
+                                                                      },
+                                                                      "Failed": {
+                                                                        "Type": "SendMessage",
+                                                                        "Message": "Can't reinforce Trapdoor to Tier 5: you need 1x Ingredient_Bar_Adamantite."
+                                                                      }
+                                                                    },
+                                                                    "Failed": {
+                                                                      "Type": "Simple",
+                                                                      "Effects": {}
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
                                                           }
                                                         }
                                                       }

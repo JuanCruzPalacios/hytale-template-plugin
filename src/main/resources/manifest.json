@@ -2,6 +2,7 @@
     "Group": "Pipita",
     "Name": "Explosives Pack",
     "Version": "2.0.0",
+    "targetServerVersion": "2026.02.17-255364b8e",
     "Description": "A modular explosives pack. Introduces all type of explosive.",
     "Main": "org.jcp.plugin.ExplosivesPackPlugin",
     "Authors": [

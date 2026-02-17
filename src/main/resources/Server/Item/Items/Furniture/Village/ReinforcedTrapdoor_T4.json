@@ -1,0 +1,79 @@
+{
+  "TranslationProperties": {
+    "Name": "Reinforced Trapdoor T4"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Doors"
+  ],
+  "Set": "Furniture_Village",
+  "Icon": "Icons/ItemsGenerated/ReinforcedTrapdoor_T4.png",
+  "IconProperties": {
+    "Scale": 0.65,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      1,
+      -26
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Wood",
+    "CustomModel": "Blocks/Reinforced/Trapdoor.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Reinforced/Trapdoor_Cobalt.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "ReinforcedRocks_T4"
+      }
+    },
+    "HitboxType": "Trapdoor",
+    "Material": "Solid",
+    "MovementSettings": {
+      "IsClimbable": true
+    },
+    "Opacity": "Transparent",
+    "ParticleColor": "#5b3222",
+    "State": {
+      "Definitions": {
+        "CloseDoorOut": {
+          "InteractionSoundEventId": "SFX_Door_Wooden_Close",
+          "CustomModelAnimation": "Blocks/Animations/Trapdoor/Trapdoor_Close.blockyanim"
+        },
+        "OpenDoorOut": {
+          "HitboxType": "Trapdoor_Open",
+          "InteractionSoundEventId": "SFX_Door_Wooden_Open",
+          "CustomModelAnimation": "Blocks/Animations/Trapdoor/Trapdoor_Open.blockyanim"
+        }
+      }
+    },
+    "VariantRotation": "NESW",
+    "BlockSoundSetId": "Wood",
+    "IsDoor": true,
+    "Interactions": {
+      "Use": "Door_Horizontal"
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Village"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}
