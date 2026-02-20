@@ -228,6 +228,5 @@
   "Model": "Blocks/Benches/Explosive_Workbench.blockymodel",
   "Texture": "Blocks/Benches/explosive_workbench_texture.png",
   "Quality": "Common",
-  "ItemLevel": 2,
-  "Scale": 1.4
+  "ItemLevel": 2
 }
