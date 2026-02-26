@@ -23,7 +23,8 @@
         },
         {
           "Power": 2,
-          "GatherType": "Rocks"
+          "GatherType": "Rocks",
+          "Quality": 1
         },
         {
           "Power": 2,

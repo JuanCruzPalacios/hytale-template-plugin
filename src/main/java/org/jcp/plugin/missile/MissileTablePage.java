@@ -18,7 +18,6 @@ import com.hypixel.hytale.server.core.ui.builder.EventData;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
 import com.hypixel.hytale.server.core.ui.builder.UIEventBuilder;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
-import com.hypixel.hytale.server.core.universe.Universe;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 
@@ -97,7 +96,7 @@ public final class MissileTablePage extends InteractiveCustomUIPage<MissileTable
             return;
         }
 
-        World world = Universe.get().getDefaultWorld();
+        World world = store.getExternalData().getWorld();
         if (world == null) {
             showErrorOnly();
             player.sendMessage(Message.raw("[MissileTable] No world available."));
@@ -143,16 +142,25 @@ public final class MissileTablePage extends InteractiveCustomUIPage<MissileTable
 
         st.targetX = x;
         st.targetZ = z;
-        st.pendingLaunchAtMs = now + 60_000L;
-        st.cooldownUntilMs = now + 3_600_000L;
 
-        // ✅ para que la alarma suene 1 vez en este lanzamiento
+        ExplosivesPackMissileFeature.MissileSettings settings = ExplosivesPackMissileFeature.getSettings();
+
+        long launchDelayMs = (settings != null)
+                ? settings.launchDelayMs
+                : ExplosivesPackMissileFeature.MissileSettings.DEFAULT_LAUNCH_DELAY_MS;
+
+        long cooldownMs = (settings != null)
+                ? settings.cooldownMs
+                : ExplosivesPackMissileFeature.MissileSettings.DEFAULT_COOLDOWN_MS;
+
+        st.pendingLaunchAtMs = now + launchDelayMs;
+        st.cooldownUntilMs = now + cooldownMs;
         st.alarmPlayed = false;
 
         ExplosivesPackMissileFeature.saveSoon();
 
         showStatusOnly();
-        player.sendMessage(Message.raw("[MissileTable] Missile scheduled at X=" + x + " Z=" + z + " (ETA 60s)"));
+        player.sendMessage(Message.raw("[MissileTable] Missile scheduled at X=" + x + " Z=" + z + " (ETA " + (launchDelayMs / 1000) + "s)"));
         close();
     }
 

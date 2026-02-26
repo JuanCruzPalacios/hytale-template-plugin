@@ -1,0 +1,40 @@
+{
+  "TranslationProperties": {
+    "Name": "barrelcrate.items.BC_ConfigTable.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Workbench"
+  ],
+  "Set": "BarrelCrate",
+  "Icon": "Icons/ItemsGenerated/Soil_Dirt.png",
+  "BlockType": {
+    "BlockParticleSetId": "Wood",
+    "BlockSoundSetId": "Wood",
+    "CustomModel": "Blocks/Benches/Explosive_Workbench.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Benches/explosive_workbench_texture.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Flags": {
+      "IsUsable": true
+    },
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#63412c",
+    "Interactions": {
+      "Use": "Open_Container"
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "BarrelCrate"
+    ]
+  }
+}

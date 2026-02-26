@@ -23,7 +23,6 @@ import java.util.logging.Level;
 
 public class ExplosivesPackPlugin extends JavaPlugin {
 
-    // ✅ Se ejecuta al cargar la clase: necesario para que el AssetStore pueda decodificar OpenCustomUI(Page.Id)
     static {
         OpenCustomUIInteraction.PAGE_CODEC.register(
                 "MissileTable",
@@ -31,12 +30,16 @@ public class ExplosivesPackPlugin extends JavaPlugin {
                 (Codec) MissileTablePageSupplier.CODEC
         );
 
-        // ✅ Nuevo Interaction Type: ExplodeSelective
-        // Permite activar self-damage SOLO para algunas explosiones (por JSON flag).
         Interaction.CODEC.register(
                 "ExplodeSelective",
                 ExplodeSelectiveInteraction.class,
                 ExplodeSelectiveInteraction.CODEC
+        );
+
+        Interaction.CODEC.register(
+                "BC_OpenCrate",
+                org.jcp.plugin.barrelcrate.interaction.BCOpenCrateInteraction.class,
+                org.jcp.plugin.barrelcrate.interaction.BCOpenCrateInteraction.CODEC
         );
     }
 
@@ -55,19 +58,29 @@ public class ExplosivesPackPlugin extends JavaPlugin {
     @Override
     protected void setup() {
 
-        // ✅ Registra TODO lo del sistema de misiles (component, tick, spawn/remove commands, indestructible, etc.)
+        // ✅ Misiles
         try {
             ExplosivesPackMissileFeature.register(this);
         } catch (Throwable t) {
-            getLogger().at(Level.SEVERE).log("ExplosivesPack: failed to register missile feature", t);
+            getLogger().at(Level.SEVERE).withCause(t).log("ExplosivesPack: failed to register missile feature");
         }
 
-        // ✅ Parche de herramientas (cuando assets ya están cargados)
+        // ✅ BootEvent: assets cargados + world pipeline listo
         getEventRegistry().register(EventPriority.NORMAL, BootEvent.class, evt -> {
+
+            // 1) Patch tools
             try {
                 patchAllToolsForReinforcedRocks();
             } catch (Throwable t) {
-                getLogger().at(Level.SEVERE).log("ExplosivesPack: failed to patch tool specs for reinforced rocks", t);
+                getLogger().at(Level.SEVERE).withCause(t).log("ExplosivesPack: failed to patch tool specs for reinforced rocks");
+            }
+
+            // 2) ✅ Registrar BarrelCrate acá (NO en setup)
+            try {
+                org.jcp.plugin.barrelcrate.BarrelCrateFeature.register(this);
+                getLogger().at(Level.INFO).log("ExplosivesPack: BarrelCrate feature registered (BootEvent)");
+            } catch (Throwable t) {
+                getLogger().at(Level.SEVERE).withCause(t).log("ExplosivesPack: failed to register BarrelCrate feature (BootEvent)");
             }
         });
     }
@@ -118,7 +131,7 @@ public class ExplosivesPackPlugin extends JavaPlugin {
         }
 
         getLogger().at(Level.INFO).log(
-                String.format("ExplosivesPack: patched %d tools, injected %d reinforced gather specs.", patchedTools, injectedSpecs)
+                "ExplosivesPack: patched " + patchedTools + " tools, injected " + injectedSpecs + " reinforced gather specs."
         );
     }
 

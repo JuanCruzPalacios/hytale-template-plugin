@@ -1,0 +1,67 @@
+END USER LICENSE AGREEMENT (EULA)
+Product License Agreement
+
+This software product ("Plugin") is developed and distributed by JPC - Pipita.
+
+By purchasing, downloading, installing, or using this Plugin, you agree to the following terms:
+
+1. LICENSE GRANT
+
+Upon valid purchase, you are granted a non-exclusive, non-transferable license to use this Plugin on ONE (1) server network owned or operated by you.
+
+A “server network” is defined as multiple servers under the same ownership or organization, operating as a single project.
+
+This license does NOT grant ownership of the Plugin or its source code.
+
+2. PERMITTED USE
+
+You are allowed to:
+- Use the Plugin within your server network.
+- Modify the Plugin for internal use within your own project.
+- Share the Plugin internally with trusted staff members strictly for operation within your licensed server network.
+
+3. PROHIBITED ACTIONS
+
+You are strictly prohibited from:
+- Redistributing, reselling, sublicensing, or sharing the Plugin outside your licensed server network.
+- Uploading the Plugin to public or private repositories.
+- Sharing the Plugin with other server owners or third parties.
+- Leaking, publishing, or distributing the Plugin in any form (free or paid).
+- Claiming the Plugin as your own work.
+
+Any unauthorized distribution voids this license immediately.
+
+4. UPDATES AND SUPPORT
+
+This purchase grants access to updates for the duration specified at the time of purchase.
+
+Updates are not guaranteed indefinitely and may depend on product lifecycle decisions.
+
+Support may be denied if:
+- The Plugin has been modified beyond intended configuration.
+- The Plugin is obtained through unauthorized sources.
+
+5. NO WARRANTY
+
+This Plugin is provided “AS IS” without warranty of any kind.
+
+The developer (JPC - Pipita) is not responsible for:
+- Server damage
+- Data loss
+- Conflicts with other plugins
+- Financial losses
+- Downtime or instability
+
+Use of this Plugin is at your own risk.
+
+6. TERMINATION
+
+This license is automatically revoked if any of the terms above are violated.
+
+Upon termination, you must immediately cease using and delete all copies of the Plugin.
+
+7. FINAL TERMS
+
+All rights not expressly granted are reserved by JPC - Pipita.
+
+By using this Plugin, you acknowledge that you have read and agreed to these terms.

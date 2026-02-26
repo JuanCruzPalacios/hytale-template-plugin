@@ -1,0 +1,18 @@
+{
+  "Enabled": false,
+  "ChunkSpawnChance": 0.25,
+  "SpawnPerChunk": 2,
+  "SpawnAttemptsMultiplier": 6,
+  "BarrelCooldownSeconds": 900,
+  "CrateRefillCooldownSeconds": 1200,
+  "DeferredRetrySeconds": 120,
+  "MaxDeferredRetries": 15,
+  "TickIntervalMs": 1000,
+  "AllowedSurfaceBlocks": ["Terrain_Grass","Terrain_Dirt","Terrain_Sand","Terrain_Stone"],
+  "DenySurfaceBlocks": ["Terrain_Water","Terrain_Lava","Terrain_Ice"],
+  "AvoidLiquidsRadius": 6,
+  "CaveAirCheckDepth": 8,
+  "TreeScanRadius": 3,
+  "ArtificialScanRadius": 7,
+  "ArtificialBlockKeyDenyKeywords": ["Furniture","Brick","Plank","Road","Torch","Door"]
+}

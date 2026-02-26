@@ -1,0 +1,59 @@
+{
+  "Container": {
+    "Type": "Choice",
+    "RollsMin": 1,
+    "RollsMax": 2,
+    "Containers": [
+      {
+        "Type": "Multiple",
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Bar_Iron",
+              "QuantityMin": 1,
+              "QuantityMax": 2
+            },
+            "Weight": 30
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Powder_Boom",
+              "QuantityMin": 1,
+              "QuantityMax": 3
+            },
+            "Weight": 80
+          },
+          {
+            "Type": "Single",
+            "Weight": 80,
+            "Item": {
+              "ItemId": "Plant_Fruit_Apple",
+              "QuantityMin": 1,
+              "QuantityMax": 3
+            }
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Weapon_BangSnap_Bomb",
+              "QuantityMax": 3
+            },
+            "Weight": 60
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Weapon_Arrow_Explosive",
+              "QuantityMin": 1,
+              "QuantityMax": 3
+            },
+            "Weight": 50
+          }
+        ]
+      }
+    ],
+    "Weight": 100
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "Container": {
+    "Type": "Choice",
+    "RollsMin": 1,
+    "RollsMax": 2,
+    "Containers": [
+      {
+        "Type": "Multiple",
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Bar_Iron",
+              "QuantityMin": 1,
+              "QuantityMax": 3
+            },
+            "Weight": 50
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Powder_Boom",
+              "QuantityMin": 1,
+              "QuantityMax": 5
+            },
+            "Weight": 90
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Adhesive_Bomb",
+              "QuantityMax": 1
+            },
+            "Weight": 1
+          },
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Weapon_Arrow_Explosive",
+              "QuantityMin": 1,
+              "QuantityMax": 5
+            },
+            "Weight": 50
+          }
+        ]
+      }
+    ],
+    "Weight": 100
+  }
+}

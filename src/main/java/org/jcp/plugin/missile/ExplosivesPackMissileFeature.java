@@ -2,13 +2,11 @@ package org.jcp.plugin.missile;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
-import com.hypixel.hytale.event.EventPriority;
-import com.hypixel.hytale.math.vector.Vector3i;
 import com.hypixel.hytale.protocol.SoundCategory;
 import com.hypixel.hytale.server.core.HytaleServer;
 import com.hypixel.hytale.server.core.asset.type.soundevent.config.SoundEvent;
-import com.hypixel.hytale.server.core.event.events.ecs.BreakBlockEvent;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.universe.Universe;
 import com.hypixel.hytale.server.core.universe.world.SoundUtil;
@@ -28,22 +26,18 @@ import java.util.logging.Level;
 public final class ExplosivesPackMissileFeature {
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
-    private static final Type MAP_TYPE = new TypeToken<Map<String, MissileTableState>>() {}.getType();
 
-    // ✅ BlockType id de tu mesa (igual que usás al spawnear)
-    private static final String MISSILE_TABLE_BLOCK_TYPE = "Missile_Table";
+    private static final Type ROOT_TYPE = new TypeToken<MissileTablesFile>() {}.getType();
 
-    // ✅ ID del projectile asset (Projectiles/Projectile_Config_Super_Rocket.json)
     private static final String SUPER_ROCKET_PROJECTILE = "Projectile_Config_Missile";
-
-    // ✅ ID del SoundEvent de la alarma (SoundEvents/Missile_Alarm.json)
     private static final String MISSILE_ALARM_SOUND = "Missile_Alarm";
 
     private static JavaPlugin plugin;
     private static Path saveFile;
 
-    // key: "world|x|y|z"
     private static final ConcurrentHashMap<String, MissileTableState> TABLES = new ConcurrentHashMap<>();
+
+    private static volatile MissileSettings SETTINGS = MissileSettings.defaultSettings();
 
     private static ScheduledFuture<Void> ticker;
 
@@ -53,23 +47,16 @@ public final class ExplosivesPackMissileFeature {
         plugin = pl;
         saveFile = plugin.getDataDirectory().resolve("missile_tables.json");
 
-        // Command (spawn)
         plugin.getCommandRegistry().registerCommand(new MissileTableSpawnCommand());
 
         loadFromDisk();
-
-        // ✅ Cuando se rompe la mesa, borrar su estado persistente
-        plugin.getEventRegistry().register(EventPriority.NORMAL, BreakBlockEvent.class, evt -> {
-            try {
-                onBreakBlock(evt);
-            } catch (Throwable t) {
-                plugin.getLogger().at(Level.SEVERE).log("ExplosivesPack: error handling BreakBlockEvent", t);
-            }
-        });
-
         startTicker();
 
-        plugin.getLogger().at(Level.INFO).log("ExplosivesPackMissileFeature: loaded tables=" + TABLES.size());
+        plugin.getLogger().at(Level.INFO).log(
+                "ExplosivesPackMissileFeature: loaded tables=" + TABLES.size() +
+                        " cooldownMs=" + SETTINGS.cooldownMs +
+                        " launchDelayMs=" + SETTINGS.launchDelayMs
+        );
     }
 
     public static MissileTableState getOrCreate(String world, int x, int y, int z) {
@@ -81,14 +68,8 @@ public final class ExplosivesPackMissileFeature {
         return TABLES.get(key(world, x, y, z));
     }
 
-    public static boolean removeTableState(String world, int x, int y, int z) {
-        String k = key(world, x, y, z);
-        MissileTableState removed = TABLES.remove(k);
-        if (removed != null) {
-            saveSoon();
-            return true;
-        }
-        return false;
+    public static MissileSettings getSettings() {
+        return SETTINGS;
     }
 
     public static void saveSoon() {
@@ -102,14 +83,42 @@ public final class ExplosivesPackMissileFeature {
     private static void loadFromDisk() {
         try {
             Files.createDirectories(plugin.getDataDirectory());
-            if (!Files.exists(saveFile)) return;
+
+            if (!Files.exists(saveFile)) {
+                saveToDisk();
+                return;
+            }
 
             String json = Files.readString(saveFile, StandardCharsets.UTF_8);
-            Map<String, MissileTableState> loaded = GSON.fromJson(json, MAP_TYPE);
-            if (loaded != null) {
-                TABLES.clear();
-                TABLES.putAll(loaded);
+
+            MissileTablesFile root = null;
+            try {
+                root = GSON.fromJson(json, ROOT_TYPE);
+            } catch (JsonSyntaxException ignored) {}
+
+            if (root != null && (root.tables != null || root.settings != null)) {
+                MissileSettings loadedSettings = (root.settings != null) ? root.settings : MissileSettings.defaultSettings();
+                loadedSettings.sanitize();
+                SETTINGS = loadedSettings;
+
+                if (root.tables != null) {
+                    TABLES.clear();
+                    TABLES.putAll(root.tables);
+                }
+                return;
             }
+
+            // compat formato viejo (solo tables)
+            Type oldMapType = new TypeToken<Map<String, MissileTableState>>() {}.getType();
+            Map<String, MissileTableState> old = GSON.fromJson(json, oldMapType);
+            if (old != null) {
+                TABLES.clear();
+                TABLES.putAll(old);
+            }
+
+            SETTINGS = MissileSettings.defaultSettings();
+            saveToDisk();
+
         } catch (Throwable t) {
             plugin.getLogger().at(Level.SEVERE).log("ExplosivesPack: failed to load missile_tables.json", t);
         }
@@ -118,7 +127,14 @@ public final class ExplosivesPackMissileFeature {
     private static synchronized void saveToDisk() {
         try {
             Files.createDirectories(plugin.getDataDirectory());
-            String json = GSON.toJson(TABLES, MAP_TYPE);
+
+            MissileTablesFile root = new MissileTablesFile();
+            root.settings = (SETTINGS != null) ? SETTINGS : MissileSettings.defaultSettings();
+            root.settings.sanitize();
+
+            root.tables = new ConcurrentHashMap<>(TABLES);
+
+            String json = GSON.toJson(root, ROOT_TYPE);
             Files.writeString(saveFile, json, StandardCharsets.UTF_8);
         } catch (IOException e) {
             plugin.getLogger().at(Level.SEVERE).log("ExplosivesPack: failed to save missile_tables.json", e);
@@ -140,9 +156,6 @@ public final class ExplosivesPackMissileFeature {
     }
 
     private static void tick() {
-        World world = Universe.get().getDefaultWorld();
-        if (world == null) return;
-
         long now = System.currentTimeMillis();
 
         for (Map.Entry<String, MissileTableState> e : TABLES.entrySet()) {
@@ -152,7 +165,6 @@ public final class ExplosivesPackMissileFeature {
             long launchAt = st.pendingLaunchAtMs;
             if (launchAt <= 0L) continue;
 
-            // parse key para obtener Y del bloque (para ubicar el sonido)
             String[] parts = e.getKey().split("\\|");
             if (parts.length != 4) {
                 st.pendingLaunchAtMs = 0L;
@@ -160,6 +172,7 @@ public final class ExplosivesPackMissileFeature {
                 continue;
             }
 
+            String worldName = parts[0];
             int by;
             try {
                 by = Integer.parseInt(parts[2]);
@@ -169,7 +182,9 @@ public final class ExplosivesPackMissileFeature {
                 continue;
             }
 
-            // ✅ Mientras espera: sonar la alarma UNA SOLA VEZ
+            World world = Universe.get().getWorld(worldName);
+            if (world == null) continue;
+
             if (now < launchAt) {
                 if (!st.alarmPlayed) {
                     int tx = st.targetX;
@@ -200,13 +215,14 @@ public final class ExplosivesPackMissileFeature {
                 continue;
             }
 
-            // ✅ Llegó el momento: lanzar el misil
             int tx = st.targetX;
             int tz = st.targetZ;
 
             st.pendingLaunchAtMs = 0L;
             st.alarmPlayed = false;
-            st.cooldownUntilMs = now + 3_600_000L; // 1 hora
+
+            long cooldownMs = (SETTINGS != null) ? SETTINGS.cooldownMs : MissileSettings.DEFAULT_COOLDOWN_MS;
+            st.cooldownUntilMs = now + cooldownMs;
 
             world.execute(() -> {
                 try {
@@ -220,37 +236,49 @@ public final class ExplosivesPackMissileFeature {
         }
     }
 
-    // ✅ EVENT: si se rompe la mesa, borrar estado persistente
-    private static void onBreakBlock(BreakBlockEvent evt) {
-        if (evt.getBlockType() == null) return;
+    // -------------------------------------------------------------------------
+    // Persisted root file
+    // -------------------------------------------------------------------------
 
-        String id = evt.getBlockType().getId();
-        if (!MISSILE_TABLE_BLOCK_TYPE.equals(id)) return;
+    public static final class MissileTablesFile {
+        public MissileSettings settings;
+        public Map<String, MissileTableState> tables;
+    }
 
-        World world = Universe.get().getDefaultWorld();
-        if (world == null) return;
+    public static final class MissileSettings {
+        public static final long DEFAULT_COOLDOWN_MS = 3_600_000L; // 1h
+        public static final long MIN_COOLDOWN_MS = 1_000L;        // 1s
 
-        Vector3i pos = evt.getTargetBlock();
-        if (pos == null) return;
+        public static final long DEFAULT_LAUNCH_DELAY_MS = 60_000L; // 60s
+        public static final long MIN_LAUNCH_DELAY_MS = 1_000L;      // 1s
 
-        boolean removed = removeTableState(world.getName(), pos.x, pos.y, pos.z);
+        /** Cooldown entre disparos (ms). */
+        public long cooldownMs = DEFAULT_COOLDOWN_MS;
 
-        if (removed) {
-            plugin.getLogger().at(Level.INFO).log(
-                    "ExplosivesPack: Missile table state removed because block was broken at "
-                            + pos.x + "," + pos.y + "," + pos.z
-            );
+        /** ETA / delay entre apretar Launch y que salga el misil (ms). */
+        public long launchDelayMs = DEFAULT_LAUNCH_DELAY_MS;
+
+        public static MissileSettings defaultSettings() {
+            MissileSettings s = new MissileSettings();
+            s.cooldownMs = DEFAULT_COOLDOWN_MS;
+            s.launchDelayMs = DEFAULT_LAUNCH_DELAY_MS;
+            return s;
+        }
+
+        public void sanitize() {
+            if (cooldownMs < MIN_COOLDOWN_MS) cooldownMs = MIN_COOLDOWN_MS;
+            if (cooldownMs > 7L * 24L * 3600L * 1000L) cooldownMs = 7L * 24L * 3600L * 1000L;
+
+            if (launchDelayMs < MIN_LAUNCH_DELAY_MS) launchDelayMs = MIN_LAUNCH_DELAY_MS;
+            if (launchDelayMs > 30L * 60L * 1000L) launchDelayMs = 30L * 60L * 1000L; // clamp 30 min
         }
     }
 
-    // Estado persistente
     public static final class MissileTableState {
         public long cooldownUntilMs = 0L;
         public long pendingLaunchAtMs = 0L;
         public int targetX = 0;
         public int targetZ = 0;
-
-        // alarma solo una vez
         public boolean alarmPlayed = false;
 
         public boolean isOnCooldown(long nowMs) {

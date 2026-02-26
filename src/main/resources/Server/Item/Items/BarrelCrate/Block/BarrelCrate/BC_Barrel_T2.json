@@ -1,0 +1,70 @@
+{
+  "TranslationProperties": {
+    "Name": "barrelcrate.items.BC_Barrel_T2.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Containers"
+  ],
+  "Set": "BarrelCrate",
+  "Icon": "Icons/ItemsGenerated/BC_Barrel_T2.png",
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "CustomModel": "Items/BarrelCrate/Red_Barrel.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/BarrelCrate/Red_Barrel.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Flags": {},
+    "HitboxType": "Barrel_Hitbox",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#590505",
+    "RandomRotation": "YawStep1",
+    "Support": {
+      "Up": [
+        {
+          "FaceType": "Branch"
+        }
+      ],
+      "Down": [
+        {
+          "FaceType": "Full"
+        },
+        {
+          "FaceType": "Barrel"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Ore",
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "VolcanicRocks",
+        "DropList": "BC_Barrel_T2_DropList"
+      }
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "BarrelCrate"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -17
+    ]
+  }
+}
