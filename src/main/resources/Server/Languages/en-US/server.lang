@@ -6,8 +6,8 @@
 items.Explosive_Workbench.name=Explosives Workbench
 items.Explosive_Workbench.description=A workstation used to craft explosives, rockets, and related components
 
-items.Missile_Table.name=Missile Table
-items.Missile_Table.description=A specialized station for assembling missiles and launch payloads
+items.Missile_Table.name=Missile Tank
+items.Missile_Table.description=A specialized station for launching missiles.
 
 # --- Weapons / Ammo (Rocket launcher) ---
 items.Weapon_RocketLauncher.name=Rocket Launcher

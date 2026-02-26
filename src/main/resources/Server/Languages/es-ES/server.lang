@@ -6,8 +6,8 @@
 items.Explosive_Workbench.name=Banco de Explosivos
 items.Explosive_Workbench.description=Una estación de trabajo para fabricar explosivos, cohetes y componentes relacionados
 
-items.Missile_Table.name=Mesa de Misiles
-items.Missile_Table.description=Una estación especializada para ensamblar misiles y cargas de lanzamiento
+items.Missile_Table.name=Tanque de Misiles
+items.Missile_Table.description=Una estación especializada para lanzar misiles.
 
 # --- Armas / Munición (Lanzacohetes) ---
 items.Weapon_RocketLauncher.name=Lanzacohetes
