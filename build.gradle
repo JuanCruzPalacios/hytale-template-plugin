@@ -149,19 +149,31 @@ tasks.register('obfuscate', Exec) {
         def outJar = file("$buildDir/libs/${project.name}-obf.jar")
         outJar.parentFile.mkdirs()
 
-        // classpath con los jars de proguard descargados
         def pgCp = configurations.proguard.files.collect { it.absolutePath }.join(File.pathSeparator)
 
-        // java executable
-        def javaExe = file("${System.getProperty('java.home')}/bin/java${OperatingSystem.current().isWindows() ? '.exe' : ''}")
+        def javaHome = System.getProperty("java.home")
+        def javaExe = file("${javaHome}/bin/java${OperatingSystem.current().isWindows() ? '.exe' : ''}")
 
-        // ProGuard: JDK base + reglas
+        // ✅ Todos los módulos del JDK (evita VerifyError por frames)
+        def jmodsDir = file("${javaHome}/jmods")
+        def jmods = jmodsDir.listFiles()?.findAll { it.name.endsWith(".jmod") } ?: []
+        def jmodsCp = jmods.collect { it.absolutePath }.join(File.pathSeparator)
+
+        // ✅ HytaleServer como librería (tu plugin compila contra esto)
+        def hytaleServerJar = file("$hytaleHome/install/$patchline/package/game/latest/Server/HytaleServer.jar")
+
         commandLine javaExe.absolutePath,
                 "-cp", pgCp,
                 "proguard.ProGuard",
                 "-injars", inJar.absolutePath,
                 "-outjars", outJar.absolutePath,
-                "-libraryjars", "${System.getProperty('java.home')}/jmods/java.base.jmod",
+
+                // librerías JDK completas
+                "-libraryjars", jmodsCp,
+
+                // librería del engine
+                "-libraryjars", hytaleServerJar.absolutePath,
+
                 "@proguard-rules.pro"
     }
 }
