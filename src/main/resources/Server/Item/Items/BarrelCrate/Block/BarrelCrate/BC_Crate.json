@@ -63,6 +63,12 @@
           }
         ]
       }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks",
+        "DropList": {}
+      }
     }
   },
   "Tags": {
