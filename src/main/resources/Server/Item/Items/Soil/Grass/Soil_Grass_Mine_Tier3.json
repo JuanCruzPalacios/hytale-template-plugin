@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Grass Mine Tier 3"
+    "Name": "server.items.Soil_Grass_Mine_Tier3.name",
+    "Description": "server.items.Soil_Grass_Mine_Tier3.description"
   },
   "ItemLevel": 3,
   "Icon": "Icons/ItemsGenerated/Soil_Grass.png",

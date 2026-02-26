@@ -1,0 +1,151 @@
+############################################
+# HyRust - Explosives Pack / Explosives & Reinforcements (en-US)
+############################################
+
+# --- Workbenches / Stations ---
+items.Explosive_Workbench.name=Explosives Workbench
+items.Explosive_Workbench.description=A workstation used to craft explosives, rockets, and related components
+
+items.Missile_Table.name=Missile Table
+items.Missile_Table.description=A specialized station for assembling missiles and launch payloads
+
+# --- Weapons / Ammo (Rocket launcher) ---
+items.Weapon_RocketLauncher.name=Rocket Launcher
+items.Weapon_RocketLauncher.description=Fires <color is="#ffffff">Rockets</color>\nA heavy weapon built for explosive impact
+
+items.Rocket_Bullet.name=Rocket
+items.Rocket_Bullet.description=A standard rocket round for the <color is="#ffffff">Rocket Launcher</color>
+
+items.Rocket_Bullet_Tier2.name=Rocket (Tier II)
+items.Rocket_Bullet_Tier2.description=An improved rocket round for the <color is="#ffffff">Rocket Launcher</color>
+
+items.Rocket_Bullet_Tier3.name=Rocket (Tier III)
+items.Rocket_Bullet_Tier3.description=An advanced rocket round for the <color is="#ffffff">Rocket Launcher</color>
+
+# --- Camouflaged explosive mines (disguised as the named block) ---
+
+items.Rock_Stone_Mine.name=Stone Mine
+items.Rock_Stone_Mine.description=A concealed explosive mine disguised as <color is="#ffffff">Stone</color>
+
+items.Rock_Stone_Mine_Tier2.name=Stone Mine (Tier II)
+items.Rock_Stone_Mine_Tier2.description=A concealed explosive mine disguised as <color is="#ffffff">Stone</color>
+
+items.Rock_Stone_Mine_Tier3.name=Stone Mine (Tier III)
+items.Rock_Stone_Mine_Tier3.description=A concealed explosive mine disguised as <color is="#ffffff">Stone</color>
+
+
+items.Rock_Stone_Cobble_Mine.name=Cobblestone Mine
+items.Rock_Stone_Cobble_Mine.description=A concealed explosive mine disguised as <color is="#ffffff">Cobblestone</color>
+
+items.Rock_Stone_Cobble_Mine_Tier2.name=Cobblestone Mine (Tier II)
+items.Rock_Stone_Cobble_Mine_Tier2.description=A concealed explosive mine disguised as <color is="#ffffff">Cobblestone</color>
+
+items.Rock_Stone_Cobble_Mine_Tier3.name=Cobblestone Mine (Tier III)
+items.Rock_Stone_Cobble_Mine_Tier3.description=A concealed explosive mine disguised as <color is="#ffffff">Cobblestone</color>
+
+
+items.Dirt_Mine.name=Dirt Mine
+items.Dirt_Mine.description=A concealed explosive mine disguised as <color is="#ffffff">Dirt</color>
+
+items.Dirt_Mine_Tier2.name=Dirt Mine (Tier II)
+items.Dirt_Mine_Tier2.description=A concealed explosive mine disguised as <color is="#ffffff">Dirt</color>
+
+items.Dirt_Mine_Tier3.name=Dirt Mine (Tier III)
+items.Dirt_Mine_Tier3.description=A concealed explosive mine disguised as <color is="#ffffff">Dirt</color>
+
+
+items.Soil_Gravel_Mine.name=Gravel Mine
+items.Soil_Gravel_Mine.description=A concealed explosive mine disguised as <color is="#ffffff">Gravel</color>
+
+items.Soil_Gravel_Mine_Tier2.name=Gravel Mine (Tier II)
+items.Soil_Gravel_Mine_Tier2.description=A concealed explosive mine disguised as <color is="#ffffff">Gravel</color>
+
+items.Soil_Gravel_Mine_Tier3.name=Gravel Mine (Tier III)
+items.Soil_Gravel_Mine_Tier3.description=A concealed explosive mine disguised as <color is="#ffffff">Gravel</color>
+
+
+items.Soil_Sand_Mine.name=Sand Mine
+items.Soil_Sand_Mine.description=A concealed explosive mine disguised as <color is="#ffffff">Sand</color>
+
+items.Soil_Sand_Mine_Tier2.name=Sand Mine (Tier II)
+items.Soil_Sand_Mine_Tier2.description=A concealed explosive mine disguised as <color is="#ffffff">Sand</color>
+
+items.Soil_Sand_Mine_Tier3.name=Sand Mine (Tier III)
+items.Soil_Sand_Mine_Tier3.description=A concealed explosive mine disguised as <color is="#ffffff">Sand</color>
+
+
+items.Soil_Grass_Mine.name=Grass Mine
+items.Soil_Grass_Mine.description=A concealed explosive mine disguised as <color is="#ffffff">Grass</color>
+
+items.Soil_Grass_Mine_Tier2.name=Grass Mine (Tier II)
+items.Soil_Grass_Mine_Tier2.description=A concealed explosive mine disguised as <color is="#ffffff">Grass</color>
+
+items.Soil_Grass_Mine_Tier3.name=Grass Mine (Tier III)
+items.Soil_Grass_Mine_Tier3.description=A concealed explosive mine disguised as <color is="#ffffff">Grass</color>
+
+# --- Explosives / Utility ---
+items.Adhesive_Bomb.name=Sticky Bomb
+items.Adhesive_Bomb.description=An explosive that <color is="#ffffff">sticks</color> to surfaces before detonating
+
+items.Adhesive_Bomb_Tier2.name=Sticky Bomb (Tier II)
+items.Adhesive_Bomb_Tier2.description=An improved sticky explosive with enhanced reliability
+
+items.Weapon_BangSnap_Bomb.name=Bang Snap
+items.Weapon_BangSnap_Bomb.description=A small thrown explosive designed for quick detonation
+
+items.Weapon_Arrow_Explosive.name=Explosive Arrow
+items.Weapon_Arrow_Explosive.description=Arrow payload: <color is="#ffffff">Explosive</color>\nCompatible with standard bows
+
+items.Weapon_Explosive_Crossbow.name=Explosive Crossbow
+items.Weapon_Explosive_Crossbow.description=Fires bolts with <color is="#ffffff">explosive payloads</color>
+
+# --- Missiles ---
+items.Missile.name=Missile
+items.Missile.description=A guided payload built for launch systems and special delivery
+
+# --- Tools ---
+items.Reforcer_Tool.name=Reinforcer Tool
+items.Reforcer_Tool.description=Right click to upgrade <color is="#ffffff">Reinforced</color> structures and containers, you need the specific material in your inventory.
+
+# --- Reinforced set (T1-T5) ---
+items.ReinforcedDoor_T1.name=Reinforced Door (Tier I)
+items.ReinforcedDoor_T2.name=Reinforced Door (Tier II)
+items.ReinforcedDoor_T3.name=Reinforced Door (Tier III)
+items.ReinforcedDoor_T4.name=Reinforced Door (Tier IV)
+items.ReinforcedDoor_T5.name=Reinforced Door (Tier V)
+
+items.ReinforcedMediumDoor_T1.name=Reinforced Medium Door (Tier I)
+items.ReinforcedMediumDoor_T2.name=Reinforced Medium Door (Tier II)
+items.ReinforcedMediumDoor_T3.name=Reinforced Medium Door (Tier III)
+items.ReinforcedMediumDoor_T4.name=Reinforced Medium Door (Tier IV)
+items.ReinforcedMediumDoor_T5.name=Reinforced Medium Door (Tier V)
+
+items.ReinforcedTrapdoor_T1.name=Reinforced Trapdoor (Tier I)
+items.ReinforcedTrapdoor_T2.name=Reinforced Trapdoor (Tier II)
+items.ReinforcedTrapdoor_T3.name=Reinforced Trapdoor (Tier III)
+items.ReinforcedTrapdoor_T4.name=Reinforced Trapdoor (Tier IV)
+items.ReinforcedTrapdoor_T5.name=Reinforced Trapdoor (Tier V)
+
+items.ReinforcedChest_Small_T1.name=Reinforced Chest (Tier I)
+items.ReinforcedChest_Small_T2.name=Reinforced Chest (Tier II)
+items.ReinforcedChest_Small_T3.name=Reinforced Chest (Tier III)
+items.ReinforcedChest_Small_T4.name=Reinforced Chest (Tier IV)
+items.ReinforcedChest_Small_T5.name=Reinforced Chest (Tier V)
+
+items.ReinforcedChest_Large_T1.name=Reinforced Large Chest (Tier I)
+items.ReinforcedChest_Large_T2.name=Reinforced Large Chest (Tier II)
+items.ReinforcedChest_Large_T3.name=Reinforced Large Chest (Tier III)
+items.ReinforcedChest_Large_T4.name=Reinforced Large Chest (Tier IV)
+items.ReinforcedChest_Large_T5.name=Reinforced Large Chest (Tier V)
+
+items.Reinforced_Rock_Tier1.name=Reinforced Rock (Tier I)
+items.Reinforced_Rock_Tier2.name=Reinforced Rock (Tier II)
+items.Reinforced_Rock_Tier3.name=Reinforced Rock (Tier III)
+items.Reinforced_Rock_Tier4.name=Reinforced Rock (Tier IV)
+items.Reinforced_Rock_Tier5.name=Reinforced Rock (Tier V)
+
+# --- Containers / Props ---
+items.BC_Barrel_T1.name=Barrel Type 1
+items.BC_Barrel_T2.name=Barrel Type 2
+
+items.BC_Crate.name=Crate

@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "barrelcrate.items.BC_Crate.name"
+    "Name": "server.items.BC_Crate.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [

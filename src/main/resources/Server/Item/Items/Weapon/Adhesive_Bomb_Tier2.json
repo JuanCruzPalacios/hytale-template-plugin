@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Adhesive Throwable Bomb Tier 2"
+    "Name": "server.items.Adhesive_Bomb_Tier2.name",
+    "Description": "server.items.Adhesive_Bomb_Tier2.description"
   },
   "Categories": [
     "Items.Weapons"

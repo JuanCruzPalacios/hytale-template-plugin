@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "barrelcrate.items.BC_Barrel_T1.name"
+    "Name": "server.items.BC_Barrel_T1.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
@@ -31,11 +31,6 @@
     "ParticleColor": "#075871",
     "RandomRotation": "YawStep1",
     "Support": {
-      "Up": [
-        {
-          "FaceType": "Branch"
-        }
-      ],
       "Down": [
         {
           "FaceType": "Full"

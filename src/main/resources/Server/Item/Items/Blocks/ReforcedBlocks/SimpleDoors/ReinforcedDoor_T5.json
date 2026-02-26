@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Reinforced Door Tier 5"
+    "Name": "server.items.ReinforcedDoor_T5.name"
   },
   "Icon": "Icons/ItemsGenerated/ReinforcedDoor_T5.png",
   "Categories": [

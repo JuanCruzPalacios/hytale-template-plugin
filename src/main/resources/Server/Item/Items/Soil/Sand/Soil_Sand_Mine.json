@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Sand Mine"
+    "Name": "server.items.Soil_Sand_Mine.name",
+    "Description": "server.items.Soil_Sand_Mine.description"
   },
   "ItemLevel": 10,
   "Icon": "Icons/ItemsGenerated/Soil_Sand.png",

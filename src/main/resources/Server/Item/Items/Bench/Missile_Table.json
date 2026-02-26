@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Missile Table"
+    "Name": "server.items.Missile_Table.name",
+    "Description": "server.items.Missile_Table.description"
   },
   "Categories": [
     "Furniture.Benches"

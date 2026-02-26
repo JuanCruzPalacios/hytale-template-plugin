@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Rocket Tier 2"
+    "Name": "server.items.Rocket_Bullet_Tier2.name",
+    "Description": "server.items.Rocket_Bullet_Tier2.description"
   },
   "Categories": [
     "Items.Weapons"

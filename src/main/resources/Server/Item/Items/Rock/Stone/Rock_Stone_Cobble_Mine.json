@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Cobblestone Mine"
+    "Name": "server.items.Rock_Stone_Cobble_Mine.name",
+    "Description": "server.items.Rock_Stone_Mine_Cobble.description"
   },
   "ItemLevel": 10,
   "MaxStack": 16,

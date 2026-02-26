@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Reforcer Tool",
-    "Description": "Reinforces volcanic rocks cobble into higher tiers.\nConsumes 1 bar per upgrade."
+    "Name": "server.items.Reforcer_Tool.name",
+    "Description": "server.items.Reforcer_Tool.description"
   },
   "Parent": "Tool_Pickaxe_Crude",
   "Icon": "Icons/ItemsGenerated/Reforcer_Tool.png",
@@ -25,7 +25,7 @@
       {
         "Type": "Crafting",
         "Categories": [
-          "Explosive_Workbench_Weapons"
+          "Explosive_Workbench_Construction"
         ],
         "Id": "Explosive_Workbench",
         "RequiredTierLevel": 1

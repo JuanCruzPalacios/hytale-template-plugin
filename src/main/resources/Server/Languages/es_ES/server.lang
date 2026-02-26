@@ -1,0 +1,151 @@
+############################################
+# HyRust - Explosives Pack / Explosivos y Refuerzos (es-ES)
+############################################
+
+# --- Bancos / Estaciones ---
+items.Explosive_Workbench.name=Banco de Explosivos
+items.Explosive_Workbench.description=Una estación de trabajo para fabricar explosivos, cohetes y componentes relacionados
+
+items.Missile_Table.name=Mesa de Misiles
+items.Missile_Table.description=Una estación especializada para ensamblar misiles y cargas de lanzamiento
+
+# --- Armas / Munición (Lanzacohetes) ---
+items.Weapon_RocketLauncher.name=Lanzacohetes
+items.Weapon_RocketLauncher.description=Dispara <color is="#ffffff">Cohetes</color>\nUn arma pesada diseñada para impacto explosivo
+
+items.Rocket_Bullet.name=Cohete
+items.Rocket_Bullet.description=Un cohete estándar para el <color is="#ffffff">Lanzacohetes</color>
+
+items.Rocket_Bullet_Tier2.name=Cohete (Nivel II)
+items.Rocket_Bullet_Tier2.description=Un cohete mejorado para el <color is="#ffffff">Lanzacohetes</color>
+
+items.Rocket_Bullet_Tier3.name=Cohete (Nivel III)
+items.Rocket_Bullet_Tier3.description=Un cohete avanzado para el <color is="#ffffff">Lanzacohetes</color>
+
+# --- Minas explosivas camufladas (disfrazadas como el bloque nombrado) ---
+
+items.Rock_Stone_Mine.name=Mina de Piedra
+items.Rock_Stone_Mine.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Piedra</color>
+
+items.Rock_Stone_Mine_Tier2.name=Mina de Piedra (Nivel II)
+items.Rock_Stone_Mine_Tier2.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Piedra</color>
+
+items.Rock_Stone_Mine_Tier3.name=Mina de Piedra (Nivel III)
+items.Rock_Stone_Mine_Tier3.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Piedra</color>
+
+
+items.Rock_Stone_Cobble_Mine.name=Mina de Adoquín
+items.Rock_Stone_Cobble_Mine.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Adoquín</color>
+
+items.Rock_Stone_Cobble_Mine_Tier2.name=Mina de Adoquín (Nivel II)
+items.Rock_Stone_Cobble_Mine_Tier2.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Adoquín</color>
+
+items.Rock_Stone_Cobble_Mine_Tier3.name=Mina de Adoquín (Nivel III)
+items.Rock_Stone_Cobble_Mine_Tier3.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Adoquín</color>
+
+
+items.Dirt_Mine.name=Mina de Tierra
+items.Dirt_Mine.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Tierra</color>
+
+items.Dirt_Mine_Tier2.name=Mina de Tierra (Nivel II)
+items.Dirt_Mine_Tier2.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Tierra</color>
+
+items.Dirt_Mine_Tier3.name=Mina de Tierra (Nivel III)
+items.Dirt_Mine_Tier3.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Tierra</color>
+
+
+items.Soil_Gravel_Mine.name=Mina de Grava
+items.Soil_Gravel_Mine.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Grava</color>
+
+items.Soil_Gravel_Mine_Tier2.name=Mina de Grava (Nivel II)
+items.Soil_Gravel_Mine_Tier2.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Grava</color>
+
+items.Soil_Gravel_Mine_Tier3.name=Mina de Grava (Nivel III)
+items.Soil_Gravel_Mine_Tier3.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Grava</color>
+
+
+items.Soil_Sand_Mine.name=Mina de Arena
+items.Soil_Sand_Mine.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Arena</color>
+
+items.Soil_Sand_Mine_Tier2.name=Mina de Arena (Nivel II)
+items.Soil_Sand_Mine_Tier2.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Arena</color>
+
+items.Soil_Sand_Mine_Tier3.name=Mina de Arena (Nivel III)
+items.Soil_Sand_Mine_Tier3.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Arena</color>
+
+
+items.Soil_Grass_Mine.name=Mina de Césped
+items.Soil_Grass_Mine.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Césped</color>
+
+items.Soil_Grass_Mine_Tier2.name=Mina de Césped (Nivel II)
+items.Soil_Grass_Mine_Tier2.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Césped</color>
+
+items.Soil_Grass_Mine_Tier3.name=Mina de Césped (Nivel III)
+items.Soil_Grass_Mine_Tier3.description=Una mina explosiva oculta camuflada como <color is="#ffffff">Césped</color>
+
+# --- Explosivos / Utilidad ---
+items.Adhesive_Bomb.name=Bomba Adhesiva
+items.Adhesive_Bomb.description=Un explosivo que se <color is="#ffffff">adhiere</color> a las superficies antes de detonar
+
+items.Adhesive_Bomb_Tier2.name=Bomba Adhesiva (Nivel II)
+items.Adhesive_Bomb_Tier2.description=Un explosivo adhesivo mejorado con mayor confiabilidad
+
+items.Weapon_BangSnap_Bomb.name=Petardo de Impacto
+items.Weapon_BangSnap_Bomb.description=Un pequeño explosivo arrojadizo diseñado para una detonación rápida
+
+items.Weapon_Arrow_Explosive.name=Flecha Explosiva
+items.Weapon_Arrow_Explosive.description=Carga de flecha: <color is="#ffffff">Explosiva</color>\nCompatible con arcos estándar
+
+items.Weapon_Explosive_Crossbow.name=Ballesta Explosiva
+items.Weapon_Explosive_Crossbow.description=Dispara virotes con <color is="#ffffff">cargas explosivas</color>
+
+# --- Misiles ---
+items.Missile.name=Misil
+items.Missile.description=Una carga guiada diseñada para sistemas de lanzamiento y entrega especial
+
+# --- Herramientas ---
+items.Reforcer_Tool.name=Herramienta de Refuerzo
+items.Reforcer_Tool.description=Clic derecho para mejorar estructuras y contenedores <color is="#ffffff">Reforzados</color>; necesitás el material específico en tu inventario.
+
+# --- Conjunto Reforzado (T1-T5) ---
+items.ReinforcedDoor_T1.name=Puerta Reforzada (Nivel I)
+items.ReinforcedDoor_T2.name=Puerta Reforzada (Nivel II)
+items.ReinforcedDoor_T3.name=Puerta Reforzada (Nivel III)
+items.ReinforcedDoor_T4.name=Puerta Reforzada (Nivel IV)
+items.ReinforcedDoor_T5.name=Puerta Reforzada (Nivel V)
+
+items.ReinforcedMediumDoor_T1.name=Puerta Mediana Reforzada (Nivel I)
+items.ReinforcedMediumDoor_T2.name=Puerta Mediana Reforzada (Nivel II)
+items.ReinforcedMediumDoor_T3.name=Puerta Mediana Reforzada (Nivel III)
+items.ReinforcedMediumDoor_T4.name=Puerta Mediana Reforzada (Nivel IV)
+items.ReinforcedMediumDoor_T5.name=Puerta Mediana Reforzada (Nivel V)
+
+items.ReinforcedTrapdoor_T1.name=Trampilla Reforzada (Nivel I)
+items.ReinforcedTrapdoor_T2.name=Trampilla Reforzada (Nivel II)
+items.ReinforcedTrapdoor_T3.name=Trampilla Reforzada (Nivel III)
+items.ReinforcedTrapdoor_T4.name=Trampilla Reforzada (Nivel IV)
+items.ReinforcedTrapdoor_T5.name=Trampilla Reforzada (Nivel V)
+
+items.ReinforcedChest_Small_T1.name=Cofre Reforzado (Nivel I)
+items.ReinforcedChest_Small_T2.name=Cofre Reforzado (Nivel II)
+items.ReinforcedChest_Small_T3.name=Cofre Reforzado (Nivel III)
+items.ReinforcedChest_Small_T4.name=Cofre Reforzado (Nivel IV)
+items.ReinforcedChest_Small_T5.name=Cofre Reforzado (Nivel V)
+
+items.ReinforcedChest_Large_T1.name=Cofre Grande Reforzado (Nivel I)
+items.ReinforcedChest_Large_T2.name=Cofre Grande Reforzado (Nivel II)
+items.ReinforcedChest_Large_T3.name=Cofre Grande Reforzado (Nivel III)
+items.ReinforcedChest_Large_T4.name=Cofre Grande Reforzado (Nivel IV)
+items.ReinforcedChest_Large_T5.name=Cofre Grande Reforzado (Nivel V)
+
+items.Reinforced_Rock_Tier1.name=Roca Reforzada (Nivel I)
+items.Reinforced_Rock_Tier2.name=Roca Reforzada (Nivel II)
+items.Reinforced_Rock_Tier3.name=Roca Reforzada (Nivel III)
+items.Reinforced_Rock_Tier4.name=Roca Reforzada (Nivel IV)
+items.Reinforced_Rock_Tier5.name=Roca Reforzada (Nivel V)
+
+# --- Contenedores / Props ---
+items.BC_Barrel_T1.name=Barril Tipo 1
+items.BC_Barrel_T2.name=Barril Tipo 2
+
+items.BC_Crate.name=Cajón

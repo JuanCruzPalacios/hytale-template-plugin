@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Rocket"
+    "Name": "server.items.Rocket_Bullet.name",
+    "Description": "server.items.Rocket_Bullet.description"
   },
   "Categories": [
     "Items.Weapons"

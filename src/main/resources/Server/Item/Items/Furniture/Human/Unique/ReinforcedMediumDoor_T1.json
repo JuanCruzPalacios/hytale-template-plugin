@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Reinforced Medium Door T1"
+    "Name": "server.items.ReinforcedMediumDoor_T1.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [

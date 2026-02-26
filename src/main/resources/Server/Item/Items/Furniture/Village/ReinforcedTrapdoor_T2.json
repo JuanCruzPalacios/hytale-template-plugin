@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Reinforced Trapdoor T2"
+    "Name": "server.items.ReinforcedTrapdoor_T2.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [

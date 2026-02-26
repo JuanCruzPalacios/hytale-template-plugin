@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Bang Snap"
+    "Name": "server.items.Weapon_BangSnap_Bomb.name",
+    "Description": "server.items.Weapon_BangSnap_Bomb.description"
   },
   "Categories": [
     "Items.Weapons"

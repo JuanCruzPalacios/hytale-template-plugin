@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Reinforced Rock Tier 4"
+    "Name": "server.items.Reinforced_Rock_Tier4.name"
   },
   "Icon": "Icons/ItemsGenerated/Reforced_Rock_Tier4.png",
   "Categories": [

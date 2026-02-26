@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Reinforced Rock Tier 2"
+    "Name": "server.items.Reinforced_Rock_Tier2.name"
   },
   "ItemLevel": 10,
   "MaxStack": 100,

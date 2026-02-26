@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Explosive Workbench",
-    "Description": "A specialized workstation designed for crafting explosives and heavy weaponry. From volatile charges to advanced demolition tools, this bench allows skilled engineers to assemble dangerous devices that require precision, knowledge, and a steady hand. Handle with care."
+    "Name": "server.items.Explosive_Workbench.name",
+    "Description": "server.items.Explosive_Workbench.description"
   },
   "Recipe": {
     "Input": [

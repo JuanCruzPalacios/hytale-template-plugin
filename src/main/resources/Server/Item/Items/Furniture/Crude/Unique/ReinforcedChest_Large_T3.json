@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Reinforced Chest Large T3"
+    "Name": "server.items.ReinforcedChest_Large_T3.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [

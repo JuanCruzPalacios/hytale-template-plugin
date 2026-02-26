@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Dirt Mine Tier 2"
+    "Name": "server.items.Dirt_Mine_Tier2.name",
+    "Description": "server.items.Dirt_Mine_Tier2.description"
   },
   "ItemLevel": 10,
   "Icon": "Icons/ItemsGenerated/Soil_Dirt.png",

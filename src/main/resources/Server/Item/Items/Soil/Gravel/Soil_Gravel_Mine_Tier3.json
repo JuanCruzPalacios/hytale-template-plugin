@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Gravel Mine Tier 3"
+    "Name": "server.items.Soil_Gravel_Mine_Tier3.name",
+    "Description": "server.items.Soil_Gravel_Mine_Tier3.description"
   },
   "ItemLevel": 15,
   "Icon": "Icons/ItemsGenerated/Soil_Gravel.png",
