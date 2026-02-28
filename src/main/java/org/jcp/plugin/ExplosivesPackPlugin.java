@@ -10,6 +10,7 @@ import com.hypixel.hytale.server.core.event.events.BootEvent;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.Interaction;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.server.OpenCustomUIInteraction;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
+import org.jcp.plugin.api.ExplosivesPackApi;
 import org.jcp.plugin.interaction.ExplodeSelectiveInteraction;
 import org.jcp.plugin.missile.ExplosivesPackMissileFeature;
 import org.jcp.plugin.missile.MissileTablePageSupplier;
@@ -58,11 +59,16 @@ public class ExplosivesPackPlugin extends JavaPlugin {
     @Override
     protected void setup() {
 
+        // Mark plugin as active as soon as setup starts.
+        // If setup throws fatally, it won't reach the end; we also set false in catch paths below.
+        ExplosivesPackApi._setActive(true);
+
         // ✅ Misiles
         try {
             ExplosivesPackMissileFeature.register(this);
         } catch (Throwable t) {
             getLogger().at(Level.SEVERE).withCause(t).log("ExplosivesPack: failed to register missile feature");
+            // Keep plugin active, but feature partially unavailable. Up to you if you want to flip active=false here.
         }
 
         // ✅ BootEvent: assets cargados + world pipeline listo
@@ -82,6 +88,9 @@ public class ExplosivesPackPlugin extends JavaPlugin {
             } catch (Throwable t) {
                 getLogger().at(Level.SEVERE).withCause(t).log("ExplosivesPack: failed to register BarrelCrate feature (BootEvent)");
             }
+
+            // If we reached here, the plugin boot pipeline ran.
+            ExplosivesPackApi._setBooted(true);
         });
     }
 

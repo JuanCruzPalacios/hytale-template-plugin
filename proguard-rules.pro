@@ -24,6 +24,15 @@
 -keep class ** extends com.hypixel.hytale.server.core.plugin.JavaPlugin { *; }
 
 # -------------------------------------------------
+# ✅ API pública (reflection): NO ofuscar ni renombrar
+# -------------------------------------------------
+# Mantener la clase y TODOS sus miembros (métodos/fields) tal cual
+-keep class org.jcp.plugin.api.ExplosivesPackApi { *; }
+
+# (Opcional recomendado) si en el futuro agregás más clases de API:
+-keep class org.jcp.plugin.api.** { *; }
+
+# -------------------------------------------------
 # NO ofuscar interacciones (como pediste)
 # -------------------------------------------------
 -keep class org.jcp.plugin.barrelcrate.interaction.** { *; }
