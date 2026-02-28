@@ -36,18 +36,6 @@ import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-/**
- * Igual que ExplodeInteraction, pero con toggle:
- * - Si SelfDamageProjectiles=true y la entidad que explota es un proyectil,
- *   usa EnvironmentSource("explosion") para que pueda dañarse el shooter.
- *
- * JSON:
- * {
- *   "Type": "ExplodeSelective",
- *   "SelfDamageProjectiles": true,
- *   "Config": { ... ExplosionConfig ... }
- * }
- */
 public final class ExplodeSelectiveInteraction extends SimpleInstantInteraction {
 
     @Nonnull
@@ -132,8 +120,6 @@ public final class ExplodeSelectiveInteraction extends SimpleInstantInteraction 
         Archetype<EntityStore> archetype = commandBuffer.getArchetype(ref);
         boolean isProjectile = archetype.contains(Projectile.getComponentType());
 
-        // ✅ Solo cambia esto respecto a vanilla:
-        // si es proyectil y SelfDamageProjectiles=true => EnvironmentSource
         Damage.Source damageSource;
         if (isProjectile && this.selfDamageProjectiles) {
             damageSource = DAMAGE_SOURCE_EXPLOSION;
@@ -147,7 +133,7 @@ public final class ExplodeSelectiveInteraction extends SimpleInstantInteraction 
                 damageSource,
                 position,
                 this.config,
-                isProjectile ? ref : null,               // ignoreRef (no dañar la entidad proyectil)
+                isProjectile ? ref : null,
                 commandBuffer,
                 (ComponentAccessor) chunkStore
         );
