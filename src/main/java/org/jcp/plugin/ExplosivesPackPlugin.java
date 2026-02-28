@@ -91,6 +91,8 @@ public class ExplosivesPackPlugin extends JavaPlugin {
 
             // If we reached here, the plugin boot pipeline ran.
             ExplosivesPackApi._setBooted(true);
+
+            getCommandRegistry().registerCommand(new org.jcp.plugin.command.ExplosivesPackInfoCommand(this));
         });
     }
 
